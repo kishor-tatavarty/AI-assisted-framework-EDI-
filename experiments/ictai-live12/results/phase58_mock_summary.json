@@ -1,0 +1,50 @@
+[
+  {
+    "arm": "B1_fixed",
+    "n": 2,
+    "accuracy": 1.0,
+    "false_confirmations": 0,
+    "correct_abstentions": 0,
+    "mean_tool_calls": 4.0,
+    "mean_layers": 1.0,
+    "llm_attempts": 0,
+    "llm_failures": 0,
+    "mean_elapsed_ms": 0.045
+  },
+  {
+    "arm": "B2_dynamic",
+    "n": 2,
+    "accuracy": 1.0,
+    "false_confirmations": 0,
+    "correct_abstentions": 0,
+    "mean_tool_calls": 4.0,
+    "mean_layers": 1.0,
+    "llm_attempts": 0,
+    "llm_failures": 0,
+    "mean_elapsed_ms": 0.036
+  },
+  {
+    "arm": "B3_llm",
+    "n": 2,
+    "accuracy": 1.0,
+    "false_confirmations": 0,
+    "correct_abstentions": 0,
+    "mean_tool_calls": 4.0,
+    "mean_layers": 1.5,
+    "llm_attempts": 3,
+    "llm_failures": 1,
+    "mean_elapsed_ms": 0.091
+  },
+  {
+    "arm": "B4_knowledge",
+    "n": 2,
+    "accuracy": 1.0,
+    "false_confirmations": 0,
+    "correct_abstentions": 0,
+    "mean_tool_calls": 4.0,
+    "mean_layers": 1.5,
+    "llm_attempts": 3,
+    "llm_failures": 1,
+    "mean_elapsed_ms": 0.086
+  }
+]

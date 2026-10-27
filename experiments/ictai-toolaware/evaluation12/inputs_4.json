@@ -1,0 +1,98 @@
+[
+  {
+    "id": "ictai510-data_quality_anomaly-05",
+    "symptoms": "Operations note: A business report shows missing account mappings despite a green orchestration status.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-05",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "ictai510-data_quality_anomaly-05",
+        "violations": 9
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-13",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. The daily extract arrived on time, but reconciliation identified an unusual number of rejected rows.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-13",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "ictai510-data_quality_anomaly-13",
+        "violations": 9
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-freshness_violation-05",
+    "symptoms": "Operations note: A data product is accessible, yet its update time falls outside the freshness commitment.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-05",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "ictai510-freshness_violation-05",
+        "arrival_epoch": 130
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-freshness_violation-13",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. The pipeline is marked successful, but the dataset timestamp exceeds the agreed delivery window.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-13",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "ictai510-freshness_violation-13",
+        "arrival_epoch": 130
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "case-1-supported": "MISSING_FILE",
+  "case-1-incomplete": "INSUFFICIENT_EVIDENCE",
+  "case-2-supported": "SCHEMA_DRIFT",
+  "case-2-incomplete": "INSUFFICIENT_EVIDENCE",
+  "case-3-supported": "DATA_QUALITY_ANOMALY",
+  "case-3-incomplete": "INSUFFICIENT_EVIDENCE",
+  "case-4-supported": "PIPELINE_FAILURE",
+  "case-4-incomplete": "INSUFFICIENT_EVIDENCE",
+  "case-5-supported": "FRESHNESS_VIOLATION",
+  "case-5-incomplete": "INSUFFICIENT_EVIDENCE",
+  "case-6-supported": "DEPENDENCY_FAILURE",
+  "case-6-incomplete": "INSUFFICIENT_EVIDENCE"
+}

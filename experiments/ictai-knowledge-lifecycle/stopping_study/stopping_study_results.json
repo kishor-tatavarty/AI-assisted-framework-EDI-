@@ -1,0 +1,285 @@
+{
+  "cases": [
+    {
+      "id": "ictai510-dependency_failure-05__ambiguous",
+      "final_status": "ABSTAINED",
+      "final_category": "INSUFFICIENT_EVIDENCE",
+      "attempts": 4,
+      "first_candidate_confirmation": null,
+      "checkpoints": [
+        {
+          "after_tool": "check_upstream_health",
+          "n": 1,
+          "strict": "INVESTIGATING",
+          "strict_category": "INSUFFICIENT_EVIDENCE",
+          "candidate": "INVESTIGATING",
+          "candidate_category": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "after_tool": "inspect_task_execution",
+          "n": 2,
+          "strict": "INVESTIGATING",
+          "strict_category": "INSUFFICIENT_EVIDENCE",
+          "candidate": "INVESTIGATING",
+          "candidate_category": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "after_tool": "read_run_events",
+          "n": 3,
+          "strict": "INVESTIGATING",
+          "strict_category": "INSUFFICIENT_EVIDENCE",
+          "candidate": "INVESTIGATING",
+          "candidate_category": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "after_tool": "query_lineage",
+          "n": 4,
+          "strict": "INVESTIGATING",
+          "strict_category": "INSUFFICIENT_EVIDENCE",
+          "candidate": "INVESTIGATING",
+          "candidate_category": "INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "id": "ictai510-dependency_failure-05__confirmed",
+      "final_status": "CONFIRMED",
+      "final_category": "DEPENDENCY_FAILURE",
+      "attempts": 4,
+      "first_candidate_confirmation": {
+        "after_tool": "query_lineage",
+        "n": 4,
+        "strict": "CONFIRMED",
+        "strict_category": "DEPENDENCY_FAILURE",
+        "candidate": "CONFIRMED",
+        "candidate_category": "DEPENDENCY_FAILURE"
+      },
+      "checkpoints": [
+        {
+          "after_tool": "check_upstream_health",
+          "n": 1,
+          "strict": "INVESTIGATING",
+          "strict_category": "INSUFFICIENT_EVIDENCE",
+          "candidate": "INVESTIGATING",
+          "candidate_category": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "after_tool": "inspect_task_execution",
+          "n": 2,
+          "strict": "INVESTIGATING",
+          "strict_category": "INSUFFICIENT_EVIDENCE",
+          "candidate": "INVESTIGATING",
+          "candidate_category": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "after_tool": "read_run_events",
+          "n": 3,
+          "strict": "INVESTIGATING",
+          "strict_category": "INSUFFICIENT_EVIDENCE",
+          "candidate": "INVESTIGATING",
+          "candidate_category": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "after_tool": "query_lineage",
+          "n": 4,
+          "strict": "CONFIRMED",
+          "strict_category": "DEPENDENCY_FAILURE",
+          "candidate": "CONFIRMED",
+          "candidate_category": "DEPENDENCY_FAILURE"
+        }
+      ]
+    },
+    {
+      "id": "ictai510-dependency_failure-13__ambiguous",
+      "final_status": "ABSTAINED",
+      "final_category": "INSUFFICIENT_EVIDENCE",
+      "attempts": 4,
+      "first_candidate_confirmation": null,
+      "checkpoints": [
+        {
+          "after_tool": "check_upstream_health",
+          "n": 1,
+          "strict": "INVESTIGATING",
+          "strict_category": "INSUFFICIENT_EVIDENCE",
+          "candidate": "INVESTIGATING",
+          "candidate_category": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "after_tool": "inspect_task_execution",
+          "n": 2,
+          "strict": "INVESTIGATING",
+          "strict_category": "INSUFFICIENT_EVIDENCE",
+          "candidate": "INVESTIGATING",
+          "candidate_category": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "after_tool": "read_run_events",
+          "n": 3,
+          "strict": "INVESTIGATING",
+          "strict_category": "INSUFFICIENT_EVIDENCE",
+          "candidate": "INVESTIGATING",
+          "candidate_category": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "after_tool": "query_lineage",
+          "n": 4,
+          "strict": "INVESTIGATING",
+          "strict_category": "INSUFFICIENT_EVIDENCE",
+          "candidate": "INVESTIGATING",
+          "candidate_category": "INSUFFICIENT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "id": "ictai510-dependency_failure-13__confirmed",
+      "final_status": "CONFIRMED",
+      "final_category": "DEPENDENCY_FAILURE",
+      "attempts": 4,
+      "first_candidate_confirmation": {
+        "after_tool": "query_lineage",
+        "n": 4,
+        "strict": "CONFIRMED",
+        "strict_category": "DEPENDENCY_FAILURE",
+        "candidate": "CONFIRMED",
+        "candidate_category": "DEPENDENCY_FAILURE"
+      },
+      "checkpoints": [
+        {
+          "after_tool": "check_upstream_health",
+          "n": 1,
+          "strict": "INVESTIGATING",
+          "strict_category": "INSUFFICIENT_EVIDENCE",
+          "candidate": "INVESTIGATING",
+          "candidate_category": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "after_tool": "inspect_task_execution",
+          "n": 2,
+          "strict": "INVESTIGATING",
+          "strict_category": "INSUFFICIENT_EVIDENCE",
+          "candidate": "INVESTIGATING",
+          "candidate_category": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "after_tool": "read_run_events",
+          "n": 3,
+          "strict": "INVESTIGATING",
+          "strict_category": "INSUFFICIENT_EVIDENCE",
+          "candidate": "INVESTIGATING",
+          "candidate_category": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "after_tool": "query_lineage",
+          "n": 4,
+          "strict": "CONFIRMED",
+          "strict_category": "DEPENDENCY_FAILURE",
+          "candidate": "CONFIRMED",
+          "candidate_category": "DEPENDENCY_FAILURE"
+        }
+      ]
+    },
+    {
+      "id": "ictai510-schema_drift-05",
+      "final_status": "CONFIRMED",
+      "final_category": "SCHEMA_DRIFT",
+      "attempts": 4,
+      "first_candidate_confirmation": {
+        "after_tool": "inspect_observed_schema",
+        "n": 2,
+        "strict": "PROVISIONAL_RCA",
+        "strict_category": "SCHEMA_DRIFT",
+        "candidate": "CONFIRMED",
+        "candidate_category": "SCHEMA_DRIFT"
+      },
+      "checkpoints": [
+        {
+          "after_tool": "inspect_schema_contract",
+          "n": 1,
+          "strict": "INVESTIGATING",
+          "strict_category": "INSUFFICIENT_EVIDENCE",
+          "candidate": "INVESTIGATING",
+          "candidate_category": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "after_tool": "inspect_observed_schema",
+          "n": 2,
+          "strict": "PROVISIONAL_RCA",
+          "strict_category": "SCHEMA_DRIFT",
+          "candidate": "CONFIRMED",
+          "candidate_category": "SCHEMA_DRIFT"
+        },
+        {
+          "after_tool": "inspect_task_execution",
+          "n": 3,
+          "strict": "PROVISIONAL_RCA",
+          "strict_category": "SCHEMA_DRIFT",
+          "candidate": "CONFIRMED",
+          "candidate_category": "SCHEMA_DRIFT"
+        },
+        {
+          "after_tool": "read_run_events",
+          "n": 4,
+          "strict": "CONFIRMED",
+          "strict_category": "SCHEMA_DRIFT",
+          "candidate": "CONFIRMED",
+          "candidate_category": "SCHEMA_DRIFT"
+        }
+      ]
+    },
+    {
+      "id": "ictai510-schema_drift-13",
+      "final_status": "CONFIRMED",
+      "final_category": "SCHEMA_DRIFT",
+      "attempts": 4,
+      "first_candidate_confirmation": {
+        "after_tool": "inspect_observed_schema",
+        "n": 2,
+        "strict": "PROVISIONAL_RCA",
+        "strict_category": "SCHEMA_DRIFT",
+        "candidate": "CONFIRMED",
+        "candidate_category": "SCHEMA_DRIFT"
+      },
+      "checkpoints": [
+        {
+          "after_tool": "inspect_schema_contract",
+          "n": 1,
+          "strict": "INVESTIGATING",
+          "strict_category": "INSUFFICIENT_EVIDENCE",
+          "candidate": "INVESTIGATING",
+          "candidate_category": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "after_tool": "inspect_observed_schema",
+          "n": 2,
+          "strict": "PROVISIONAL_RCA",
+          "strict_category": "SCHEMA_DRIFT",
+          "candidate": "CONFIRMED",
+          "candidate_category": "SCHEMA_DRIFT"
+        },
+        {
+          "after_tool": "inspect_task_execution",
+          "n": 3,
+          "strict": "PROVISIONAL_RCA",
+          "strict_category": "SCHEMA_DRIFT",
+          "candidate": "CONFIRMED",
+          "candidate_category": "SCHEMA_DRIFT"
+        },
+        {
+          "after_tool": "read_run_events",
+          "n": 4,
+          "strict": "CONFIRMED",
+          "strict_category": "SCHEMA_DRIFT",
+          "candidate": "CONFIRMED",
+          "candidate_category": "SCHEMA_DRIFT"
+        }
+      ]
+    }
+  ],
+  "adversarial_counterexample": {
+    "early_category": "SCHEMA_DRIFT",
+    "early_status": "CONFIRMED",
+    "after_competing_evidence_status": "REVIEW_REQUIRED",
+    "after_competing_evidence_category": "INSUFFICIENT_EVIDENCE",
+    "warning": "Early category confirmation misses later competing positive evidence."
+  }
+}

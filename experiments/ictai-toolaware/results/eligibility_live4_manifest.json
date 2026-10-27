@@ -1,0 +1,11 @@
+{
+  "cases": 4,
+  "categories": [
+    "DATA_QUALITY_ANOMALY",
+    "FRESHNESS_VIOLATION"
+  ],
+  "duplicate_history_descriptions": [],
+  "inputs_sha256": "17bcb8a47374d542e8bd2ac880c82b081c088321ad41b528e67efbe6d277c2b1",
+  "gold_sha256": "e0fa95d32278a8b70d6048be389b01c4438dd28f6321bca36ecd7ba5ffd88aba",
+  "history_sha256": "5154dae39a2ce215ddc6a54d8e21a6c1fffe3287a511e0fe1e1df936dbc484e9"
+}

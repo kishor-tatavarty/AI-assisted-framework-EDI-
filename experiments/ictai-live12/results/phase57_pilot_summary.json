@@ -1,0 +1,38 @@
+[
+  {
+    "arm": "B1_fixed",
+    "n": 12,
+    "accuracy": 1.0,
+    "mean_tool_calls": 1.5833333333333333,
+    "mean_layers": 1.25,
+    "abstentions": 6,
+    "llm_calls": 0
+  },
+  {
+    "arm": "B2_dynamic",
+    "n": 12,
+    "accuracy": 1.0,
+    "mean_tool_calls": 1.5833333333333333,
+    "mean_layers": 1.25,
+    "abstentions": 6,
+    "llm_calls": 0
+  },
+  {
+    "arm": "B3_llm",
+    "n": 12,
+    "accuracy": 1.0,
+    "mean_tool_calls": 1.5833333333333333,
+    "mean_layers": 1.25,
+    "abstentions": 6,
+    "llm_calls": 20
+  },
+  {
+    "arm": "B4_knowledge",
+    "n": 12,
+    "accuracy": 1.0,
+    "mean_tool_calls": 1.5833333333333333,
+    "mean_layers": 1.25,
+    "abstentions": 6,
+    "llm_calls": 20
+  }
+]

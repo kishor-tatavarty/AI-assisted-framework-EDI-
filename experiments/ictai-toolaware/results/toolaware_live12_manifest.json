@@ -1,0 +1,15 @@
+{
+  "cases": 12,
+  "categories": [
+    "DATA_QUALITY_ANOMALY",
+    "DEPENDENCY_FAILURE",
+    "FRESHNESS_VIOLATION",
+    "MISSING_FILE",
+    "PIPELINE_FAILURE",
+    "SCHEMA_DRIFT"
+  ],
+  "duplicate_history_descriptions": [],
+  "inputs_sha256": "b569b54638a0b02f2645e1713d9b3a345c547b3d2bfb2a83252925b7a0d8eadb",
+  "gold_sha256": "117ed66d2178a5568795532df00f72cb8463539baa7ae9a42e1d09b9676b4796",
+  "history_sha256": "5154dae39a2ce215ddc6a54d8e21a6c1fffe3287a511e0fe1e1df936dbc484e9"
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "ictai510-schema_drift-05",
+    "symptoms": "Operations note: An upstream producer changed its export layout while the consumer contract remained unchanged.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-schema_drift-13",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. The ingestion parser reports an unexpected attribute layout after a partner-side deployment.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  }
+]

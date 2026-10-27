@@ -1,0 +1,2754 @@
+[
+  {
+    "id": "ictai510-missing_file-01",
+    "symptoms": "Monitoring observation: The scheduled delivery window closed without a matching object in the landing area.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "check_object_inventory": {
+        "present": false,
+        "count": 0
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-missing_file-02",
+    "symptoms": "Monitoring observation: The partner said its nightly batch was held for reconciliation; a downstream task reports an unresolved input.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "check_object_inventory": {
+        "present": false,
+        "count": 0
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-missing_file-03",
+    "symptoms": "Monitoring observation: A workflow reports an artifact resolution problem shortly after the external distributor paused its export.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "check_object_inventory": {
+        "present": false,
+        "count": 0
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-missing_file-04",
+    "symptoms": "Monitoring observation: The reporting feed has not advanced, although the scheduler itself completed its prechecks.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "check_object_inventory": {
+        "present": false,
+        "count": 0
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-missing_file-05",
+    "symptoms": "Operations note: The supplier says it cannot release the latest extract; analysts only see yesterday’s partition.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "check_object_inventory": {
+        "present": false,
+        "count": 0
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-missing_file-06",
+    "symptoms": "Operations note: The scheduled delivery window closed without a matching object in the landing area.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "check_object_inventory": {
+        "present": false,
+        "count": 0
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-missing_file-07",
+    "symptoms": "Operations note: The partner said its nightly batch was held for reconciliation; a downstream task reports an unresolved input.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "check_object_inventory": {
+        "present": false,
+        "count": 0
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-missing_file-08",
+    "symptoms": "Operations note: A workflow reports an artifact resolution problem shortly after the external distributor paused its export.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "check_object_inventory": {
+        "present": false,
+        "count": 0
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-missing_file-09",
+    "symptoms": "Combined service-desk and delivery notes: The reporting feed has not advanced, although the scheduler itself completed its prechecks. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "check_object_inventory": {
+        "present": false,
+        "count": 0
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-missing_file-10",
+    "symptoms": "Combined service-desk and delivery notes: The supplier says it cannot release the latest extract; analysts only see yesterday’s partition. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "check_object_inventory": {
+        "present": false,
+        "count": 0
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-missing_file-11",
+    "symptoms": "Combined service-desk and delivery notes: The scheduled delivery window closed without a matching object in the landing area. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "check_object_inventory": {
+        "present": false,
+        "count": 0
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-missing_file-12",
+    "symptoms": "Combined service-desk and delivery notes: The partner said its nightly batch was held for reconciliation; a downstream task reports an unresolved input. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "check_object_inventory": {
+        "present": false,
+        "count": 0
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-missing_file-13",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. A workflow reports an artifact resolution problem shortly after the external distributor paused its export.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "check_object_inventory": {
+        "present": false,
+        "count": 0
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-missing_file-14",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. The reporting feed has not advanced, although the scheduler itself completed its prechecks.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "check_object_inventory": {
+        "present": false,
+        "count": 0
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-missing_file-15",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. The supplier says it cannot release the latest extract; analysts only see yesterday’s partition.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "check_object_inventory": {
+        "present": false,
+        "count": 0
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-missing_file-16",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. The scheduled delivery window closed without a matching object in the landing area.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "check_object_inventory": {
+        "present": false,
+        "count": 0
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-missing_file-17",
+    "symptoms": "Unresolved ticket: The partner said its nightly batch was held for reconciliation; a downstream task reports an unresolved input. A required verification source is not yet available.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-missing_file-18",
+    "symptoms": "Unresolved ticket: A workflow reports an artifact resolution problem shortly after the external distributor paused its export. A required verification source is not yet available.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-missing_file-19",
+    "symptoms": "Unresolved ticket: The reporting feed has not advanced, although the scheduler itself completed its prechecks. A required verification source is not yet available.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-missing_file-20",
+    "symptoms": "Unresolved ticket: The supplier says it cannot release the latest extract; analysts only see yesterday’s partition. A required verification source is not yet available.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-schema_drift-01",
+    "symptoms": "Monitoring observation: An incoming extract has a different set of columns than the approved interface specification.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-schema_drift-02",
+    "symptoms": "Monitoring observation: After a vendor release, a transformation cannot find a field it previously selected.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-schema_drift-03",
+    "symptoms": "Monitoring observation: The ingestion parser reports an unexpected attribute layout after a partner-side deployment.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-schema_drift-04",
+    "symptoms": "Monitoring observation: A scheduled job fails on a projection step; the release note mentions a standardized identifier name.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-schema_drift-05",
+    "symptoms": "Operations note: An upstream producer changed its export layout while the consumer contract remained unchanged.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-schema_drift-06",
+    "symptoms": "Operations note: An incoming extract has a different set of columns than the approved interface specification.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-schema_drift-07",
+    "symptoms": "Operations note: After a vendor release, a transformation cannot find a field it previously selected.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-schema_drift-08",
+    "symptoms": "Operations note: The ingestion parser reports an unexpected attribute layout after a partner-side deployment.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-schema_drift-09",
+    "symptoms": "Combined service-desk and delivery notes: A scheduled job fails on a projection step; the release note mentions a standardized identifier name. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-schema_drift-10",
+    "symptoms": "Combined service-desk and delivery notes: An upstream producer changed its export layout while the consumer contract remained unchanged. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-schema_drift-11",
+    "symptoms": "Combined service-desk and delivery notes: An incoming extract has a different set of columns than the approved interface specification. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-schema_drift-12",
+    "symptoms": "Combined service-desk and delivery notes: After a vendor release, a transformation cannot find a field it previously selected. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-schema_drift-13",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. The ingestion parser reports an unexpected attribute layout after a partner-side deployment.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-schema_drift-14",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. A scheduled job fails on a projection step; the release note mentions a standardized identifier name.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-schema_drift-15",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. An upstream producer changed its export layout while the consumer contract remained unchanged.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-schema_drift-16",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. An incoming extract has a different set of columns than the approved interface specification.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-schema_drift-17",
+    "symptoms": "Unresolved ticket: After a vendor release, a transformation cannot find a field it previously selected. A required verification source is not yet available.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-schema_drift-18",
+    "symptoms": "Unresolved ticket: The ingestion parser reports an unexpected attribute layout after a partner-side deployment. A required verification source is not yet available.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-schema_drift-19",
+    "symptoms": "Unresolved ticket: A scheduled job fails on a projection step; the release note mentions a standardized identifier name. A required verification source is not yet available.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-schema_drift-20",
+    "symptoms": "Unresolved ticket: An upstream producer changed its export layout while the consumer contract remained unchanged. A required verification source is not yet available.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-01",
+    "symptoms": "Monitoring observation: A completed load produced more invalid customer identifiers than the control threshold permits.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-01",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "ictai510-data_quality_anomaly-01",
+        "violations": 9
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-02",
+    "symptoms": "Monitoring observation: The dashboard contains unexpected blank keys although ingestion completed successfully.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-02",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "ictai510-data_quality_anomaly-02",
+        "violations": 9
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-03",
+    "symptoms": "Monitoring observation: The daily extract arrived on time, but reconciliation identified an unusual number of rejected rows.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-03",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "ictai510-data_quality_anomaly-03",
+        "violations": 9
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-04",
+    "symptoms": "Monitoring observation: A partner states that the export is complete; the validation summary reports a spike in rule violations.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-04",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "ictai510-data_quality_anomaly-04",
+        "violations": 9
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-05",
+    "symptoms": "Operations note: A business report shows missing account mappings despite a green orchestration status.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-05",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "ictai510-data_quality_anomaly-05",
+        "violations": 9
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-06",
+    "symptoms": "Operations note: A completed load produced more invalid customer identifiers than the control threshold permits.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-06",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "ictai510-data_quality_anomaly-06",
+        "violations": 9
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-07",
+    "symptoms": "Operations note: The dashboard contains unexpected blank keys although ingestion completed successfully.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-07",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "ictai510-data_quality_anomaly-07",
+        "violations": 9
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-08",
+    "symptoms": "Operations note: The daily extract arrived on time, but reconciliation identified an unusual number of rejected rows.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-08",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "ictai510-data_quality_anomaly-08",
+        "violations": 9
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-09",
+    "symptoms": "Combined service-desk and delivery notes: A partner states that the export is complete; the validation summary reports a spike in rule violations. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-09",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "ictai510-data_quality_anomaly-09",
+        "violations": 9
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-10",
+    "symptoms": "Combined service-desk and delivery notes: A business report shows missing account mappings despite a green orchestration status. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-10",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "ictai510-data_quality_anomaly-10",
+        "violations": 9
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-11",
+    "symptoms": "Combined service-desk and delivery notes: A completed load produced more invalid customer identifiers than the control threshold permits. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-11",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "ictai510-data_quality_anomaly-11",
+        "violations": 9
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-12",
+    "symptoms": "Combined service-desk and delivery notes: The dashboard contains unexpected blank keys although ingestion completed successfully. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-12",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "ictai510-data_quality_anomaly-12",
+        "violations": 9
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-13",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. The daily extract arrived on time, but reconciliation identified an unusual number of rejected rows.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-13",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "ictai510-data_quality_anomaly-13",
+        "violations": 9
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-14",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. A partner states that the export is complete; the validation summary reports a spike in rule violations.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-14",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "ictai510-data_quality_anomaly-14",
+        "violations": 9
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-15",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. A business report shows missing account mappings despite a green orchestration status.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-15",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "ictai510-data_quality_anomaly-15",
+        "violations": 9
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-16",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. A completed load produced more invalid customer identifiers than the control threshold permits.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-16",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "ictai510-data_quality_anomaly-16",
+        "violations": 9
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-17",
+    "symptoms": "Unresolved ticket: The dashboard contains unexpected blank keys although ingestion completed successfully. A required verification source is not yet available.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-17",
+        "threshold": 2
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-18",
+    "symptoms": "Unresolved ticket: The daily extract arrived on time, but reconciliation identified an unusual number of rejected rows. A required verification source is not yet available.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-18",
+        "threshold": 2
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-19",
+    "symptoms": "Unresolved ticket: A partner states that the export is complete; the validation summary reports a spike in rule violations. A required verification source is not yet available.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-19",
+        "threshold": 2
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-20",
+    "symptoms": "Unresolved ticket: A business report shows missing account mappings despite a green orchestration status. A required verification source is not yet available.",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "ictai510-data_quality_anomaly-20",
+        "threshold": 2
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-pipeline_failure-01",
+    "symptoms": "Monitoring observation: The orchestrator marks a task as failed after an execution exception in its worker.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "ictai510-pipeline_failure-01"
+      },
+      "read_run_events": {
+        "execution_error": true,
+        "run_id": "ictai510-pipeline_failure-01"
+      },
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-pipeline_failure-02",
+    "symptoms": "Monitoring observation: The source delivery is present, but a compute process exited during ingestion.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "ictai510-pipeline_failure-02"
+      },
+      "read_run_events": {
+        "execution_error": true,
+        "run_id": "ictai510-pipeline_failure-02"
+      },
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-pipeline_failure-03",
+    "symptoms": "Monitoring observation: A scheduled transformation stopped unexpectedly; execution records show a task-level failure.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "ictai510-pipeline_failure-03"
+      },
+      "read_run_events": {
+        "execution_error": true,
+        "run_id": "ictai510-pipeline_failure-03"
+      },
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-pipeline_failure-04",
+    "symptoms": "Monitoring observation: A run was launched normally and then terminated inside the processing engine.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "ictai510-pipeline_failure-04"
+      },
+      "read_run_events": {
+        "execution_error": true,
+        "run_id": "ictai510-pipeline_failure-04"
+      },
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-pipeline_failure-05",
+    "symptoms": "Operations note: The operator reports a job crash even though the required input files arrived.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "ictai510-pipeline_failure-05"
+      },
+      "read_run_events": {
+        "execution_error": true,
+        "run_id": "ictai510-pipeline_failure-05"
+      },
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-pipeline_failure-06",
+    "symptoms": "Operations note: The orchestrator marks a task as failed after an execution exception in its worker.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "ictai510-pipeline_failure-06"
+      },
+      "read_run_events": {
+        "execution_error": true,
+        "run_id": "ictai510-pipeline_failure-06"
+      },
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-pipeline_failure-07",
+    "symptoms": "Operations note: The source delivery is present, but a compute process exited during ingestion.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "ictai510-pipeline_failure-07"
+      },
+      "read_run_events": {
+        "execution_error": true,
+        "run_id": "ictai510-pipeline_failure-07"
+      },
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-pipeline_failure-08",
+    "symptoms": "Operations note: A scheduled transformation stopped unexpectedly; execution records show a task-level failure.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "ictai510-pipeline_failure-08"
+      },
+      "read_run_events": {
+        "execution_error": true,
+        "run_id": "ictai510-pipeline_failure-08"
+      },
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-pipeline_failure-09",
+    "symptoms": "Combined service-desk and delivery notes: A run was launched normally and then terminated inside the processing engine. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "ictai510-pipeline_failure-09"
+      },
+      "read_run_events": {
+        "execution_error": true,
+        "run_id": "ictai510-pipeline_failure-09"
+      },
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-pipeline_failure-10",
+    "symptoms": "Combined service-desk and delivery notes: The operator reports a job crash even though the required input files arrived. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "ictai510-pipeline_failure-10"
+      },
+      "read_run_events": {
+        "execution_error": true,
+        "run_id": "ictai510-pipeline_failure-10"
+      },
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-pipeline_failure-11",
+    "symptoms": "Combined service-desk and delivery notes: The orchestrator marks a task as failed after an execution exception in its worker. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "ictai510-pipeline_failure-11"
+      },
+      "read_run_events": {
+        "execution_error": true,
+        "run_id": "ictai510-pipeline_failure-11"
+      },
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-pipeline_failure-12",
+    "symptoms": "Combined service-desk and delivery notes: The source delivery is present, but a compute process exited during ingestion. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "ictai510-pipeline_failure-12"
+      },
+      "read_run_events": {
+        "execution_error": true,
+        "run_id": "ictai510-pipeline_failure-12"
+      },
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-pipeline_failure-13",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. A scheduled transformation stopped unexpectedly; execution records show a task-level failure.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "ictai510-pipeline_failure-13"
+      },
+      "read_run_events": {
+        "execution_error": true,
+        "run_id": "ictai510-pipeline_failure-13"
+      },
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-pipeline_failure-14",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. A run was launched normally and then terminated inside the processing engine.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "ictai510-pipeline_failure-14"
+      },
+      "read_run_events": {
+        "execution_error": true,
+        "run_id": "ictai510-pipeline_failure-14"
+      },
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-pipeline_failure-15",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. The operator reports a job crash even though the required input files arrived.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "ictai510-pipeline_failure-15"
+      },
+      "read_run_events": {
+        "execution_error": true,
+        "run_id": "ictai510-pipeline_failure-15"
+      },
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-pipeline_failure-16",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. The orchestrator marks a task as failed after an execution exception in its worker.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "ictai510-pipeline_failure-16"
+      },
+      "read_run_events": {
+        "execution_error": true,
+        "run_id": "ictai510-pipeline_failure-16"
+      },
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-pipeline_failure-17",
+    "symptoms": "Unresolved ticket: The source delivery is present, but a compute process exited during ingestion. A required verification source is not yet available.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "ictai510-pipeline_failure-17"
+      },
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-pipeline_failure-18",
+    "symptoms": "Unresolved ticket: A scheduled transformation stopped unexpectedly; execution records show a task-level failure. A required verification source is not yet available.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "ictai510-pipeline_failure-18"
+      },
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-pipeline_failure-19",
+    "symptoms": "Unresolved ticket: A run was launched normally and then terminated inside the processing engine. A required verification source is not yet available.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "ictai510-pipeline_failure-19"
+      },
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-pipeline_failure-20",
+    "symptoms": "Unresolved ticket: The operator reports a job crash even though the required input files arrived. A required verification source is not yet available.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "ictai510-pipeline_failure-20"
+      },
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-freshness_violation-01",
+    "symptoms": "Monitoring observation: The latest published partition appeared after its contractual availability deadline.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-01",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "ictai510-freshness_violation-01",
+        "arrival_epoch": 130
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-freshness_violation-02",
+    "symptoms": "Monitoring observation: Business users see a stale dashboard even though the batch eventually arrived.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-02",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "ictai510-freshness_violation-02",
+        "arrival_epoch": 130
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-freshness_violation-03",
+    "symptoms": "Monitoring observation: The pipeline is marked successful, but the dataset timestamp exceeds the agreed delivery window.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-03",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "ictai510-freshness_violation-03",
+        "arrival_epoch": 130
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-freshness_violation-04",
+    "symptoms": "Monitoring observation: The reporting SLA was missed while the source continued sending records late into the morning.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-04",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "ictai510-freshness_violation-04",
+        "arrival_epoch": 130
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-freshness_violation-05",
+    "symptoms": "Operations note: A data product is accessible, yet its update time falls outside the freshness commitment.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-05",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "ictai510-freshness_violation-05",
+        "arrival_epoch": 130
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-freshness_violation-06",
+    "symptoms": "Operations note: The latest published partition appeared after its contractual availability deadline.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-06",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "ictai510-freshness_violation-06",
+        "arrival_epoch": 130
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-freshness_violation-07",
+    "symptoms": "Operations note: Business users see a stale dashboard even though the batch eventually arrived.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-07",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "ictai510-freshness_violation-07",
+        "arrival_epoch": 130
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-freshness_violation-08",
+    "symptoms": "Operations note: The pipeline is marked successful, but the dataset timestamp exceeds the agreed delivery window.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-08",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "ictai510-freshness_violation-08",
+        "arrival_epoch": 130
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-freshness_violation-09",
+    "symptoms": "Combined service-desk and delivery notes: The reporting SLA was missed while the source continued sending records late into the morning. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-09",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "ictai510-freshness_violation-09",
+        "arrival_epoch": 130
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-freshness_violation-10",
+    "symptoms": "Combined service-desk and delivery notes: A data product is accessible, yet its update time falls outside the freshness commitment. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-10",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "ictai510-freshness_violation-10",
+        "arrival_epoch": 130
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-freshness_violation-11",
+    "symptoms": "Combined service-desk and delivery notes: The latest published partition appeared after its contractual availability deadline. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-11",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "ictai510-freshness_violation-11",
+        "arrival_epoch": 130
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-freshness_violation-12",
+    "symptoms": "Combined service-desk and delivery notes: Business users see a stale dashboard even though the batch eventually arrived. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-12",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "ictai510-freshness_violation-12",
+        "arrival_epoch": 130
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-freshness_violation-13",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. The pipeline is marked successful, but the dataset timestamp exceeds the agreed delivery window.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-13",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "ictai510-freshness_violation-13",
+        "arrival_epoch": 130
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-freshness_violation-14",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. The reporting SLA was missed while the source continued sending records late into the morning.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-14",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "ictai510-freshness_violation-14",
+        "arrival_epoch": 130
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-freshness_violation-15",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. A data product is accessible, yet its update time falls outside the freshness commitment.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-15",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "ictai510-freshness_violation-15",
+        "arrival_epoch": 130
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-freshness_violation-16",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. The latest published partition appeared after its contractual availability deadline.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-16",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "ictai510-freshness_violation-16",
+        "arrival_epoch": 130
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-freshness_violation-17",
+    "symptoms": "Unresolved ticket: Business users see a stale dashboard even though the batch eventually arrived. A required verification source is not yet available.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-17",
+        "deadline_epoch": 100
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-freshness_violation-18",
+    "symptoms": "Unresolved ticket: The pipeline is marked successful, but the dataset timestamp exceeds the agreed delivery window. A required verification source is not yet available.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-18",
+        "deadline_epoch": 100
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-freshness_violation-19",
+    "symptoms": "Unresolved ticket: The reporting SLA was missed while the source continued sending records late into the morning. A required verification source is not yet available.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-19",
+        "deadline_epoch": 100
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-freshness_violation-20",
+    "symptoms": "Unresolved ticket: A data product is accessible, yet its update time falls outside the freshness commitment. A required verification source is not yet available.",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "ictai510-freshness_violation-20",
+        "deadline_epoch": 100
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-dependency_failure-01",
+    "symptoms": "Monitoring observation: The downstream task is waiting because an upstream reference service is unavailable.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-01"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-01"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy",
+        "upstream_id": "ictai510-dependency_failure-01"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-dependency_failure-02",
+    "symptoms": "Monitoring observation: An ingestion job reports a blocked prerequisite while a required upstream system is unhealthy.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-02"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-02"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy",
+        "upstream_id": "ictai510-dependency_failure-02"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-dependency_failure-03",
+    "symptoms": "Monitoring observation: The orchestrator has no local exception, but its dependency check cannot contact a reference endpoint.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-03"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-03"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy",
+        "upstream_id": "ictai510-dependency_failure-03"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-dependency_failure-04",
+    "symptoms": "Monitoring observation: A downstream table refresh stalled after a linked upstream service entered outage state.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-04"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-04"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy",
+        "upstream_id": "ictai510-dependency_failure-04"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "structured"
+  },
+  {
+    "id": "ictai510-dependency_failure-05",
+    "symptoms": "Operations note: The scheduled load cannot proceed because its prerequisite feed is marked unavailable.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-05"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-05"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy",
+        "upstream_id": "ictai510-dependency_failure-05"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-dependency_failure-06",
+    "symptoms": "Operations note: The downstream task is waiting because an upstream reference service is unavailable.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-06"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-06"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy",
+        "upstream_id": "ictai510-dependency_failure-06"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-dependency_failure-07",
+    "symptoms": "Operations note: An ingestion job reports a blocked prerequisite while a required upstream system is unhealthy.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-07"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-07"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy",
+        "upstream_id": "ictai510-dependency_failure-07"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-dependency_failure-08",
+    "symptoms": "Operations note: The orchestrator has no local exception, but its dependency check cannot contact a reference endpoint.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-08"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-08"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy",
+        "upstream_id": "ictai510-dependency_failure-08"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "ictai510-dependency_failure-09",
+    "symptoms": "Combined service-desk and delivery notes: A downstream table refresh stalled after a linked upstream service entered outage state. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-09"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-09"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy",
+        "upstream_id": "ictai510-dependency_failure-09"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-dependency_failure-10",
+    "symptoms": "Combined service-desk and delivery notes: The scheduled load cannot proceed because its prerequisite feed is marked unavailable. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-10"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-10"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy",
+        "upstream_id": "ictai510-dependency_failure-10"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-dependency_failure-11",
+    "symptoms": "Combined service-desk and delivery notes: The downstream task is waiting because an upstream reference service is unavailable. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-11"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-11"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy",
+        "upstream_id": "ictai510-dependency_failure-11"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-dependency_failure-12",
+    "symptoms": "Combined service-desk and delivery notes: An ingestion job reports a blocked prerequisite while a required upstream system is unhealthy. Secondary monitoring did not isolate the responsible component.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-12"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-12"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy",
+        "upstream_id": "ictai510-dependency_failure-12"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "ictai510-dependency_failure-13",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. The orchestrator has no local exception, but its dependency check cannot contact a reference endpoint.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-13"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-13"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy",
+        "upstream_id": "ictai510-dependency_failure-13"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-dependency_failure-14",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. A downstream table refresh stalled after a linked upstream service entered outage state.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-14"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-14"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy",
+        "upstream_id": "ictai510-dependency_failure-14"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-dependency_failure-15",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. The scheduled load cannot proceed because its prerequisite feed is marked unavailable.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-15"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-15"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy",
+        "upstream_id": "ictai510-dependency_failure-15"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-dependency_failure-16",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. The downstream task is waiting because an upstream reference service is unavailable.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-16"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-16"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy",
+        "upstream_id": "ictai510-dependency_failure-16"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-dependency_failure-17",
+    "symptoms": "Unresolved ticket: An ingestion job reports a blocked prerequisite while a required upstream system is unhealthy. A required verification source is not yet available.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-17"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-17"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-dependency_failure-18",
+    "symptoms": "Unresolved ticket: The orchestrator has no local exception, but its dependency check cannot contact a reference endpoint. A required verification source is not yet available.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-18"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-18"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-dependency_failure-19",
+    "symptoms": "Unresolved ticket: A downstream table refresh stalled after a linked upstream service entered outage state. A required verification source is not yet available.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-19"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-19"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "incomplete"
+  },
+  {
+    "id": "ictai510-dependency_failure-20",
+    "symptoms": "Unresolved ticket: The scheduled load cannot proceed because its prerequisite feed is marked unavailable. A required verification source is not yet available.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-20"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-20"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "incomplete"
+  }
+]

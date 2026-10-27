@@ -1,0 +1,14 @@
+{
+  "cases": [
+    "schema_migration",
+    "upstream_dependency"
+  ],
+  "arms": [
+    "B3_llm",
+    "B4_knowledge"
+  ],
+  "budget": 12,
+  "model": "gpt-4.1-mini (or ICTAI_MODEL override)",
+  "fixture_sha256": "0e4778e5185627439e619bea3e7195f64787936783b475ccfcfa8a6457d7f662",
+  "synthetic": true
+}

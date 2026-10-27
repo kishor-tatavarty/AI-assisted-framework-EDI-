@@ -1,0 +1,722 @@
+[
+  {
+    "id": "ictai510-missing_file-01",
+    "intended_category": "MISSING_FILE",
+    "variant": "structured",
+    "label_for_draft_only": "MISSING_FILE"
+  },
+  {
+    "id": "ictai510-missing_file-02",
+    "intended_category": "MISSING_FILE",
+    "variant": "structured",
+    "label_for_draft_only": "MISSING_FILE"
+  },
+  {
+    "id": "ictai510-missing_file-03",
+    "intended_category": "MISSING_FILE",
+    "variant": "structured",
+    "label_for_draft_only": "MISSING_FILE"
+  },
+  {
+    "id": "ictai510-missing_file-04",
+    "intended_category": "MISSING_FILE",
+    "variant": "structured",
+    "label_for_draft_only": "MISSING_FILE"
+  },
+  {
+    "id": "ictai510-missing_file-05",
+    "intended_category": "MISSING_FILE",
+    "variant": "semantic",
+    "label_for_draft_only": "MISSING_FILE"
+  },
+  {
+    "id": "ictai510-missing_file-06",
+    "intended_category": "MISSING_FILE",
+    "variant": "semantic",
+    "label_for_draft_only": "MISSING_FILE"
+  },
+  {
+    "id": "ictai510-missing_file-07",
+    "intended_category": "MISSING_FILE",
+    "variant": "semantic",
+    "label_for_draft_only": "MISSING_FILE"
+  },
+  {
+    "id": "ictai510-missing_file-08",
+    "intended_category": "MISSING_FILE",
+    "variant": "semantic",
+    "label_for_draft_only": "MISSING_FILE"
+  },
+  {
+    "id": "ictai510-missing_file-09",
+    "intended_category": "MISSING_FILE",
+    "variant": "cross_source",
+    "label_for_draft_only": "MISSING_FILE"
+  },
+  {
+    "id": "ictai510-missing_file-10",
+    "intended_category": "MISSING_FILE",
+    "variant": "cross_source",
+    "label_for_draft_only": "MISSING_FILE"
+  },
+  {
+    "id": "ictai510-missing_file-11",
+    "intended_category": "MISSING_FILE",
+    "variant": "cross_source",
+    "label_for_draft_only": "MISSING_FILE"
+  },
+  {
+    "id": "ictai510-missing_file-12",
+    "intended_category": "MISSING_FILE",
+    "variant": "cross_source",
+    "label_for_draft_only": "MISSING_FILE"
+  },
+  {
+    "id": "ictai510-missing_file-13",
+    "intended_category": "MISSING_FILE",
+    "variant": "misleading",
+    "label_for_draft_only": "MISSING_FILE"
+  },
+  {
+    "id": "ictai510-missing_file-14",
+    "intended_category": "MISSING_FILE",
+    "variant": "misleading",
+    "label_for_draft_only": "MISSING_FILE"
+  },
+  {
+    "id": "ictai510-missing_file-15",
+    "intended_category": "MISSING_FILE",
+    "variant": "misleading",
+    "label_for_draft_only": "MISSING_FILE"
+  },
+  {
+    "id": "ictai510-missing_file-16",
+    "intended_category": "MISSING_FILE",
+    "variant": "misleading",
+    "label_for_draft_only": "MISSING_FILE"
+  },
+  {
+    "id": "ictai510-missing_file-17",
+    "intended_category": "MISSING_FILE",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-missing_file-18",
+    "intended_category": "MISSING_FILE",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-missing_file-19",
+    "intended_category": "MISSING_FILE",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-missing_file-20",
+    "intended_category": "MISSING_FILE",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-schema_drift-01",
+    "intended_category": "SCHEMA_DRIFT",
+    "variant": "structured",
+    "label_for_draft_only": "SCHEMA_DRIFT"
+  },
+  {
+    "id": "ictai510-schema_drift-02",
+    "intended_category": "SCHEMA_DRIFT",
+    "variant": "structured",
+    "label_for_draft_only": "SCHEMA_DRIFT"
+  },
+  {
+    "id": "ictai510-schema_drift-03",
+    "intended_category": "SCHEMA_DRIFT",
+    "variant": "structured",
+    "label_for_draft_only": "SCHEMA_DRIFT"
+  },
+  {
+    "id": "ictai510-schema_drift-04",
+    "intended_category": "SCHEMA_DRIFT",
+    "variant": "structured",
+    "label_for_draft_only": "SCHEMA_DRIFT"
+  },
+  {
+    "id": "ictai510-schema_drift-05",
+    "intended_category": "SCHEMA_DRIFT",
+    "variant": "semantic",
+    "label_for_draft_only": "SCHEMA_DRIFT"
+  },
+  {
+    "id": "ictai510-schema_drift-06",
+    "intended_category": "SCHEMA_DRIFT",
+    "variant": "semantic",
+    "label_for_draft_only": "SCHEMA_DRIFT"
+  },
+  {
+    "id": "ictai510-schema_drift-07",
+    "intended_category": "SCHEMA_DRIFT",
+    "variant": "semantic",
+    "label_for_draft_only": "SCHEMA_DRIFT"
+  },
+  {
+    "id": "ictai510-schema_drift-08",
+    "intended_category": "SCHEMA_DRIFT",
+    "variant": "semantic",
+    "label_for_draft_only": "SCHEMA_DRIFT"
+  },
+  {
+    "id": "ictai510-schema_drift-09",
+    "intended_category": "SCHEMA_DRIFT",
+    "variant": "cross_source",
+    "label_for_draft_only": "SCHEMA_DRIFT"
+  },
+  {
+    "id": "ictai510-schema_drift-10",
+    "intended_category": "SCHEMA_DRIFT",
+    "variant": "cross_source",
+    "label_for_draft_only": "SCHEMA_DRIFT"
+  },
+  {
+    "id": "ictai510-schema_drift-11",
+    "intended_category": "SCHEMA_DRIFT",
+    "variant": "cross_source",
+    "label_for_draft_only": "SCHEMA_DRIFT"
+  },
+  {
+    "id": "ictai510-schema_drift-12",
+    "intended_category": "SCHEMA_DRIFT",
+    "variant": "cross_source",
+    "label_for_draft_only": "SCHEMA_DRIFT"
+  },
+  {
+    "id": "ictai510-schema_drift-13",
+    "intended_category": "SCHEMA_DRIFT",
+    "variant": "misleading",
+    "label_for_draft_only": "SCHEMA_DRIFT"
+  },
+  {
+    "id": "ictai510-schema_drift-14",
+    "intended_category": "SCHEMA_DRIFT",
+    "variant": "misleading",
+    "label_for_draft_only": "SCHEMA_DRIFT"
+  },
+  {
+    "id": "ictai510-schema_drift-15",
+    "intended_category": "SCHEMA_DRIFT",
+    "variant": "misleading",
+    "label_for_draft_only": "SCHEMA_DRIFT"
+  },
+  {
+    "id": "ictai510-schema_drift-16",
+    "intended_category": "SCHEMA_DRIFT",
+    "variant": "misleading",
+    "label_for_draft_only": "SCHEMA_DRIFT"
+  },
+  {
+    "id": "ictai510-schema_drift-17",
+    "intended_category": "SCHEMA_DRIFT",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-schema_drift-18",
+    "intended_category": "SCHEMA_DRIFT",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-schema_drift-19",
+    "intended_category": "SCHEMA_DRIFT",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-schema_drift-20",
+    "intended_category": "SCHEMA_DRIFT",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-01",
+    "intended_category": "DATA_QUALITY_ANOMALY",
+    "variant": "structured",
+    "label_for_draft_only": "DATA_QUALITY_ANOMALY"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-02",
+    "intended_category": "DATA_QUALITY_ANOMALY",
+    "variant": "structured",
+    "label_for_draft_only": "DATA_QUALITY_ANOMALY"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-03",
+    "intended_category": "DATA_QUALITY_ANOMALY",
+    "variant": "structured",
+    "label_for_draft_only": "DATA_QUALITY_ANOMALY"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-04",
+    "intended_category": "DATA_QUALITY_ANOMALY",
+    "variant": "structured",
+    "label_for_draft_only": "DATA_QUALITY_ANOMALY"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-05",
+    "intended_category": "DATA_QUALITY_ANOMALY",
+    "variant": "semantic",
+    "label_for_draft_only": "DATA_QUALITY_ANOMALY"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-06",
+    "intended_category": "DATA_QUALITY_ANOMALY",
+    "variant": "semantic",
+    "label_for_draft_only": "DATA_QUALITY_ANOMALY"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-07",
+    "intended_category": "DATA_QUALITY_ANOMALY",
+    "variant": "semantic",
+    "label_for_draft_only": "DATA_QUALITY_ANOMALY"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-08",
+    "intended_category": "DATA_QUALITY_ANOMALY",
+    "variant": "semantic",
+    "label_for_draft_only": "DATA_QUALITY_ANOMALY"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-09",
+    "intended_category": "DATA_QUALITY_ANOMALY",
+    "variant": "cross_source",
+    "label_for_draft_only": "DATA_QUALITY_ANOMALY"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-10",
+    "intended_category": "DATA_QUALITY_ANOMALY",
+    "variant": "cross_source",
+    "label_for_draft_only": "DATA_QUALITY_ANOMALY"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-11",
+    "intended_category": "DATA_QUALITY_ANOMALY",
+    "variant": "cross_source",
+    "label_for_draft_only": "DATA_QUALITY_ANOMALY"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-12",
+    "intended_category": "DATA_QUALITY_ANOMALY",
+    "variant": "cross_source",
+    "label_for_draft_only": "DATA_QUALITY_ANOMALY"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-13",
+    "intended_category": "DATA_QUALITY_ANOMALY",
+    "variant": "misleading",
+    "label_for_draft_only": "DATA_QUALITY_ANOMALY"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-14",
+    "intended_category": "DATA_QUALITY_ANOMALY",
+    "variant": "misleading",
+    "label_for_draft_only": "DATA_QUALITY_ANOMALY"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-15",
+    "intended_category": "DATA_QUALITY_ANOMALY",
+    "variant": "misleading",
+    "label_for_draft_only": "DATA_QUALITY_ANOMALY"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-16",
+    "intended_category": "DATA_QUALITY_ANOMALY",
+    "variant": "misleading",
+    "label_for_draft_only": "DATA_QUALITY_ANOMALY"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-17",
+    "intended_category": "DATA_QUALITY_ANOMALY",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-18",
+    "intended_category": "DATA_QUALITY_ANOMALY",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-19",
+    "intended_category": "DATA_QUALITY_ANOMALY",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-data_quality_anomaly-20",
+    "intended_category": "DATA_QUALITY_ANOMALY",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-pipeline_failure-01",
+    "intended_category": "PIPELINE_FAILURE",
+    "variant": "structured",
+    "label_for_draft_only": "PIPELINE_FAILURE"
+  },
+  {
+    "id": "ictai510-pipeline_failure-02",
+    "intended_category": "PIPELINE_FAILURE",
+    "variant": "structured",
+    "label_for_draft_only": "PIPELINE_FAILURE"
+  },
+  {
+    "id": "ictai510-pipeline_failure-03",
+    "intended_category": "PIPELINE_FAILURE",
+    "variant": "structured",
+    "label_for_draft_only": "PIPELINE_FAILURE"
+  },
+  {
+    "id": "ictai510-pipeline_failure-04",
+    "intended_category": "PIPELINE_FAILURE",
+    "variant": "structured",
+    "label_for_draft_only": "PIPELINE_FAILURE"
+  },
+  {
+    "id": "ictai510-pipeline_failure-05",
+    "intended_category": "PIPELINE_FAILURE",
+    "variant": "semantic",
+    "label_for_draft_only": "PIPELINE_FAILURE"
+  },
+  {
+    "id": "ictai510-pipeline_failure-06",
+    "intended_category": "PIPELINE_FAILURE",
+    "variant": "semantic",
+    "label_for_draft_only": "PIPELINE_FAILURE"
+  },
+  {
+    "id": "ictai510-pipeline_failure-07",
+    "intended_category": "PIPELINE_FAILURE",
+    "variant": "semantic",
+    "label_for_draft_only": "PIPELINE_FAILURE"
+  },
+  {
+    "id": "ictai510-pipeline_failure-08",
+    "intended_category": "PIPELINE_FAILURE",
+    "variant": "semantic",
+    "label_for_draft_only": "PIPELINE_FAILURE"
+  },
+  {
+    "id": "ictai510-pipeline_failure-09",
+    "intended_category": "PIPELINE_FAILURE",
+    "variant": "cross_source",
+    "label_for_draft_only": "PIPELINE_FAILURE"
+  },
+  {
+    "id": "ictai510-pipeline_failure-10",
+    "intended_category": "PIPELINE_FAILURE",
+    "variant": "cross_source",
+    "label_for_draft_only": "PIPELINE_FAILURE"
+  },
+  {
+    "id": "ictai510-pipeline_failure-11",
+    "intended_category": "PIPELINE_FAILURE",
+    "variant": "cross_source",
+    "label_for_draft_only": "PIPELINE_FAILURE"
+  },
+  {
+    "id": "ictai510-pipeline_failure-12",
+    "intended_category": "PIPELINE_FAILURE",
+    "variant": "cross_source",
+    "label_for_draft_only": "PIPELINE_FAILURE"
+  },
+  {
+    "id": "ictai510-pipeline_failure-13",
+    "intended_category": "PIPELINE_FAILURE",
+    "variant": "misleading",
+    "label_for_draft_only": "PIPELINE_FAILURE"
+  },
+  {
+    "id": "ictai510-pipeline_failure-14",
+    "intended_category": "PIPELINE_FAILURE",
+    "variant": "misleading",
+    "label_for_draft_only": "PIPELINE_FAILURE"
+  },
+  {
+    "id": "ictai510-pipeline_failure-15",
+    "intended_category": "PIPELINE_FAILURE",
+    "variant": "misleading",
+    "label_for_draft_only": "PIPELINE_FAILURE"
+  },
+  {
+    "id": "ictai510-pipeline_failure-16",
+    "intended_category": "PIPELINE_FAILURE",
+    "variant": "misleading",
+    "label_for_draft_only": "PIPELINE_FAILURE"
+  },
+  {
+    "id": "ictai510-pipeline_failure-17",
+    "intended_category": "PIPELINE_FAILURE",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-pipeline_failure-18",
+    "intended_category": "PIPELINE_FAILURE",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-pipeline_failure-19",
+    "intended_category": "PIPELINE_FAILURE",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-pipeline_failure-20",
+    "intended_category": "PIPELINE_FAILURE",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-freshness_violation-01",
+    "intended_category": "FRESHNESS_VIOLATION",
+    "variant": "structured",
+    "label_for_draft_only": "FRESHNESS_VIOLATION"
+  },
+  {
+    "id": "ictai510-freshness_violation-02",
+    "intended_category": "FRESHNESS_VIOLATION",
+    "variant": "structured",
+    "label_for_draft_only": "FRESHNESS_VIOLATION"
+  },
+  {
+    "id": "ictai510-freshness_violation-03",
+    "intended_category": "FRESHNESS_VIOLATION",
+    "variant": "structured",
+    "label_for_draft_only": "FRESHNESS_VIOLATION"
+  },
+  {
+    "id": "ictai510-freshness_violation-04",
+    "intended_category": "FRESHNESS_VIOLATION",
+    "variant": "structured",
+    "label_for_draft_only": "FRESHNESS_VIOLATION"
+  },
+  {
+    "id": "ictai510-freshness_violation-05",
+    "intended_category": "FRESHNESS_VIOLATION",
+    "variant": "semantic",
+    "label_for_draft_only": "FRESHNESS_VIOLATION"
+  },
+  {
+    "id": "ictai510-freshness_violation-06",
+    "intended_category": "FRESHNESS_VIOLATION",
+    "variant": "semantic",
+    "label_for_draft_only": "FRESHNESS_VIOLATION"
+  },
+  {
+    "id": "ictai510-freshness_violation-07",
+    "intended_category": "FRESHNESS_VIOLATION",
+    "variant": "semantic",
+    "label_for_draft_only": "FRESHNESS_VIOLATION"
+  },
+  {
+    "id": "ictai510-freshness_violation-08",
+    "intended_category": "FRESHNESS_VIOLATION",
+    "variant": "semantic",
+    "label_for_draft_only": "FRESHNESS_VIOLATION"
+  },
+  {
+    "id": "ictai510-freshness_violation-09",
+    "intended_category": "FRESHNESS_VIOLATION",
+    "variant": "cross_source",
+    "label_for_draft_only": "FRESHNESS_VIOLATION"
+  },
+  {
+    "id": "ictai510-freshness_violation-10",
+    "intended_category": "FRESHNESS_VIOLATION",
+    "variant": "cross_source",
+    "label_for_draft_only": "FRESHNESS_VIOLATION"
+  },
+  {
+    "id": "ictai510-freshness_violation-11",
+    "intended_category": "FRESHNESS_VIOLATION",
+    "variant": "cross_source",
+    "label_for_draft_only": "FRESHNESS_VIOLATION"
+  },
+  {
+    "id": "ictai510-freshness_violation-12",
+    "intended_category": "FRESHNESS_VIOLATION",
+    "variant": "cross_source",
+    "label_for_draft_only": "FRESHNESS_VIOLATION"
+  },
+  {
+    "id": "ictai510-freshness_violation-13",
+    "intended_category": "FRESHNESS_VIOLATION",
+    "variant": "misleading",
+    "label_for_draft_only": "FRESHNESS_VIOLATION"
+  },
+  {
+    "id": "ictai510-freshness_violation-14",
+    "intended_category": "FRESHNESS_VIOLATION",
+    "variant": "misleading",
+    "label_for_draft_only": "FRESHNESS_VIOLATION"
+  },
+  {
+    "id": "ictai510-freshness_violation-15",
+    "intended_category": "FRESHNESS_VIOLATION",
+    "variant": "misleading",
+    "label_for_draft_only": "FRESHNESS_VIOLATION"
+  },
+  {
+    "id": "ictai510-freshness_violation-16",
+    "intended_category": "FRESHNESS_VIOLATION",
+    "variant": "misleading",
+    "label_for_draft_only": "FRESHNESS_VIOLATION"
+  },
+  {
+    "id": "ictai510-freshness_violation-17",
+    "intended_category": "FRESHNESS_VIOLATION",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-freshness_violation-18",
+    "intended_category": "FRESHNESS_VIOLATION",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-freshness_violation-19",
+    "intended_category": "FRESHNESS_VIOLATION",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-freshness_violation-20",
+    "intended_category": "FRESHNESS_VIOLATION",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-dependency_failure-01",
+    "intended_category": "DEPENDENCY_FAILURE",
+    "variant": "structured",
+    "label_for_draft_only": "DEPENDENCY_FAILURE"
+  },
+  {
+    "id": "ictai510-dependency_failure-02",
+    "intended_category": "DEPENDENCY_FAILURE",
+    "variant": "structured",
+    "label_for_draft_only": "DEPENDENCY_FAILURE"
+  },
+  {
+    "id": "ictai510-dependency_failure-03",
+    "intended_category": "DEPENDENCY_FAILURE",
+    "variant": "structured",
+    "label_for_draft_only": "DEPENDENCY_FAILURE"
+  },
+  {
+    "id": "ictai510-dependency_failure-04",
+    "intended_category": "DEPENDENCY_FAILURE",
+    "variant": "structured",
+    "label_for_draft_only": "DEPENDENCY_FAILURE"
+  },
+  {
+    "id": "ictai510-dependency_failure-05",
+    "intended_category": "DEPENDENCY_FAILURE",
+    "variant": "semantic",
+    "label_for_draft_only": "DEPENDENCY_FAILURE"
+  },
+  {
+    "id": "ictai510-dependency_failure-06",
+    "intended_category": "DEPENDENCY_FAILURE",
+    "variant": "semantic",
+    "label_for_draft_only": "DEPENDENCY_FAILURE"
+  },
+  {
+    "id": "ictai510-dependency_failure-07",
+    "intended_category": "DEPENDENCY_FAILURE",
+    "variant": "semantic",
+    "label_for_draft_only": "DEPENDENCY_FAILURE"
+  },
+  {
+    "id": "ictai510-dependency_failure-08",
+    "intended_category": "DEPENDENCY_FAILURE",
+    "variant": "semantic",
+    "label_for_draft_only": "DEPENDENCY_FAILURE"
+  },
+  {
+    "id": "ictai510-dependency_failure-09",
+    "intended_category": "DEPENDENCY_FAILURE",
+    "variant": "cross_source",
+    "label_for_draft_only": "DEPENDENCY_FAILURE"
+  },
+  {
+    "id": "ictai510-dependency_failure-10",
+    "intended_category": "DEPENDENCY_FAILURE",
+    "variant": "cross_source",
+    "label_for_draft_only": "DEPENDENCY_FAILURE"
+  },
+  {
+    "id": "ictai510-dependency_failure-11",
+    "intended_category": "DEPENDENCY_FAILURE",
+    "variant": "cross_source",
+    "label_for_draft_only": "DEPENDENCY_FAILURE"
+  },
+  {
+    "id": "ictai510-dependency_failure-12",
+    "intended_category": "DEPENDENCY_FAILURE",
+    "variant": "cross_source",
+    "label_for_draft_only": "DEPENDENCY_FAILURE"
+  },
+  {
+    "id": "ictai510-dependency_failure-13",
+    "intended_category": "DEPENDENCY_FAILURE",
+    "variant": "misleading",
+    "label_for_draft_only": "DEPENDENCY_FAILURE"
+  },
+  {
+    "id": "ictai510-dependency_failure-14",
+    "intended_category": "DEPENDENCY_FAILURE",
+    "variant": "misleading",
+    "label_for_draft_only": "DEPENDENCY_FAILURE"
+  },
+  {
+    "id": "ictai510-dependency_failure-15",
+    "intended_category": "DEPENDENCY_FAILURE",
+    "variant": "misleading",
+    "label_for_draft_only": "DEPENDENCY_FAILURE"
+  },
+  {
+    "id": "ictai510-dependency_failure-16",
+    "intended_category": "DEPENDENCY_FAILURE",
+    "variant": "misleading",
+    "label_for_draft_only": "DEPENDENCY_FAILURE"
+  },
+  {
+    "id": "ictai510-dependency_failure-17",
+    "intended_category": "DEPENDENCY_FAILURE",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-dependency_failure-18",
+    "intended_category": "DEPENDENCY_FAILURE",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-dependency_failure-19",
+    "intended_category": "DEPENDENCY_FAILURE",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "id": "ictai510-dependency_failure-20",
+    "intended_category": "DEPENDENCY_FAILURE",
+    "variant": "incomplete",
+    "label_for_draft_only": "INSUFFICIENT_EVIDENCE"
+  }
+]

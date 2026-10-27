@@ -1,0 +1,86 @@
+[
+  {
+    "id": "train-missing_file-0",
+    "description": "Partner reconciliation placed the overnight export on hold; downstream cannot resolve input.",
+    "layer": "source",
+    "verified": true,
+    "stale": false
+  },
+  {
+    "id": "train-missing_file-1",
+    "description": "Vendor shipment is pending approval, although the scheduler reports an artifact lookup problem.",
+    "layer": "source",
+    "verified": true,
+    "stale": false
+  },
+  {
+    "id": "train-schema_drift-0",
+    "description": "Spark cannot resolve customer_ref after release notes renamed it account_reference.",
+    "layer": "validation",
+    "verified": true,
+    "stale": false
+  },
+  {
+    "id": "train-schema_drift-1",
+    "description": "The projection fails after the supplier's field-standardization rollout.",
+    "layer": "validation",
+    "verified": true,
+    "stale": false
+  },
+  {
+    "id": "train-data_quality_anomaly-0",
+    "description": "Reporting completed but analysts noticed many blank customer identifiers.",
+    "layer": "validation",
+    "verified": true,
+    "stale": false
+  },
+  {
+    "id": "train-data_quality_anomaly-1",
+    "description": "Dashboard figures contain unexpected gaps despite successful execution.",
+    "layer": "validation",
+    "verified": true,
+    "stale": false
+  },
+  {
+    "id": "train-pipeline_failure-0",
+    "description": "Worker process exited unexpectedly after the scheduler launched the transformation.",
+    "layer": "pipeline",
+    "verified": true,
+    "stale": false
+  },
+  {
+    "id": "train-pipeline_failure-1",
+    "description": "Orchestration worker stopped mid-run with an execution exception.",
+    "layer": "pipeline",
+    "verified": true,
+    "stale": false
+  },
+  {
+    "id": "train-freshness_violation-0",
+    "description": "Morning dashboard still displays yesterday's figures after reporting deadline.",
+    "layer": "source",
+    "verified": true,
+    "stale": false
+  },
+  {
+    "id": "train-freshness_violation-1",
+    "description": "Analysts complain the feed looks old even though job status is green.",
+    "layer": "source",
+    "verified": true,
+    "stale": false
+  },
+  {
+    "id": "train-dependency_failure-0",
+    "description": "Upstream reference service was unavailable and downstream processing is waiting.",
+    "layer": "lineage",
+    "verified": true,
+    "stale": false
+  },
+  {
+    "id": "train-dependency_failure-1",
+    "description": "Nightly task stalled because a prerequisite service did not respond.",
+    "layer": "lineage",
+    "verified": true,
+    "stale": false
+  }
+]

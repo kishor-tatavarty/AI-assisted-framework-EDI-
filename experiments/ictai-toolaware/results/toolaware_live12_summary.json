@@ -1,0 +1,50 @@
+[
+  {
+    "arm": "B1_fixed",
+    "n": 12,
+    "correct": 10,
+    "accuracy": 0.8333333333333334,
+    "false_confirmations": 0,
+    "correct_abstentions": 0,
+    "mean_tool_calls": 4,
+    "mean_layers": 1.5,
+    "llm_attempts": 0,
+    "llm_failures": 0
+  },
+  {
+    "arm": "B2_dynamic",
+    "n": 12,
+    "correct": 10,
+    "accuracy": 0.8333333333333334,
+    "false_confirmations": 0,
+    "correct_abstentions": 0,
+    "mean_tool_calls": 4,
+    "mean_layers": 1.75,
+    "llm_attempts": 0,
+    "llm_failures": 0
+  },
+  {
+    "arm": "B3_llm",
+    "n": 12,
+    "correct": 10,
+    "accuracy": 0.8333333333333334,
+    "false_confirmations": 0,
+    "correct_abstentions": 0,
+    "mean_tool_calls": 4,
+    "mean_layers": 1.5,
+    "llm_attempts": 18,
+    "llm_failures": 5
+  },
+  {
+    "arm": "B4_knowledge",
+    "n": 12,
+    "correct": 10,
+    "accuracy": 0.8333333333333334,
+    "false_confirmations": 0,
+    "correct_abstentions": 0,
+    "mean_tool_calls": 4,
+    "mean_layers": 1.5,
+    "llm_attempts": 18,
+    "llm_failures": 5
+  }
+]

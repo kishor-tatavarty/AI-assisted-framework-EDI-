@@ -1,0 +1,6 @@
+{
+  "ictai510-data_quality_anomaly-05": "DATA_QUALITY_ANOMALY",
+  "ictai510-data_quality_anomaly-13": "DATA_QUALITY_ANOMALY",
+  "ictai510-freshness_violation-05": "FRESHNESS_VIOLATION",
+  "ictai510-freshness_violation-13": "FRESHNESS_VIOLATION"
+}

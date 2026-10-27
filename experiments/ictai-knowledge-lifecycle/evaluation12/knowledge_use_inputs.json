@@ -1,0 +1,53 @@
+[
+  {
+    "id": "ictai510-schema_drift-13",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. The ingestion parser reports an unexpected attribute layout after a partner-side deployment.",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  },
+  {
+    "id": "ictai510-dependency_failure-13",
+    "symptoms": "Initial alert: ingestion workflow failed. Investigate independently. The orchestrator has no local exception, but its dependency check cannot contact a reference endpoint.",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "ictai510-dependency_failure-13"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "ictai510-dependency_failure-13"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "decoy",
+        "upstream_id": "ictai510-dependency_failure-13"
+      },
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "decoy"
+      }
+    },
+    "type": "misleading"
+  }
+]

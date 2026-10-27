@@ -1,0 +1,44 @@
+[
+  {
+    "id": "pilot-schema-history-01-conflict",
+    "layer": "source",
+    "verified": true,
+    "stale": false,
+    "description": "Partner deployment renamed customer_key to account_key; parser rejects unexpected attributes. Compare observed schema against contract.",
+    "source_incident_id": "SYNTHETIC-pilot-schema-history-01-conflict",
+    "source_system": "synthetic-fixture",
+    "reviewer_id": "fixture-validation-only",
+    "verified_at": "2026-10-01T00:00:00Z",
+    "valid_from": "2026-10-01T00:00:00Z",
+    "valid_until": "2027-10-01T00:00:00Z",
+    "expected_current_observations": [
+      {
+        "tool": "inspect_observed_schema",
+        "key": "columns",
+        "equals": [
+          "customer_key"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pilot-dependency-history-01-conflict",
+    "layer": "pipeline",
+    "verified": true,
+    "stale": false,
+    "description": "Reference endpoint timeout blocked the enrichment feed; verify upstream dependency and lineage relationship.",
+    "source_incident_id": "SYNTHETIC-pilot-dependency-history-01-conflict",
+    "source_system": "synthetic-fixture",
+    "reviewer_id": "fixture-validation-only",
+    "verified_at": "2026-10-01T00:00:00Z",
+    "valid_from": "2026-10-01T00:00:00Z",
+    "valid_until": "2027-10-01T00:00:00Z",
+    "expected_current_observations": [
+      {
+        "tool": "check_upstream_health",
+        "key": "healthy",
+        "equals": false
+      }
+    ]
+  }
+]

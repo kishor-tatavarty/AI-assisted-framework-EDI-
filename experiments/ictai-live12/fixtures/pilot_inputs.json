@@ -1,0 +1,158 @@
+[
+  {
+    "id": "case-1-supported",
+    "symptoms": "File missing at delivery cutoff",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      },
+      "check_object_inventory": {
+        "present": false,
+        "count": 0
+      }
+    }
+  },
+  {
+    "id": "case-1-incomplete",
+    "symptoms": "File missing at delivery cutoff (partial telemetry)",
+    "tools": {
+      "inspect_manifest": {
+        "expected": true
+      }
+    }
+  },
+  {
+    "id": "case-2-supported",
+    "symptoms": "Column schema mismatch",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "amount"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "total"
+        ]
+      }
+    }
+  },
+  {
+    "id": "case-2-incomplete",
+    "symptoms": "Column schema mismatch (partial telemetry)",
+    "tools": {
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "amount"
+        ]
+      }
+    }
+  },
+  {
+    "id": "case-3-supported",
+    "symptoms": "Invalid quality records",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "R",
+        "threshold": 1
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "R",
+        "violations": 4
+      }
+    }
+  },
+  {
+    "id": "case-3-incomplete",
+    "symptoms": "Invalid quality records (partial telemetry)",
+    "tools": {
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "R",
+        "threshold": 1
+      }
+    }
+  },
+  {
+    "id": "case-4-supported",
+    "symptoms": "DAG task failed",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "r"
+      },
+      "read_run_events": {
+        "execution_error": true,
+        "run_id": "r"
+      }
+    }
+  },
+  {
+    "id": "case-4-incomplete",
+    "symptoms": "DAG task failed (partial telemetry)",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "r"
+      }
+    }
+  },
+  {
+    "id": "case-5-supported",
+    "symptoms": "Late freshness arrival",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "d",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "d",
+        "arrival_epoch": 150
+      }
+    }
+  },
+  {
+    "id": "case-5-incomplete",
+    "symptoms": "Late freshness arrival (partial telemetry)",
+    "tools": {
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "d",
+        "deadline_epoch": 100
+      }
+    }
+  },
+  {
+    "id": "case-6-supported",
+    "symptoms": "Upstream dependency blocked DAG",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "u"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "u"
+      },
+      "read_run_events": {
+        "blocked_by_upstream": true,
+        "upstream_id": "u"
+      }
+    }
+  },
+  {
+    "id": "case-6-incomplete",
+    "symptoms": "Upstream dependency blocked DAG (partial telemetry)",
+    "tools": {
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "u"
+      }
+    }
+  }
+]

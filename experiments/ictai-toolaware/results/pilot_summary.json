@@ -1,0 +1,29 @@
+[
+  {
+    "arm": "B1_fixed",
+    "n": 10,
+    "accuracy": 0.7,
+    "mean_tool_calls": 2.3,
+    "mean_layers_visited": 3.5,
+    "abstentions": 5,
+    "mean_elapsed_ms": 0.0106762
+  },
+  {
+    "arm": "B2_dynamic",
+    "n": 10,
+    "accuracy": 0.7,
+    "mean_tool_calls": 2.3,
+    "mean_layers_visited": 1.5,
+    "abstentions": 5,
+    "mean_elapsed_ms": 0.0347173
+  },
+  {
+    "arm": "B3_knowledge",
+    "n": 10,
+    "accuracy": 0.7,
+    "mean_tool_calls": 2.3,
+    "mean_layers_visited": 1.5,
+    "abstentions": 5,
+    "mean_elapsed_ms": 0.0156956
+  }
+]

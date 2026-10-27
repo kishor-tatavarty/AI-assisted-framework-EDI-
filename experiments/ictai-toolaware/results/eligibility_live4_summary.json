@@ -1,0 +1,50 @@
+[
+  {
+    "arm": "B1_fixed",
+    "n": 4,
+    "correct": 4,
+    "accuracy": 1.0,
+    "false_confirmations": 0,
+    "correct_abstentions": 0,
+    "mean_tool_calls": 4,
+    "mean_layers": 1,
+    "llm_attempts": 0,
+    "llm_failures": 0
+  },
+  {
+    "arm": "B2_dynamic",
+    "n": 4,
+    "correct": 4,
+    "accuracy": 1.0,
+    "false_confirmations": 0,
+    "correct_abstentions": 0,
+    "mean_tool_calls": 4,
+    "mean_layers": 1.25,
+    "llm_attempts": 0,
+    "llm_failures": 0
+  },
+  {
+    "arm": "B3_llm",
+    "n": 4,
+    "correct": 4,
+    "accuracy": 1.0,
+    "false_confirmations": 0,
+    "correct_abstentions": 0,
+    "mean_tool_calls": 4,
+    "mean_layers": 1,
+    "llm_attempts": 4,
+    "llm_failures": 0
+  },
+  {
+    "arm": "B4_knowledge",
+    "n": 4,
+    "correct": 4,
+    "accuracy": 1.0,
+    "false_confirmations": 0,
+    "correct_abstentions": 0,
+    "mean_tool_calls": 4,
+    "mean_layers": 1,
+    "llm_attempts": 4,
+    "llm_failures": 0
+  }
+]

@@ -1,0 +1,436 @@
+{
+  "results": [
+    {
+      "id": "ictai510-schema_drift-05",
+      "strict_status": "CONFIRMED",
+      "strict_category": "SCHEMA_DRIFT",
+      "strict_attempts": 4,
+      "candidate_first": {
+        "n": 4,
+        "status": "CONFIRMED",
+        "category": "SCHEMA_DRIFT"
+      },
+      "hypothetical_saved_calls": 0,
+      "checkpoints": [
+        {
+          "n": 1,
+          "tool": "inspect_schema_contract",
+          "status": "INVESTIGATING",
+          "category": "INSUFFICIENT_EVIDENCE",
+          "missing": [
+            "inspect_observed_schema",
+            "inspect_task_execution",
+            "read_run_events"
+          ],
+          "possible": [
+            "PIPELINE_FAILURE",
+            "SCHEMA_DRIFT"
+          ]
+        },
+        {
+          "n": 2,
+          "tool": "inspect_observed_schema",
+          "status": "INVESTIGATING",
+          "category": "SCHEMA_DRIFT",
+          "missing": [
+            "inspect_task_execution",
+            "read_run_events"
+          ],
+          "possible": [
+            "PIPELINE_FAILURE",
+            "SCHEMA_DRIFT"
+          ]
+        },
+        {
+          "n": 3,
+          "tool": "inspect_task_execution",
+          "status": "INVESTIGATING",
+          "category": "SCHEMA_DRIFT",
+          "missing": [
+            "read_run_events"
+          ],
+          "possible": [
+            "PIPELINE_FAILURE",
+            "SCHEMA_DRIFT"
+          ]
+        },
+        {
+          "n": 4,
+          "tool": "read_run_events",
+          "status": "CONFIRMED",
+          "category": "SCHEMA_DRIFT",
+          "missing": [],
+          "possible": [
+            "PIPELINE_FAILURE",
+            "SCHEMA_DRIFT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ictai510-schema_drift-13",
+      "strict_status": "CONFIRMED",
+      "strict_category": "SCHEMA_DRIFT",
+      "strict_attempts": 4,
+      "candidate_first": {
+        "n": 4,
+        "status": "CONFIRMED",
+        "category": "SCHEMA_DRIFT"
+      },
+      "hypothetical_saved_calls": 0,
+      "checkpoints": [
+        {
+          "n": 1,
+          "tool": "inspect_schema_contract",
+          "status": "INVESTIGATING",
+          "category": "INSUFFICIENT_EVIDENCE",
+          "missing": [
+            "inspect_observed_schema",
+            "inspect_task_execution",
+            "read_run_events"
+          ],
+          "possible": [
+            "PIPELINE_FAILURE",
+            "SCHEMA_DRIFT"
+          ]
+        },
+        {
+          "n": 2,
+          "tool": "inspect_observed_schema",
+          "status": "INVESTIGATING",
+          "category": "SCHEMA_DRIFT",
+          "missing": [
+            "inspect_task_execution",
+            "read_run_events"
+          ],
+          "possible": [
+            "PIPELINE_FAILURE",
+            "SCHEMA_DRIFT"
+          ]
+        },
+        {
+          "n": 3,
+          "tool": "inspect_task_execution",
+          "status": "INVESTIGATING",
+          "category": "SCHEMA_DRIFT",
+          "missing": [
+            "read_run_events"
+          ],
+          "possible": [
+            "PIPELINE_FAILURE",
+            "SCHEMA_DRIFT"
+          ]
+        },
+        {
+          "n": 4,
+          "tool": "read_run_events",
+          "status": "CONFIRMED",
+          "category": "SCHEMA_DRIFT",
+          "missing": [],
+          "possible": [
+            "PIPELINE_FAILURE",
+            "SCHEMA_DRIFT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ictai510-dependency_failure-05__ambiguous",
+      "strict_status": "ABSTAINED",
+      "strict_category": "INSUFFICIENT_EVIDENCE",
+      "strict_attempts": 4,
+      "candidate_first": null,
+      "hypothetical_saved_calls": 0,
+      "checkpoints": [
+        {
+          "n": 1,
+          "tool": "check_upstream_health",
+          "status": "INVESTIGATING",
+          "category": "INSUFFICIENT_EVIDENCE",
+          "missing": [
+            "inspect_task_execution",
+            "query_lineage",
+            "read_run_events"
+          ],
+          "possible": [
+            "DEPENDENCY_FAILURE",
+            "PIPELINE_FAILURE"
+          ]
+        },
+        {
+          "n": 2,
+          "tool": "inspect_task_execution",
+          "status": "INVESTIGATING",
+          "category": "INSUFFICIENT_EVIDENCE",
+          "missing": [
+            "query_lineage",
+            "read_run_events"
+          ],
+          "possible": [
+            "DEPENDENCY_FAILURE",
+            "PIPELINE_FAILURE"
+          ]
+        },
+        {
+          "n": 3,
+          "tool": "read_run_events",
+          "status": "INVESTIGATING",
+          "category": "INSUFFICIENT_EVIDENCE",
+          "missing": [
+            "query_lineage"
+          ],
+          "possible": [
+            "DEPENDENCY_FAILURE",
+            "PIPELINE_FAILURE"
+          ]
+        },
+        {
+          "n": 4,
+          "tool": "query_lineage",
+          "status": "INVESTIGATING",
+          "category": "INSUFFICIENT_EVIDENCE",
+          "missing": [],
+          "possible": [
+            "DEPENDENCY_FAILURE",
+            "PIPELINE_FAILURE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ictai510-dependency_failure-05__confirmed",
+      "strict_status": "CONFIRMED",
+      "strict_category": "DEPENDENCY_FAILURE",
+      "strict_attempts": 4,
+      "candidate_first": {
+        "n": 4,
+        "status": "CONFIRMED",
+        "category": "DEPENDENCY_FAILURE"
+      },
+      "hypothetical_saved_calls": 0,
+      "checkpoints": [
+        {
+          "n": 1,
+          "tool": "check_upstream_health",
+          "status": "INVESTIGATING",
+          "category": "INSUFFICIENT_EVIDENCE",
+          "missing": [
+            "inspect_task_execution",
+            "query_lineage",
+            "read_run_events"
+          ],
+          "possible": [
+            "DEPENDENCY_FAILURE",
+            "PIPELINE_FAILURE"
+          ]
+        },
+        {
+          "n": 2,
+          "tool": "inspect_task_execution",
+          "status": "INVESTIGATING",
+          "category": "INSUFFICIENT_EVIDENCE",
+          "missing": [
+            "query_lineage",
+            "read_run_events"
+          ],
+          "possible": [
+            "DEPENDENCY_FAILURE",
+            "PIPELINE_FAILURE"
+          ]
+        },
+        {
+          "n": 3,
+          "tool": "read_run_events",
+          "status": "INVESTIGATING",
+          "category": "INSUFFICIENT_EVIDENCE",
+          "missing": [
+            "query_lineage"
+          ],
+          "possible": [
+            "DEPENDENCY_FAILURE",
+            "PIPELINE_FAILURE"
+          ]
+        },
+        {
+          "n": 4,
+          "tool": "query_lineage",
+          "status": "CONFIRMED",
+          "category": "DEPENDENCY_FAILURE",
+          "missing": [],
+          "possible": [
+            "DEPENDENCY_FAILURE",
+            "PIPELINE_FAILURE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ictai510-dependency_failure-13__ambiguous",
+      "strict_status": "ABSTAINED",
+      "strict_category": "INSUFFICIENT_EVIDENCE",
+      "strict_attempts": 4,
+      "candidate_first": null,
+      "hypothetical_saved_calls": 0,
+      "checkpoints": [
+        {
+          "n": 1,
+          "tool": "check_upstream_health",
+          "status": "INVESTIGATING",
+          "category": "INSUFFICIENT_EVIDENCE",
+          "missing": [
+            "inspect_task_execution",
+            "query_lineage",
+            "read_run_events"
+          ],
+          "possible": [
+            "DEPENDENCY_FAILURE",
+            "PIPELINE_FAILURE"
+          ]
+        },
+        {
+          "n": 2,
+          "tool": "inspect_task_execution",
+          "status": "INVESTIGATING",
+          "category": "INSUFFICIENT_EVIDENCE",
+          "missing": [
+            "query_lineage",
+            "read_run_events"
+          ],
+          "possible": [
+            "DEPENDENCY_FAILURE",
+            "PIPELINE_FAILURE"
+          ]
+        },
+        {
+          "n": 3,
+          "tool": "read_run_events",
+          "status": "INVESTIGATING",
+          "category": "INSUFFICIENT_EVIDENCE",
+          "missing": [
+            "query_lineage"
+          ],
+          "possible": [
+            "DEPENDENCY_FAILURE",
+            "PIPELINE_FAILURE"
+          ]
+        },
+        {
+          "n": 4,
+          "tool": "query_lineage",
+          "status": "INVESTIGATING",
+          "category": "INSUFFICIENT_EVIDENCE",
+          "missing": [],
+          "possible": [
+            "DEPENDENCY_FAILURE",
+            "PIPELINE_FAILURE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ictai510-dependency_failure-13__confirmed",
+      "strict_status": "CONFIRMED",
+      "strict_category": "DEPENDENCY_FAILURE",
+      "strict_attempts": 4,
+      "candidate_first": {
+        "n": 4,
+        "status": "CONFIRMED",
+        "category": "DEPENDENCY_FAILURE"
+      },
+      "hypothetical_saved_calls": 0,
+      "checkpoints": [
+        {
+          "n": 1,
+          "tool": "check_upstream_health",
+          "status": "INVESTIGATING",
+          "category": "INSUFFICIENT_EVIDENCE",
+          "missing": [
+            "inspect_task_execution",
+            "query_lineage",
+            "read_run_events"
+          ],
+          "possible": [
+            "DEPENDENCY_FAILURE",
+            "PIPELINE_FAILURE"
+          ]
+        },
+        {
+          "n": 2,
+          "tool": "inspect_task_execution",
+          "status": "INVESTIGATING",
+          "category": "INSUFFICIENT_EVIDENCE",
+          "missing": [
+            "query_lineage",
+            "read_run_events"
+          ],
+          "possible": [
+            "DEPENDENCY_FAILURE",
+            "PIPELINE_FAILURE"
+          ]
+        },
+        {
+          "n": 3,
+          "tool": "read_run_events",
+          "status": "INVESTIGATING",
+          "category": "INSUFFICIENT_EVIDENCE",
+          "missing": [
+            "query_lineage"
+          ],
+          "possible": [
+            "DEPENDENCY_FAILURE",
+            "PIPELINE_FAILURE"
+          ]
+        },
+        {
+          "n": 4,
+          "tool": "query_lineage",
+          "status": "CONFIRMED",
+          "category": "DEPENDENCY_FAILURE",
+          "missing": [],
+          "possible": [
+            "DEPENDENCY_FAILURE",
+            "PIPELINE_FAILURE"
+          ]
+        }
+      ]
+    }
+  ],
+  "adversarial": {
+    "early": {
+      "status": "INVESTIGATING",
+      "category": "SCHEMA_DRIFT",
+      "missing": [
+        "inspect_task_execution",
+        "read_run_events"
+      ],
+      "possible": [
+        "PIPELINE_FAILURE",
+        "SCHEMA_DRIFT"
+      ]
+    },
+    "after_competing_evidence": {
+      "status": "REVIEW_REQUIRED",
+      "category": "INSUFFICIENT_EVIDENCE",
+      "missing": [],
+      "possible": [
+        "PIPELINE_FAILURE",
+        "SCHEMA_DRIFT"
+      ]
+    }
+  },
+  "partial_tool_inventory": {
+    "status": "CONFIRMED",
+    "category": "SCHEMA_DRIFT",
+    "missing": [],
+    "possible": [
+      "SCHEMA_DRIFT"
+    ]
+  },
+  "limitations": [
+    "Synthetic fixtures only",
+    "This assumes a complete, trusted tool inventory",
+    "Cannot detect unknown competing causes or faulty tool results",
+    "No change to production stopping policy or controller",
+    "Does not establish end-to-end savings until integrated and validated"
+  ]
+}

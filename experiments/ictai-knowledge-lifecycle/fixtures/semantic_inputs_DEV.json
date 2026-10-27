@@ -1,0 +1,544 @@
+[
+  {
+    "id": "sem58-missing_file-01",
+    "symptoms": "Partner reconciliation placed the overnight export on hold; downstream cannot resolve input.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "other"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "other"
+      },
+      "inspect_manifest": {
+        "expected": true
+      },
+      "check_object_inventory": {
+        "present": false,
+        "count": 0
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "sem58-missing_file-02",
+    "symptoms": "Vendor shipment is pending approval, although the scheduler reports an artifact lookup problem.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "other"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "other"
+      },
+      "inspect_manifest": {
+        "expected": true
+      },
+      "check_object_inventory": {
+        "present": false,
+        "count": 0
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "sem58-missing_file-03",
+    "symptoms": "Operational ticket: Partner reconciliation placed the overnight export on hold; downstream cannot resolve input. Do not assume the alert category.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "other"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "other"
+      },
+      "inspect_manifest": {
+        "expected": true
+      },
+      "check_object_inventory": {
+        "present": false,
+        "count": 0
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "sem58-missing_file-04",
+    "symptoms": "Operational ticket: Vendor shipment is pending approval, although the scheduler reports an artifact lookup problem. Do not assume the alert category.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "other"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "other"
+      },
+      "inspect_manifest": {
+        "expected": true
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "sem58-schema_drift-01",
+    "symptoms": "Spark cannot resolve customer_ref after release notes renamed it account_reference.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "other"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "other"
+      },
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "sem58-schema_drift-02",
+    "symptoms": "The projection fails after the supplier's field-standardization rollout.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "other"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "other"
+      },
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "sem58-schema_drift-03",
+    "symptoms": "Operational ticket: Spark cannot resolve customer_ref after release notes renamed it account_reference. Do not assume the alert category.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "other"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "other"
+      },
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      },
+      "inspect_observed_schema": {
+        "columns": [
+          "id",
+          "account_reference"
+        ]
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "sem58-schema_drift-04",
+    "symptoms": "Operational ticket: The projection fails after the supplier's field-standardization rollout. Do not assume the alert category.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "other"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "other"
+      },
+      "inspect_schema_contract": {
+        "columns": [
+          "id",
+          "customer_ref"
+        ]
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "sem58-data_quality_anomaly-01",
+    "symptoms": "Reporting completed but analysts noticed many blank customer identifiers.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "other"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "other"
+      },
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "nulls",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "nulls",
+        "violations": 9
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "sem58-data_quality_anomaly-02",
+    "symptoms": "Dashboard figures contain unexpected gaps despite successful execution.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "other"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "other"
+      },
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "nulls",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "nulls",
+        "violations": 9
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "sem58-data_quality_anomaly-03",
+    "symptoms": "Operational ticket: Reporting completed but analysts noticed many blank customer identifiers. Do not assume the alert category.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "other"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "other"
+      },
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "nulls",
+        "threshold": 2
+      },
+      "inspect_quality_measurement": {
+        "rule_id": "nulls",
+        "violations": 9
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "sem58-data_quality_anomaly-04",
+    "symptoms": "Operational ticket: Dashboard figures contain unexpected gaps despite successful execution. Do not assume the alert category.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "other"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "other"
+      },
+      "inspect_quality_rule": {
+        "active": true,
+        "rule_id": "nulls",
+        "threshold": 2
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "sem58-pipeline_failure-01",
+    "symptoms": "Worker process exited unexpectedly after the scheduler launched the transformation.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      },
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "r1"
+      },
+      "read_run_events": {
+        "execution_error": true,
+        "run_id": "r1"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "sem58-pipeline_failure-02",
+    "symptoms": "Orchestration worker stopped mid-run with an execution exception.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      },
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "r1"
+      },
+      "read_run_events": {
+        "execution_error": true,
+        "run_id": "r1"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "sem58-pipeline_failure-03",
+    "symptoms": "Operational ticket: Worker process exited unexpectedly after the scheduler launched the transformation. Do not assume the alert category.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      },
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "r1"
+      },
+      "read_run_events": {
+        "execution_error": true,
+        "run_id": "r1"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "sem58-pipeline_failure-04",
+    "symptoms": "Operational ticket: Orchestration worker stopped mid-run with an execution exception. Do not assume the alert category.",
+    "tools": {
+      "inspect_manifest": {
+        "expected": false
+      },
+      "check_object_inventory": {
+        "present": true,
+        "count": 1
+      },
+      "inspect_task_execution": {
+        "failed": true,
+        "run_id": "r1"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "sem58-freshness_violation-01",
+    "symptoms": "Morning dashboard still displays yesterday's figures after reporting deadline.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "other"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "other"
+      },
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "d1",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "d1",
+        "arrival_epoch": 130
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "sem58-freshness_violation-02",
+    "symptoms": "Analysts complain the feed looks old even though job status is green.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "other"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "other"
+      },
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "d1",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "d1",
+        "arrival_epoch": 130
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "sem58-freshness_violation-03",
+    "symptoms": "Operational ticket: Morning dashboard still displays yesterday's figures after reporting deadline. Do not assume the alert category.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "other"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "other"
+      },
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "d1",
+        "deadline_epoch": 100
+      },
+      "inspect_arrival_timestamps": {
+        "dataset_id": "d1",
+        "arrival_epoch": 130
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "sem58-freshness_violation-04",
+    "symptoms": "Operational ticket: Analysts complain the feed looks old even though job status is green. Do not assume the alert category.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "other"
+      },
+      "read_run_events": {
+        "execution_error": false,
+        "run_id": "other"
+      },
+      "inspect_freshness_sla": {
+        "active": true,
+        "dataset_id": "d1",
+        "deadline_epoch": 100
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "sem58-dependency_failure-01",
+    "symptoms": "Upstream reference service was unavailable and downstream processing is waiting.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "other"
+      },
+      "read_run_events": {
+        "blocked_by_upstream": true,
+        "upstream_id": "u1"
+      },
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "u1"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "u1"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "sem58-dependency_failure-02",
+    "symptoms": "Nightly task stalled because a prerequisite service did not respond.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "other"
+      },
+      "read_run_events": {
+        "blocked_by_upstream": true,
+        "upstream_id": "u1"
+      },
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "u1"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "u1"
+      }
+    },
+    "type": "cross_source"
+  },
+  {
+    "id": "sem58-dependency_failure-03",
+    "symptoms": "Operational ticket: Upstream reference service was unavailable and downstream processing is waiting. Do not assume the alert category.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "other"
+      },
+      "read_run_events": {
+        "blocked_by_upstream": true,
+        "upstream_id": "u1"
+      },
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "u1"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "u1"
+      }
+    },
+    "type": "semantic"
+  },
+  {
+    "id": "sem58-dependency_failure-04",
+    "symptoms": "Operational ticket: Nightly task stalled because a prerequisite service did not respond. Do not assume the alert category.",
+    "tools": {
+      "inspect_task_execution": {
+        "failed": false,
+        "run_id": "other"
+      },
+      "query_lineage": {
+        "depends_on_upstream": true,
+        "upstream_id": "u1"
+      },
+      "check_upstream_health": {
+        "healthy": false,
+        "upstream_id": "u1"
+      }
+    },
+    "type": "cross_source"
+  }
+]

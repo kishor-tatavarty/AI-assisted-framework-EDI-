@@ -1,0 +1,9 @@
+{
+  "offline_test_results": {
+    "ictai-live12": 121,
+    "ictai-toolaware": 129,
+    "ictai-knowledge-lifecycle": 149
+  },
+  "status": "all passed",
+  "notes": "Temporary files redirected to writable workspace. No live API calls performed. Public repository and license not yet selected."
+}

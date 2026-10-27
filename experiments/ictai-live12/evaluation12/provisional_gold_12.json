@@ -1,0 +1,14 @@
+{
+  "ictai510-missing_file-05": "MISSING_FILE",
+  "ictai510-missing_file-13": "MISSING_FILE",
+  "ictai510-schema_drift-05": "SCHEMA_DRIFT",
+  "ictai510-schema_drift-13": "SCHEMA_DRIFT",
+  "ictai510-data_quality_anomaly-05": "DATA_QUALITY_ANOMALY",
+  "ictai510-data_quality_anomaly-13": "DATA_QUALITY_ANOMALY",
+  "ictai510-pipeline_failure-05": "PIPELINE_FAILURE",
+  "ictai510-pipeline_failure-13": "PIPELINE_FAILURE",
+  "ictai510-freshness_violation-05": "FRESHNESS_VIOLATION",
+  "ictai510-freshness_violation-13": "FRESHNESS_VIOLATION",
+  "ictai510-dependency_failure-05": "DEPENDENCY_FAILURE",
+  "ictai510-dependency_failure-13": "DEPENDENCY_FAILURE"
+}

@@ -1,0 +1,1122 @@
+[
+  {
+    "path": "experiments/ictai-live12/README.md",
+    "sha256": "552877088c73f22807b55a34fabe08c9dea69c8f4df2908d3f3b246a21f97d9c"
+  },
+  {
+    "path": "experiments/ictai-live12/README_LIVE_12.md",
+    "sha256": "ab7f0c52943d357a24925b79a4d66dc9948ecae2996fd7dfb2f7e78c02b527be"
+  },
+  {
+    "path": "experiments/ictai-live12/README_PHASE51.md",
+    "sha256": "592c07aa7c4d04e55b049021cdde4f94eb9ffa461ad5a69a3e7d1f0ad4b54a3b"
+  },
+  {
+    "path": "experiments/ictai-live12/README_PHASE510.md",
+    "sha256": "3fa563215719dffc64c37b1dcc89b46f5a69f8fe169191eb63ead2efeb1155c5"
+  },
+  {
+    "path": "experiments/ictai-live12/README_PHASE52.md",
+    "sha256": "46b328b175dc83b01f95a9128260b32ce778b6c8df4d65e08cc8680a0c849efa"
+  },
+  {
+    "path": "experiments/ictai-live12/README_PHASE53.md",
+    "sha256": "167836f2d1cee6727ccfd8c11bed9db6a761939d1f51b0025d964aa326770e7e"
+  },
+  {
+    "path": "experiments/ictai-live12/README_PHASE54.md",
+    "sha256": "d6f3c316b1248360032260e965a2071fdee6bad1f44522737d86810b5f70c466"
+  },
+  {
+    "path": "experiments/ictai-live12/README_PHASE55.md",
+    "sha256": "9f9bba77e7a0f8808d2472556eb66136b279667e8c5efd4b464de5cc82e61d5e"
+  },
+  {
+    "path": "experiments/ictai-live12/README_PHASE56.md",
+    "sha256": "0c49a8768d5e4cb1dc2492cabbc804ee085c33d580dc10ae539c14c650533a0e"
+  },
+  {
+    "path": "experiments/ictai-live12/README_PHASE57.md",
+    "sha256": "b5cf95fdd852dde4e4bc314e07dd432efcd819fb535a1fa4133d627b8a1ad2b4"
+  },
+  {
+    "path": "experiments/ictai-live12/README_PHASE58.md",
+    "sha256": "a69cfe33a6b0ed00fd59a45418f89489aa0930cb532d84416eab77ddc81f345e"
+  },
+  {
+    "path": "experiments/ictai-live12/README_PHASE581.md",
+    "sha256": "40c2bc0ccc8381554f06cf89ff5323a85d9942542253547e2dc62c8ecae3f4bc"
+  },
+  {
+    "path": "experiments/ictai-live12/README_PHASE582.md",
+    "sha256": "9402c8820817c80f88186ac3de6285039f674bf31ee420c3aa30776d6c91d158"
+  },
+  {
+    "path": "experiments/ictai-live12/README_PHASE59.md",
+    "sha256": "21b11a262b1f215e64e0f6473843009fd21e9b65bec62952234bba87818c45a3"
+  },
+  {
+    "path": "experiments/ictai-live12/run_evaluation59.py",
+    "sha256": "0ad370cc2cb48794538c321dc6c08f0458f3183070aa652debbe4ccbc580fcb7"
+  },
+  {
+    "path": "experiments/ictai-live12/run_experiment.py",
+    "sha256": "15d4e5acbb47120273f06ad142a604b6aa4b6d56466a6f78336d7d8889a00d7a"
+  },
+  {
+    "path": "experiments/ictai-live12/run_experiment51.py",
+    "sha256": "64ae80b1ebc9f6ee91e99a93df799c3250a6eccf6681a9a583a11e5a1e0403ec"
+  },
+  {
+    "path": "experiments/ictai-live12/run_experiment57.py",
+    "sha256": "2391bdaaf49f398e7ad11ee1e2bdafa37b947759ee912ee8d102276d2b155709"
+  },
+  {
+    "path": "experiments/ictai-live12/run_live54.py",
+    "sha256": "f38be6f2185d85e6611669b308de7168dc328e3fd20703a8ed3317cdaee5deb7"
+  },
+  {
+    "path": "experiments/ictai-live12/run_semantic58.py",
+    "sha256": "6f380f5a81c9ad5983c482cc727c66cea01081ad9e164c12f200bf11d9de6fef"
+  },
+  {
+    "path": "experiments/ictai-live12/evaluation12/historical_train_candidate.json",
+    "sha256": "30c9a92dfc3e9ad6a9e4b7dc50e982bb5ae162f519f6d2df97b98da3cfaffffe"
+  },
+  {
+    "path": "experiments/ictai-live12/evaluation12/inputs_12.json",
+    "sha256": "d66dc0cad2eceee2ba5feda447e5e83111108a03c56478b906867b0de91367df"
+  },
+  {
+    "path": "experiments/ictai-live12/evaluation12/provisional_gold_12.json",
+    "sha256": "e575f042189ee3a6c52442e96daf4bfed4e739122aade6187c3f4245ae6b2f96"
+  },
+  {
+    "path": "experiments/ictai-live12/fixtures/historical_train_only.json",
+    "sha256": "e7831b6b6300725722fbe35abfb37190ea86b3aaec222efe04c39172cca3a108"
+  },
+  {
+    "path": "experiments/ictai-live12/fixtures/pilot_gold_DEV_ONLY.json",
+    "sha256": "285141bc0a12e8de8bc73460e560315af79f38093189c5991a6e011779b1a386"
+  },
+  {
+    "path": "experiments/ictai-live12/fixtures/pilot_inputs.json",
+    "sha256": "18b9c269a4e92b7f85d96ea20543aec03a4f5aabb377a8dc0df27c569b8dd4bf"
+  },
+  {
+    "path": "experiments/ictai-live12/fixtures/semantic_gold_DEV_ONLY.json",
+    "sha256": "ab1be0885148b6dd173cc0a7c6002cc5788cbd6fa5cae01c9b2f715614491782"
+  },
+  {
+    "path": "experiments/ictai-live12/fixtures/semantic_inputs_DEV.json",
+    "sha256": "3c39ce48ad2182b73a85a2b09fb5aa46e8cad8dad7dee807bdb7a7537ea338ef"
+  },
+  {
+    "path": "experiments/ictai-live12/ictai/confirmation.py",
+    "sha256": "cc9d4ccd17929ea619453b166b719f0bddcb472b702f78525d6a6c36b10734b5"
+  },
+  {
+    "path": "experiments/ictai-live12/ictai/confirmation_six.py",
+    "sha256": "959c657632994bd5f9e16323f9ecebd3789896e18a3101713d81113e4f7674df"
+  },
+  {
+    "path": "experiments/ictai-live12/ictai/controller.py",
+    "sha256": "e00e906f94e667eed7453cc7566eaa6d9173d2dab4a3331caccbf9c262de1f4c"
+  },
+  {
+    "path": "experiments/ictai-live12/ictai/evaluation59.py",
+    "sha256": "a76990e791cacf98ab652ab67f5b621ccbc657825a23d415752e5e7fdd53fcca"
+  },
+  {
+    "path": "experiments/ictai-live12/ictai/experiment.py",
+    "sha256": "899510e335faef097df62a0ff86524a9e1c09461b44e10c856c9ac89890a9154"
+  },
+  {
+    "path": "experiments/ictai-live12/ictai/experiment51.py",
+    "sha256": "81383c2d6df299b178abfe20f3c3dbb61ffc09f0843d57a806d4d4b7b1c87063"
+  },
+  {
+    "path": "experiments/ictai-live12/ictai/experiment52.py",
+    "sha256": "0292b163f1c5561bc1794dffa3530bc1c39193fc8ed046f94d178983f6e9d563"
+  },
+  {
+    "path": "experiments/ictai-live12/ictai/experiment53.py",
+    "sha256": "0620b9bdd414b772e84704dea4775e26046385c2423b6775982224e986ac77c9"
+  },
+  {
+    "path": "experiments/ictai-live12/ictai/experiment55.py",
+    "sha256": "e35872bd220356918fca463004cd3debe4536fbe32f116ed6c8e022e3e09af97"
+  },
+  {
+    "path": "experiments/ictai-live12/ictai/experiment57.py",
+    "sha256": "8895f0a4248d6a70dd94195dc39dac36612160d59383f468d7f84dc9c37a83de"
+  },
+  {
+    "path": "experiments/ictai-live12/ictai/knowledge.py",
+    "sha256": "b08657579dac1e8ddb7c3fa2c734debd21c5b0d0e2611e595f6e62c18b130707"
+  },
+  {
+    "path": "experiments/ictai-live12/ictai/live_openai.py",
+    "sha256": "23395a5630de44bf6a7ce20f68e5946d9128c443009bf5a3cccf1032e1d5879e"
+  },
+  {
+    "path": "experiments/ictai-live12/ictai/llm_reasoner.py",
+    "sha256": "0077820937cc8a976d6b29da7bf0edf55cc282ae5ca98a6b12d5e73d52544a3b"
+  },
+  {
+    "path": "experiments/ictai-live12/ictai/rca.py",
+    "sha256": "769f13af3b30a797e1c14e51a85cb3774386cd46de368ed2a6307a456e687b69"
+  },
+  {
+    "path": "experiments/ictai-live12/ictai/reasoning_context.py",
+    "sha256": "70e5621d0e2ae30ccb9ad0ce61aab5899537246c114f2b5238707c85903ee842"
+  },
+  {
+    "path": "experiments/ictai-live12/ictai/semantic58.py",
+    "sha256": "f895f1aa67e30ca910b9842f8a4abde84fd2a13ea50eed2bbab46dc2e2965ef9"
+  },
+  {
+    "path": "experiments/ictai-live12/ictai/semantic_fixtures58.py",
+    "sha256": "428c54b869c2485593db2eced45efb9de10f355d4637b88f26e84f5b76b14f93"
+  },
+  {
+    "path": "experiments/ictai-live12/ictai/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "experiments/ictai-live12/phase510/candidate_inputs.json",
+    "sha256": "d7a8f93d3e6a035f4ce976559d9b282601e8e5d733b68a8522ccaf8e6f72603b"
+  },
+  {
+    "path": "experiments/ictai-live12/phase510/case_design_manifest.json",
+    "sha256": "9d70dcfddf39de0309cbe0418caba9fe45ed7cad5dd395aff3bb6c2f7bfee97e"
+  },
+  {
+    "path": "experiments/ictai-live12/phase510/dataset_manifest.json",
+    "sha256": "04abca5949a72371626752314ca806298c2ffc82b8fc66d79c8febbe3caac1a8"
+  },
+  {
+    "path": "experiments/ictai-live12/phase510/historical_candidate.json",
+    "sha256": "30c9a92dfc3e9ad6a9e4b7dc50e982bb5ae162f519f6d2df97b98da3cfaffffe"
+  },
+  {
+    "path": "experiments/ictai-live12/phase510/provisional_gold_NOT_FOR_CONFIRMATORY_USE.json",
+    "sha256": "5775854398f110786c6df67e3ca47a4da5d8253b3de0c217a54659df1362ec09"
+  },
+  {
+    "path": "experiments/ictai-live12/phase510/review_template.csv",
+    "sha256": "eb5ba36721e9b0e088d20f3337423541417dd89087a3ca4294272f37c9d33b10"
+  },
+  {
+    "path": "experiments/ictai-live12/results/phase12_live_manifest.json",
+    "sha256": "a7250314d45988ef47297053ba1b306cf7dd01a978d78c391362eb6fbedfd1f6"
+  },
+  {
+    "path": "experiments/ictai-live12/results/phase12_live_summary.json",
+    "sha256": "4e99a4feabefee7ebb1ad96804f155ebaf13f4c799c6fbbf058bb635fdccba1b"
+  },
+  {
+    "path": "experiments/ictai-live12/results/phase12_offline_manifest.json",
+    "sha256": "f750046c57b327e0c7c3c593b6b0243f8d13093bb47b9e781f83169033e9a810"
+  },
+  {
+    "path": "experiments/ictai-live12/results/phase12_offline_summary.json",
+    "sha256": "11c90245e46cfaf7fa98aa6b40b838f04705076469967eb6aa164ad7862941be"
+  },
+  {
+    "path": "experiments/ictai-live12/results/phase51_summary.json",
+    "sha256": "7fff3533b33f4b24718d487424d292bdb237b94dd449af5a5f4b9a23ce2872b3"
+  },
+  {
+    "path": "experiments/ictai-live12/results/phase57_pilot_summary.json",
+    "sha256": "1253b66b5b193ccf59d70231221cd9f75cfb9b0b9a9cb0252d673f8e225fc4ef"
+  },
+  {
+    "path": "experiments/ictai-live12/results/phase58_mock_summary.json",
+    "sha256": "d6de704e0ea2821a2f22410c808b8a49e09d3603e17deb2b3a69faa1287ac2b4"
+  },
+  {
+    "path": "experiments/ictai-live12/results/pilot_summary.json",
+    "sha256": "f4c1bfec9da55d9224ea98420d35fa46390ae5586cbfdedabf225931a4c03f70"
+  },
+  {
+    "path": "experiments/ictai-live12/tests/test_candidate510.py",
+    "sha256": "e9ee2fea0817fdae3d1af545b7d4590e873b844ae7fb8eb59fcc7c93bca082aa"
+  },
+  {
+    "path": "experiments/ictai-live12/tests/test_confirmation.py",
+    "sha256": "1eb1f0587743bcd11c1909f2f75396181e85ec4ac4fe3f9d8128e6a45d88fcdc"
+  },
+  {
+    "path": "experiments/ictai-live12/tests/test_controller.py",
+    "sha256": "69471033343e02fdfa5b5b08623a72ba2f5f396fd9de57c9115edd024230ac25"
+  },
+  {
+    "path": "experiments/ictai-live12/tests/test_dynamic.py",
+    "sha256": "5c8e786a65e42661ab596b6b3ffac1f4caa084c0e71990a75cd20351f57e1e74"
+  },
+  {
+    "path": "experiments/ictai-live12/tests/test_evaluation59.py",
+    "sha256": "14501f849f3a6887b88618b275b959a0130e079d4f110ea4c601840fc982b983"
+  },
+  {
+    "path": "experiments/ictai-live12/tests/test_experiment.py",
+    "sha256": "67877facd8c26578eb59251d74412d807a97692c283717a879a5dcac3df7546a"
+  },
+  {
+    "path": "experiments/ictai-live12/tests/test_experiment51.py",
+    "sha256": "562f4274c22c08fcf9c44cfed5765de25d3001a2c712e403d438365c76eaa777"
+  },
+  {
+    "path": "experiments/ictai-live12/tests/test_experiment55.py",
+    "sha256": "57836231f032d3f10820d8dc9cb4df1be986c1d3c3e71a1aa88a4735cfe63e0e"
+  },
+  {
+    "path": "experiments/ictai-live12/tests/test_experiment57.py",
+    "sha256": "8da0df51cad730aff64d1b760e33bc9f58b5307a1382717e8f10859383c3762d"
+  },
+  {
+    "path": "experiments/ictai-live12/tests/test_knowledge.py",
+    "sha256": "e8ef07989e3fa81a40c057c2aa07626d958f30a058f79caca1368d1ae5c1657d"
+  },
+  {
+    "path": "experiments/ictai-live12/tests/test_knowledge_normalization582.py",
+    "sha256": "58adcf8c8a9fb8435024e194bd9cf758791d69b6804a0516f24b39a633e7d5ad"
+  },
+  {
+    "path": "experiments/ictai-live12/tests/test_knowledge_refs581.py",
+    "sha256": "71557805d6bd6a9578e5a921a4fc90774c4d5f562c859db7c5365d2efc830db1"
+  },
+  {
+    "path": "experiments/ictai-live12/tests/test_live_openai.py",
+    "sha256": "d2ce72392d32699ec8409fbc66012a0033348fcd1c2214c3e4189f0f8d35a755"
+  },
+  {
+    "path": "experiments/ictai-live12/tests/test_llm_reasoner.py",
+    "sha256": "bcc02cf5a1bfc2bb162d0f34aa9071282391a119233d9ad52088bc73562f4849"
+  },
+  {
+    "path": "experiments/ictai-live12/tests/test_rca.py",
+    "sha256": "772f81b1aec23d1c8b9eb9474d6a180a2cadb4a8b26c65466a2d070de6573589"
+  },
+  {
+    "path": "experiments/ictai-live12/tests/test_semantic58.py",
+    "sha256": "4f690601b69aefed7e3f389e54ed4f20c6ac601dbec19ab1d41d6cdb638e1ca8"
+  },
+  {
+    "path": "experiments/ictai-live12/tests/test_six_categories.py",
+    "sha256": "f1c36006cca58275e39988856792df70a578b9e237d21d324ac2ed9412fd2301"
+  },
+  {
+    "path": "experiments/ictai-toolaware/README.md",
+    "sha256": "552877088c73f22807b55a34fabe08c9dea69c8f4df2908d3f3b246a21f97d9c"
+  },
+  {
+    "path": "experiments/ictai-toolaware/README_IMPROVEMENT.md",
+    "sha256": "078c6f5da3ebf931970d1d21b96f4dc7cb8b2bf85a0dca1362d8f61eec8427fe"
+  },
+  {
+    "path": "experiments/ictai-toolaware/README_LIVE_12.md",
+    "sha256": "ab7f0c52943d357a24925b79a4d66dc9948ecae2996fd7dfb2f7e78c02b527be"
+  },
+  {
+    "path": "experiments/ictai-toolaware/README_PATCH.md",
+    "sha256": "e51eecbde21f0defeb1daaf636f87070d9027ccb224da6a6b198868c2b023201"
+  },
+  {
+    "path": "experiments/ictai-toolaware/README_PHASE51.md",
+    "sha256": "592c07aa7c4d04e55b049021cdde4f94eb9ffa461ad5a69a3e7d1f0ad4b54a3b"
+  },
+  {
+    "path": "experiments/ictai-toolaware/README_PHASE510.md",
+    "sha256": "3fa563215719dffc64c37b1dcc89b46f5a69f8fe169191eb63ead2efeb1155c5"
+  },
+  {
+    "path": "experiments/ictai-toolaware/README_PHASE52.md",
+    "sha256": "46b328b175dc83b01f95a9128260b32ce778b6c8df4d65e08cc8680a0c849efa"
+  },
+  {
+    "path": "experiments/ictai-toolaware/README_PHASE53.md",
+    "sha256": "167836f2d1cee6727ccfd8c11bed9db6a761939d1f51b0025d964aa326770e7e"
+  },
+  {
+    "path": "experiments/ictai-toolaware/README_PHASE54.md",
+    "sha256": "d6f3c316b1248360032260e965a2071fdee6bad1f44522737d86810b5f70c466"
+  },
+  {
+    "path": "experiments/ictai-toolaware/README_PHASE55.md",
+    "sha256": "9f9bba77e7a0f8808d2472556eb66136b279667e8c5efd4b464de5cc82e61d5e"
+  },
+  {
+    "path": "experiments/ictai-toolaware/README_PHASE56.md",
+    "sha256": "0c49a8768d5e4cb1dc2492cabbc804ee085c33d580dc10ae539c14c650533a0e"
+  },
+  {
+    "path": "experiments/ictai-toolaware/README_PHASE57.md",
+    "sha256": "b5cf95fdd852dde4e4bc314e07dd432efcd819fb535a1fa4133d627b8a1ad2b4"
+  },
+  {
+    "path": "experiments/ictai-toolaware/README_PHASE58.md",
+    "sha256": "a69cfe33a6b0ed00fd59a45418f89489aa0930cb532d84416eab77ddc81f345e"
+  },
+  {
+    "path": "experiments/ictai-toolaware/README_PHASE581.md",
+    "sha256": "40c2bc0ccc8381554f06cf89ff5323a85d9942542253547e2dc62c8ecae3f4bc"
+  },
+  {
+    "path": "experiments/ictai-toolaware/README_PHASE582.md",
+    "sha256": "9402c8820817c80f88186ac3de6285039f674bf31ee420c3aa30776d6c91d158"
+  },
+  {
+    "path": "experiments/ictai-toolaware/README_PHASE59.md",
+    "sha256": "21b11a262b1f215e64e0f6473843009fd21e9b65bec62952234bba87818c45a3"
+  },
+  {
+    "path": "experiments/ictai-toolaware/run_evaluation59.py",
+    "sha256": "0ad370cc2cb48794538c321dc6c08f0458f3183070aa652debbe4ccbc580fcb7"
+  },
+  {
+    "path": "experiments/ictai-toolaware/run_experiment.py",
+    "sha256": "15d4e5acbb47120273f06ad142a604b6aa4b6d56466a6f78336d7d8889a00d7a"
+  },
+  {
+    "path": "experiments/ictai-toolaware/run_experiment51.py",
+    "sha256": "64ae80b1ebc9f6ee91e99a93df799c3250a6eccf6681a9a583a11e5a1e0403ec"
+  },
+  {
+    "path": "experiments/ictai-toolaware/run_experiment57.py",
+    "sha256": "2391bdaaf49f398e7ad11ee1e2bdafa37b947759ee912ee8d102276d2b155709"
+  },
+  {
+    "path": "experiments/ictai-toolaware/run_live54.py",
+    "sha256": "f38be6f2185d85e6611669b308de7168dc328e3fd20703a8ed3317cdaee5deb7"
+  },
+  {
+    "path": "experiments/ictai-toolaware/run_semantic58.py",
+    "sha256": "6f380f5a81c9ad5983c482cc727c66cea01081ad9e164c12f200bf11d9de6fef"
+  },
+  {
+    "path": "experiments/ictai-toolaware/evaluation12/gold_4.json",
+    "sha256": "adf51140b2140d85f65e8250cfd40626047e73491a1204ccad39238f7656f598"
+  },
+  {
+    "path": "experiments/ictai-toolaware/evaluation12/historical_train_candidate.json",
+    "sha256": "30c9a92dfc3e9ad6a9e4b7dc50e982bb5ae162f519f6d2df97b98da3cfaffffe"
+  },
+  {
+    "path": "experiments/ictai-toolaware/evaluation12/inputs_12.json",
+    "sha256": "d66dc0cad2eceee2ba5feda447e5e83111108a03c56478b906867b0de91367df"
+  },
+  {
+    "path": "experiments/ictai-toolaware/evaluation12/inputs_4.json",
+    "sha256": "7e92871a6c8738929059c8c519bc4f4e63378683c8552462d33103e30ba7b284"
+  },
+  {
+    "path": "experiments/ictai-toolaware/evaluation12/provisional_gold_12.json",
+    "sha256": "e575f042189ee3a6c52442e96daf4bfed4e739122aade6187c3f4245ae6b2f96"
+  },
+  {
+    "path": "experiments/ictai-toolaware/fixtures/historical_train_only.json",
+    "sha256": "e7831b6b6300725722fbe35abfb37190ea86b3aaec222efe04c39172cca3a108"
+  },
+  {
+    "path": "experiments/ictai-toolaware/fixtures/pilot_gold_DEV_ONLY.json",
+    "sha256": "285141bc0a12e8de8bc73460e560315af79f38093189c5991a6e011779b1a386"
+  },
+  {
+    "path": "experiments/ictai-toolaware/fixtures/pilot_inputs.json",
+    "sha256": "18b9c269a4e92b7f85d96ea20543aec03a4f5aabb377a8dc0df27c569b8dd4bf"
+  },
+  {
+    "path": "experiments/ictai-toolaware/fixtures/semantic_gold_DEV_ONLY.json",
+    "sha256": "ab1be0885148b6dd173cc0a7c6002cc5788cbd6fa5cae01c9b2f715614491782"
+  },
+  {
+    "path": "experiments/ictai-toolaware/fixtures/semantic_inputs_DEV.json",
+    "sha256": "3c39ce48ad2182b73a85a2b09fb5aa46e8cad8dad7dee807bdb7a7537ea338ef"
+  },
+  {
+    "path": "experiments/ictai-toolaware/ictai/confirmation.py",
+    "sha256": "cc9d4ccd17929ea619453b166b719f0bddcb472b702f78525d6a6c36b10734b5"
+  },
+  {
+    "path": "experiments/ictai-toolaware/ictai/confirmation_six.py",
+    "sha256": "959c657632994bd5f9e16323f9ecebd3789896e18a3101713d81113e4f7674df"
+  },
+  {
+    "path": "experiments/ictai-toolaware/ictai/controller.py",
+    "sha256": "e00e906f94e667eed7453cc7566eaa6d9173d2dab4a3331caccbf9c262de1f4c"
+  },
+  {
+    "path": "experiments/ictai-toolaware/ictai/evaluation59.py",
+    "sha256": "a76990e791cacf98ab652ab67f5b621ccbc657825a23d415752e5e7fdd53fcca"
+  },
+  {
+    "path": "experiments/ictai-toolaware/ictai/experiment.py",
+    "sha256": "899510e335faef097df62a0ff86524a9e1c09461b44e10c856c9ac89890a9154"
+  },
+  {
+    "path": "experiments/ictai-toolaware/ictai/experiment51.py",
+    "sha256": "81383c2d6df299b178abfe20f3c3dbb61ffc09f0843d57a806d4d4b7b1c87063"
+  },
+  {
+    "path": "experiments/ictai-toolaware/ictai/experiment52.py",
+    "sha256": "0292b163f1c5561bc1794dffa3530bc1c39193fc8ed046f94d178983f6e9d563"
+  },
+  {
+    "path": "experiments/ictai-toolaware/ictai/experiment53.py",
+    "sha256": "0620b9bdd414b772e84704dea4775e26046385c2423b6775982224e986ac77c9"
+  },
+  {
+    "path": "experiments/ictai-toolaware/ictai/experiment55.py",
+    "sha256": "e35872bd220356918fca463004cd3debe4536fbe32f116ed6c8e022e3e09af97"
+  },
+  {
+    "path": "experiments/ictai-toolaware/ictai/experiment57.py",
+    "sha256": "8895f0a4248d6a70dd94195dc39dac36612160d59383f468d7f84dc9c37a83de"
+  },
+  {
+    "path": "experiments/ictai-toolaware/ictai/knowledge.py",
+    "sha256": "b08657579dac1e8ddb7c3fa2c734debd21c5b0d0e2611e595f6e62c18b130707"
+  },
+  {
+    "path": "experiments/ictai-toolaware/ictai/live_openai.py",
+    "sha256": "23395a5630de44bf6a7ce20f68e5946d9128c443009bf5a3cccf1032e1d5879e"
+  },
+  {
+    "path": "experiments/ictai-toolaware/ictai/llm_reasoner.py",
+    "sha256": "6a6df4126e6e0a1607878e1762d3a6f8f809835632a45e20d931e76ae4de199c"
+  },
+  {
+    "path": "experiments/ictai-toolaware/ictai/rca.py",
+    "sha256": "769f13af3b30a797e1c14e51a85cb3774386cd46de368ed2a6307a456e687b69"
+  },
+  {
+    "path": "experiments/ictai-toolaware/ictai/reasoning_context.py",
+    "sha256": "f712a1523ee675115c362c1caac2d8f24450c08bd2273a1b94e6a7b883aecf56"
+  },
+  {
+    "path": "experiments/ictai-toolaware/ictai/semantic58.py",
+    "sha256": "d0c1c6027f5273ca76165b2d624f09a2f455fa4d2f186bad842b922091005957"
+  },
+  {
+    "path": "experiments/ictai-toolaware/ictai/semantic_fixtures58.py",
+    "sha256": "428c54b869c2485593db2eced45efb9de10f355d4637b88f26e84f5b76b14f93"
+  },
+  {
+    "path": "experiments/ictai-toolaware/ictai/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "experiments/ictai-toolaware/phase510/candidate_inputs.json",
+    "sha256": "d7a8f93d3e6a035f4ce976559d9b282601e8e5d733b68a8522ccaf8e6f72603b"
+  },
+  {
+    "path": "experiments/ictai-toolaware/phase510/case_design_manifest.json",
+    "sha256": "9d70dcfddf39de0309cbe0418caba9fe45ed7cad5dd395aff3bb6c2f7bfee97e"
+  },
+  {
+    "path": "experiments/ictai-toolaware/phase510/dataset_manifest.json",
+    "sha256": "04abca5949a72371626752314ca806298c2ffc82b8fc66d79c8febbe3caac1a8"
+  },
+  {
+    "path": "experiments/ictai-toolaware/phase510/historical_candidate.json",
+    "sha256": "30c9a92dfc3e9ad6a9e4b7dc50e982bb5ae162f519f6d2df97b98da3cfaffffe"
+  },
+  {
+    "path": "experiments/ictai-toolaware/phase510/provisional_gold_NOT_FOR_CONFIRMATORY_USE.json",
+    "sha256": "5775854398f110786c6df67e3ca47a4da5d8253b3de0c217a54659df1362ec09"
+  },
+  {
+    "path": "experiments/ictai-toolaware/phase510/review_template.csv",
+    "sha256": "eb5ba36721e9b0e088d20f3337423541417dd89087a3ca4294272f37c9d33b10"
+  },
+  {
+    "path": "experiments/ictai-toolaware/results/eligibility_live4_manifest.json",
+    "sha256": "36e75d403b161efae958dc175667e3b324c6efb017b7bebff15de9bd9c873710"
+  },
+  {
+    "path": "experiments/ictai-toolaware/results/eligibility_live4_summary.json",
+    "sha256": "0ac45b2f681bcfd8772a8b949be23c221fdbb448e69647251c1685cb04ac25aa"
+  },
+  {
+    "path": "experiments/ictai-toolaware/results/phase12_offline_manifest.json",
+    "sha256": "f750046c57b327e0c7c3c593b6b0243f8d13093bb47b9e781f83169033e9a810"
+  },
+  {
+    "path": "experiments/ictai-toolaware/results/phase12_offline_summary.json",
+    "sha256": "11c90245e46cfaf7fa98aa6b40b838f04705076469967eb6aa164ad7862941be"
+  },
+  {
+    "path": "experiments/ictai-toolaware/results/phase51_summary.json",
+    "sha256": "7fff3533b33f4b24718d487424d292bdb237b94dd449af5a5f4b9a23ce2872b3"
+  },
+  {
+    "path": "experiments/ictai-toolaware/results/phase57_pilot_summary.json",
+    "sha256": "1253b66b5b193ccf59d70231221cd9f75cfb9b0b9a9cb0252d673f8e225fc4ef"
+  },
+  {
+    "path": "experiments/ictai-toolaware/results/phase58_mock_summary.json",
+    "sha256": "d6de704e0ea2821a2f22410c808b8a49e09d3603e17deb2b3a69faa1287ac2b4"
+  },
+  {
+    "path": "experiments/ictai-toolaware/results/pilot_summary.json",
+    "sha256": "f4c1bfec9da55d9224ea98420d35fa46390ae5586cbfdedabf225931a4c03f70"
+  },
+  {
+    "path": "experiments/ictai-toolaware/results/toolaware_live12_manifest.json",
+    "sha256": "a7250314d45988ef47297053ba1b306cf7dd01a978d78c391362eb6fbedfd1f6"
+  },
+  {
+    "path": "experiments/ictai-toolaware/results/toolaware_live12_summary.json",
+    "sha256": "a56d15f95548ee975c3bd8ea0e979ec4f54fe47b7da0fd2d432afe9a6633c9f4"
+  },
+  {
+    "path": "experiments/ictai-toolaware/tests/test_candidate510.py",
+    "sha256": "e9ee2fea0817fdae3d1af545b7d4590e873b844ae7fb8eb59fcc7c93bca082aa"
+  },
+  {
+    "path": "experiments/ictai-toolaware/tests/test_confirmation.py",
+    "sha256": "1eb1f0587743bcd11c1909f2f75396181e85ec4ac4fe3f9d8128e6a45d88fcdc"
+  },
+  {
+    "path": "experiments/ictai-toolaware/tests/test_controller.py",
+    "sha256": "69471033343e02fdfa5b5b08623a72ba2f5f396fd9de57c9115edd024230ac25"
+  },
+  {
+    "path": "experiments/ictai-toolaware/tests/test_dynamic.py",
+    "sha256": "5c8e786a65e42661ab596b6b3ffac1f4caa084c0e71990a75cd20351f57e1e74"
+  },
+  {
+    "path": "experiments/ictai-toolaware/tests/test_eligibility_consistency.py",
+    "sha256": "b8e5341e8197c212d6a7366fd956862c657a3736f51a570ec60b6b3089b4f7be"
+  },
+  {
+    "path": "experiments/ictai-toolaware/tests/test_evaluation59.py",
+    "sha256": "14501f849f3a6887b88618b275b959a0130e079d4f110ea4c601840fc982b983"
+  },
+  {
+    "path": "experiments/ictai-toolaware/tests/test_experiment.py",
+    "sha256": "67877facd8c26578eb59251d74412d807a97692c283717a879a5dcac3df7546a"
+  },
+  {
+    "path": "experiments/ictai-toolaware/tests/test_experiment51.py",
+    "sha256": "562f4274c22c08fcf9c44cfed5765de25d3001a2c712e403d438365c76eaa777"
+  },
+  {
+    "path": "experiments/ictai-toolaware/tests/test_experiment55.py",
+    "sha256": "57836231f032d3f10820d8dc9cb4df1be986c1d3c3e71a1aa88a4735cfe63e0e"
+  },
+  {
+    "path": "experiments/ictai-toolaware/tests/test_experiment57.py",
+    "sha256": "8da0df51cad730aff64d1b760e33bc9f58b5307a1382717e8f10859383c3762d"
+  },
+  {
+    "path": "experiments/ictai-toolaware/tests/test_knowledge.py",
+    "sha256": "e8ef07989e3fa81a40c057c2aa07626d958f30a058f79caca1368d1ae5c1657d"
+  },
+  {
+    "path": "experiments/ictai-toolaware/tests/test_knowledge_normalization582.py",
+    "sha256": "5a1e32962acd94e3e7b3bb44f39ce8e0a543db3a9600c36db70b504d0ec8a864"
+  },
+  {
+    "path": "experiments/ictai-toolaware/tests/test_knowledge_refs581.py",
+    "sha256": "71557805d6bd6a9578e5a921a4fc90774c4d5f562c859db7c5365d2efc830db1"
+  },
+  {
+    "path": "experiments/ictai-toolaware/tests/test_live_openai.py",
+    "sha256": "d2ce72392d32699ec8409fbc66012a0033348fcd1c2214c3e4189f0f8d35a755"
+  },
+  {
+    "path": "experiments/ictai-toolaware/tests/test_llm_reasoner.py",
+    "sha256": "bcc02cf5a1bfc2bb162d0f34aa9071282391a119233d9ad52088bc73562f4849"
+  },
+  {
+    "path": "experiments/ictai-toolaware/tests/test_rca.py",
+    "sha256": "772f81b1aec23d1c8b9eb9474d6a180a2cadb4a8b26c65466a2d070de6573589"
+  },
+  {
+    "path": "experiments/ictai-toolaware/tests/test_semantic58.py",
+    "sha256": "4f690601b69aefed7e3f389e54ed4f20c6ac601dbec19ab1d41d6cdb638e1ca8"
+  },
+  {
+    "path": "experiments/ictai-toolaware/tests/test_six_categories.py",
+    "sha256": "f1c36006cca58275e39988856792df70a578b9e237d21d324ac2ed9412fd2301"
+  },
+  {
+    "path": "experiments/ictai-toolaware/tests/test_tool_aware.py",
+    "sha256": "0d09c099340482f3cf2346993a69c3a246693b7d58733209cedf688ebc90a3dd"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/dependency_variants.json",
+    "sha256": "c1d1fad226bb63787f78dae6c6d79f604af70bcdc67cb57e125d614d4ab65a3f"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/diagnose_ictai_stopping.py",
+    "sha256": "65ab809a8e906e60f09ac37ef4ba2a9f6dbfcc1ba39471e66d4d0fb16e5a4cca"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ictai_confirmation_accounting_audit.py",
+    "sha256": "773a1ebba6635ff11fa927b355ca5db300fb1e6e99b8e3565822e8a47349c064"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ICTAI_Confirmation_Accounting_Audit_README.txt",
+    "sha256": "7db659d6e37cd8efca54e1e183910ecc8b3810bd61073346e663d2d09cf41a3e"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/provisional_expected_outcomes.json",
+    "sha256": "104c5217ad95dea3a5bd1898907547d390e3ce29f4321134a1ddd36de5965fd0"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README.md",
+    "sha256": "813effb8852fbec73e650caf11994796c56d2483f31f9bb4d65fc613d7f72aeb"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README.txt",
+    "sha256": "0173a592d271b7346ea253ace4660f67f69da0ec092bc265818bbdef5bdc61ed"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README_IMPROVEMENT.md",
+    "sha256": "078c6f5da3ebf931970d1d21b96f4dc7cb8b2bf85a0dca1362d8f61eec8427fe"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README_KNOWLEDGE_PILOT.md",
+    "sha256": "5bae3eda880ebf0d3953067df4d4a4effb6fa9615811568b8610fac24a2467db"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README_KNOWLEDGE_USE.md",
+    "sha256": "452643a817b68471a0ece4885f12dd4c3e38ef017a4a1f6ddd815d15922dfbbb"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README_LIFECYCLE_PATCH.md",
+    "sha256": "4a2528b24722a26156285e382e393b068eaa7a208b68a5c03773d8b545def779"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README_LIVE_12.md",
+    "sha256": "ab7f0c52943d357a24925b79a4d66dc9948ecae2996fd7dfb2f7e78c02b527be"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README_PATCH.md",
+    "sha256": "7c2a849430ae3680af3142b881273aae232138122ffca078e8a3f1507e3c80c4"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README_PHASE51.md",
+    "sha256": "592c07aa7c4d04e55b049021cdde4f94eb9ffa461ad5a69a3e7d1f0ad4b54a3b"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README_PHASE510.md",
+    "sha256": "3fa563215719dffc64c37b1dcc89b46f5a69f8fe169191eb63ead2efeb1155c5"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README_PHASE52.md",
+    "sha256": "46b328b175dc83b01f95a9128260b32ce778b6c8df4d65e08cc8680a0c849efa"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README_PHASE53.md",
+    "sha256": "167836f2d1cee6727ccfd8c11bed9db6a761939d1f51b0025d964aa326770e7e"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README_PHASE54.md",
+    "sha256": "d6f3c316b1248360032260e965a2071fdee6bad1f44522737d86810b5f70c466"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README_PHASE55.md",
+    "sha256": "9f9bba77e7a0f8808d2472556eb66136b279667e8c5efd4b464de5cc82e61d5e"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README_PHASE56.md",
+    "sha256": "0c49a8768d5e4cb1dc2492cabbc804ee085c33d580dc10ae539c14c650533a0e"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README_PHASE57.md",
+    "sha256": "b5cf95fdd852dde4e4bc314e07dd432efcd819fb535a1fa4133d627b8a1ad2b4"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README_PHASE58.md",
+    "sha256": "a69cfe33a6b0ed00fd59a45418f89489aa0930cb532d84416eab77ddc81f345e"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README_PHASE581.md",
+    "sha256": "40c2bc0ccc8381554f06cf89ff5323a85d9942542253547e2dc62c8ecae3f4bc"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README_PHASE582.md",
+    "sha256": "9402c8820817c80f88186ac3de6285039f674bf31ee420c3aa30776d6c91d158"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README_PHASE59.md",
+    "sha256": "21b11a262b1f215e64e0f6473843009fd21e9b65bec62952234bba87818c45a3"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/README_RELIABILITY.md",
+    "sha256": "22c08318194da523d29b24a2397e953f716183df5916b662fadd2b8d0d198b0d"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/run_dependency_fixture_checks.py",
+    "sha256": "eda3f6926ca9d5bd11616806f4f4f68a1942c17512311bd5255e3826dd13d035"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/run_evaluation59.py",
+    "sha256": "0ad370cc2cb48794538c321dc6c08f0458f3183070aa652debbe4ccbc580fcb7"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/run_evidence_scheduling.py",
+    "sha256": "cf436e36e4f76dc0c51504536c8d5e28e92ce73581e99a0ffcac481342ebbed6"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/run_experiment.py",
+    "sha256": "15d4e5acbb47120273f06ad142a604b6aa4b6d56466a6f78336d7d8889a00d7a"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/run_experiment51.py",
+    "sha256": "64ae80b1ebc9f6ee91e99a93df799c3250a6eccf6681a9a583a11e5a1e0403ec"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/run_experiment57.py",
+    "sha256": "2391bdaaf49f398e7ad11ee1e2bdafa37b947759ee912ee8d102276d2b155709"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/run_knowledge_routing_choice.py",
+    "sha256": "ed8cacda3037ca7fcf62d72f96add0995974871f2ce78e895e56ca580b30fe56"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/run_knowledge_routing_live.py",
+    "sha256": "00ae069a716077cea7bb47705c6ca47490bdf50a73c6c39beee95b50b94e8927"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/run_knowledge_use.py",
+    "sha256": "70c35830be5034dbc765512a83ac96f9ea0dd265e86ea7365a4a7cbd096177cb"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/run_lifecycle_followup.py",
+    "sha256": "09870b764241d181f61829c06c95ecd4aa14deae1fe17a5fa2e74b7a0f8d9a40"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/run_lifecycle_offline.py",
+    "sha256": "2b0c1fd4c3cc50f095f39727b1281374ee4c41c802c05b6a61d9657c5b8b87f7"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/run_live54.py",
+    "sha256": "f38be6f2185d85e6611669b308de7168dc328e3fd20703a8ed3317cdaee5deb7"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/run_semantic58.py",
+    "sha256": "6f380f5a81c9ad5983c482cc727c66cea01081ad9e164c12f200bf11d9de6fef"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/dependency_fixture_checks/dependency_variants.json",
+    "sha256": "c1d1fad226bb63787f78dae6c6d79f604af70bcdc67cb57e125d614d4ab65a3f"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/dependency_fixture_checks/provisional_expected_outcomes.json",
+    "sha256": "104c5217ad95dea3a5bd1898907547d390e3ce29f4321134a1ddd36de5965fd0"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/dependency_fixture_checks/README.md",
+    "sha256": "813effb8852fbec73e650caf11994796c56d2483f31f9bb4d65fc613d7f72aeb"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/dependency_fixture_checks/run_dependency_fixture_checks.py",
+    "sha256": "eda3f6926ca9d5bd11616806f4f4f68a1942c17512311bd5255e3826dd13d035"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/evaluation12/historical_semantic_pilot.json",
+    "sha256": "a75cab157a970c9531f3650a13ee1b707ec6c08319e56e1c6889ad1c8cea480b"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/evaluation12/historical_train_candidate.json",
+    "sha256": "30c9a92dfc3e9ad6a9e4b7dc50e982bb5ae162f519f6d2df97b98da3cfaffffe"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/evaluation12/history_conflicting.json",
+    "sha256": "50d908ff1b6d3732df48c77fabb6bdf6ec5e7cd9ecc9b46d2c10b94b7628a8dc"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/evaluation12/history_irrelevant.json",
+    "sha256": "657724f33015e3c4944119f24a2e141ee16d08ccc582a1b6c28c3b520453d40b"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/evaluation12/history_relevant.json",
+    "sha256": "d2e3b023ffe18b211aa9dbb707c935a1134b85f203b22088f7f24cbee1df85dd"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/evaluation12/history_stale.json",
+    "sha256": "352f8c073b0448677205448242a204d7dabb5ac1f3c53d25cb64b63450698543"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/evaluation12/inputs_12.json",
+    "sha256": "d66dc0cad2eceee2ba5feda447e5e83111108a03c56478b906867b0de91367df"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/evaluation12/knowledge_use_inputs.json",
+    "sha256": "91bf9bb5685e5fabcd271c81a0ca6da3ad4c318112eb26917174ddd317fc1a9c"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/evaluation12/knowledge_use_provisional_gold.json",
+    "sha256": "fdaf955519ba37d7632ebd584dcb0de99c213c841ee93c70178f0be7db8d0271"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/evaluation12/provisional_gold_12.json",
+    "sha256": "e575f042189ee3a6c52442e96daf4bfed4e739122aade6187c3f4245ae6b2f96"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/fixtures/historical_train_only.json",
+    "sha256": "e7831b6b6300725722fbe35abfb37190ea86b3aaec222efe04c39172cca3a108"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/fixtures/pilot_gold_DEV_ONLY.json",
+    "sha256": "285141bc0a12e8de8bc73460e560315af79f38093189c5991a6e011779b1a386"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/fixtures/pilot_inputs.json",
+    "sha256": "18b9c269a4e92b7f85d96ea20543aec03a4f5aabb377a8dc0df27c569b8dd4bf"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/fixtures/semantic_gold_DEV_ONLY.json",
+    "sha256": "ab1be0885148b6dd173cc0a7c6002cc5788cbd6fa5cae01c9b2f715614491782"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/fixtures/semantic_inputs_DEV.json",
+    "sha256": "3c39ce48ad2182b73a85a2b09fb5aa46e8cad8dad7dee807bdb7a7537ea338ef"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ictai/confirmation.py",
+    "sha256": "cc9d4ccd17929ea619453b166b719f0bddcb472b702f78525d6a6c36b10734b5"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ictai/confirmation_six.py",
+    "sha256": "959c657632994bd5f9e16323f9ecebd3789896e18a3101713d81113e4f7674df"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ictai/controller.py",
+    "sha256": "e00e906f94e667eed7453cc7566eaa6d9173d2dab4a3331caccbf9c262de1f4c"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ictai/evaluation59.py",
+    "sha256": "a76990e791cacf98ab652ab67f5b621ccbc657825a23d415752e5e7fdd53fcca"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ictai/experiment.py",
+    "sha256": "899510e335faef097df62a0ff86524a9e1c09461b44e10c856c9ac89890a9154"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ictai/experiment51.py",
+    "sha256": "81383c2d6df299b178abfe20f3c3dbb61ffc09f0843d57a806d4d4b7b1c87063"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ictai/experiment52.py",
+    "sha256": "0292b163f1c5561bc1794dffa3530bc1c39193fc8ed046f94d178983f6e9d563"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ictai/experiment53.py",
+    "sha256": "0620b9bdd414b772e84704dea4775e26046385c2423b6775982224e986ac77c9"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ictai/experiment55.py",
+    "sha256": "e35872bd220356918fca463004cd3debe4536fbe32f116ed6c8e022e3e09af97"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ictai/experiment57.py",
+    "sha256": "8895f0a4248d6a70dd94195dc39dac36612160d59383f468d7f84dc9c37a83de"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ictai/knowledge.py",
+    "sha256": "b08657579dac1e8ddb7c3fa2c734debd21c5b0d0e2611e595f6e62c18b130707"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ictai/knowledge_guard.py",
+    "sha256": "3fc77cf8d5d4ef486312d7511c7eb889b416a0a1430f82c0588d42a5824e4b0b"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ictai/live_openai.py",
+    "sha256": "23395a5630de44bf6a7ce20f68e5946d9128c443009bf5a3cccf1032e1d5879e"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ictai/llm_reasoner.py",
+    "sha256": "6a6df4126e6e0a1607878e1762d3a6f8f809835632a45e20d931e76ae4de199c"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ictai/rca.py",
+    "sha256": "769f13af3b30a797e1c14e51a85cb3774386cd46de368ed2a6307a456e687b69"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ictai/reasoning_context.py",
+    "sha256": "f712a1523ee675115c362c1caac2d8f24450c08bd2273a1b94e6a7b883aecf56"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ictai/semantic58.py",
+    "sha256": "cd72df7cceacd4fee6722545c682f08735e085d6d2caa7842213ff8fc87ef919"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ictai/semantic_fixtures58.py",
+    "sha256": "428c54b869c2485593db2eced45efb9de10f355d4637b88f26e84f5b76b14f93"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/ictai/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/phase510/candidate_inputs.json",
+    "sha256": "d7a8f93d3e6a035f4ce976559d9b282601e8e5d733b68a8522ccaf8e6f72603b"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/phase510/case_design_manifest.json",
+    "sha256": "9d70dcfddf39de0309cbe0418caba9fe45ed7cad5dd395aff3bb6c2f7bfee97e"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/phase510/dataset_manifest.json",
+    "sha256": "04abca5949a72371626752314ca806298c2ffc82b8fc66d79c8febbe3caac1a8"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/phase510/historical_candidate.json",
+    "sha256": "30c9a92dfc3e9ad6a9e4b7dc50e982bb5ae162f519f6d2df97b98da3cfaffffe"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/phase510/provisional_gold_NOT_FOR_CONFIRMATORY_USE.json",
+    "sha256": "5775854398f110786c6df67e3ca47a4da5d8253b3de0c217a54659df1362ec09"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/phase510/review_template.csv",
+    "sha256": "eb5ba36721e9b0e088d20f3337423541417dd89087a3ca4294272f37c9d33b10"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/results/knowledge_routing_live_manifest.json",
+    "sha256": "aebff59bd32c77f50cbdd0a52ce484bcdd556155e2657ebee8b500577919e8b5"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/risk_aware_study/README.md",
+    "sha256": "a34c8fa14220750e68afa8ea1d2490747a29b8d6131f7e5a1f4d4186cb265363"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/risk_aware_study/risk_aware_results.json",
+    "sha256": "7aff519d40a11a9084891f6ee66c229478049c5b67faa76e8ac010c1d738a511"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/risk_aware_study/run_risk_aware_study.py",
+    "sha256": "e3e2f54bfb5d280e1f74a709c16f367ff30d601319d688c35972fa66665b7154"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/stopping_study/baseline_cases.json",
+    "sha256": "d1445a737b167a80881ac53543dbe6e32fb2973f4bca6ed39d1d2f97c60f0f61"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/stopping_study/dependency_variants.json",
+    "sha256": "c1d1fad226bb63787f78dae6c6d79f604af70bcdc67cb57e125d614d4ab65a3f"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/stopping_study/README.md",
+    "sha256": "5c7b0e5d101d141f1b3694417efd94c686de4655e3bc897bffc8dc1872cb9eea"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/stopping_study/run_stopping_study.py",
+    "sha256": "7e9a508834f64a783ad833ecbd5d2a45e542d36dbc7570d41cfd99f3600a2fa1"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/stopping_study/stopping_study_results.json",
+    "sha256": "3f6b0b9a673c72740909806c48fc52d6e75d2be3c587f11bc53f21df2533d8e8"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_candidate510.py",
+    "sha256": "e9ee2fea0817fdae3d1af545b7d4590e873b844ae7fb8eb59fcc7c93bca082aa"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_confirmation.py",
+    "sha256": "1eb1f0587743bcd11c1909f2f75396181e85ec4ac4fe3f9d8128e6a45d88fcdc"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_controller.py",
+    "sha256": "69471033343e02fdfa5b5b08623a72ba2f5f396fd9de57c9115edd024230ac25"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_dynamic.py",
+    "sha256": "5c8e786a65e42661ab596b6b3ffac1f4caa084c0e71990a75cd20351f57e1e74"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_eligibility_consistency.py",
+    "sha256": "b8e5341e8197c212d6a7366fd956862c657a3736f51a570ec60b6b3089b4f7be"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_evaluation59.py",
+    "sha256": "14501f849f3a6887b88618b275b959a0130e079d4f110ea4c601840fc982b983"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_evidence_scheduling.py",
+    "sha256": "106d5f761fdf95a98ffbfd2cf75967cd0b9bf099fec29f0655dd82c2c6468a66"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_experiment.py",
+    "sha256": "67877facd8c26578eb59251d74412d807a97692c283717a879a5dcac3df7546a"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_experiment51.py",
+    "sha256": "562f4274c22c08fcf9c44cfed5765de25d3001a2c712e403d438365c76eaa777"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_experiment55.py",
+    "sha256": "57836231f032d3f10820d8dc9cb4df1be986c1d3c3e71a1aa88a4735cfe63e0e"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_experiment57.py",
+    "sha256": "8da0df51cad730aff64d1b760e33bc9f58b5307a1382717e8f10859383c3762d"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_knowledge.py",
+    "sha256": "e8ef07989e3fa81a40c057c2aa07626d958f30a058f79caca1368d1ae5c1657d"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_knowledge_guard.py",
+    "sha256": "02f5f2d6c66b4fb598bd92e9f2bb8fac990d80681034f1e4a573c1729d8356db"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_knowledge_lifecycle.py",
+    "sha256": "bdd17875f7bc0cbfd50abd7f64d0c1e4e72efe38483bcd73bf29c4223b1d65b4"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_knowledge_normalization582.py",
+    "sha256": "5a1e32962acd94e3e7b3bb44f39ce8e0a543db3a9600c36db70b504d0ec8a864"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_knowledge_refs581.py",
+    "sha256": "3578652dafcf4d4b50879c4725b6ea99df92ded12f4b251651380ad73524a2b8"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_knowledge_retrieval_pilot.py",
+    "sha256": "8f8011af5a971b59c5519074c1efb81f63b4174f118c5fe26b75a361300df6cb"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_live_openai.py",
+    "sha256": "d2ce72392d32699ec8409fbc66012a0033348fcd1c2214c3e4189f0f8d35a755"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_llm_reasoner.py",
+    "sha256": "bcc02cf5a1bfc2bb162d0f34aa9071282391a119233d9ad52088bc73562f4849"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_rca.py",
+    "sha256": "772f81b1aec23d1c8b9eb9474d6a180a2cadb4a8b26c65466a2d070de6573589"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_semantic58.py",
+    "sha256": "19c0b24f0ec52d6b1aa02a6fc15e7dbdabd1642157bfe5d5f934e8520ab3e091"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_six_categories.py",
+    "sha256": "f1c36006cca58275e39988856792df70a578b9e237d21d324ac2ed9412fd2301"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_tool_aware.py",
+    "sha256": "0d09c099340482f3cf2346993a69c3a246693b7d58733209cedf688ebc90a3dd"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/tests/test_tool_observability.py",
+    "sha256": "e1ab42166869d0c58c0100f3bb51d55b9f3a5e37880621268fd2f7a048546d93"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/risk_aware_study/stopping_study/baseline_cases.json",
+    "sha256": "d1445a737b167a80881ac53543dbe6e32fb2973f4bca6ed39d1d2f97c60f0f61"
+  },
+  {
+    "path": "experiments/ictai-knowledge-lifecycle/risk_aware_study/stopping_study/dependency_variants.json",
+    "sha256": "c1d1fad226bb63787f78dae6c6d79f604af70bcdc67cb57e125d614d4ab65a3f"
+  }
+]

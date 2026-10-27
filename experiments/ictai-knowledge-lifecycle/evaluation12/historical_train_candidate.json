@@ -1,0 +1,44 @@
+[
+  {
+    "id": "kb510-missing_file-a",
+    "description": "Historical runbook for source checks: inspect primary observations and corroborate the source of failure before closing the ticket.",
+    "layer": "source",
+    "verified": true,
+    "stale": false
+  },
+  {
+    "id": "kb510-schema_drift-a",
+    "description": "Historical runbook for validation checks: inspect primary observations and corroborate the source of failure before closing the ticket.",
+    "layer": "validation",
+    "verified": true,
+    "stale": false
+  },
+  {
+    "id": "kb510-data_quality_anomaly-a",
+    "description": "Historical runbook for validation checks: inspect primary observations and corroborate the source of failure before closing the ticket.",
+    "layer": "validation",
+    "verified": true,
+    "stale": false
+  },
+  {
+    "id": "kb510-pipeline_failure-a",
+    "description": "Historical runbook for pipeline checks: inspect primary observations and corroborate the source of failure before closing the ticket.",
+    "layer": "pipeline",
+    "verified": true,
+    "stale": false
+  },
+  {
+    "id": "kb510-freshness_violation-a",
+    "description": "Historical runbook for source checks: inspect primary observations and corroborate the source of failure before closing the ticket.",
+    "layer": "source",
+    "verified": true,
+    "stale": false
+  },
+  {
+    "id": "kb510-dependency_failure-a",
+    "description": "Historical runbook for lineage checks: inspect primary observations and corroborate the source of failure before closing the ticket.",
+    "layer": "lineage",
+    "verified": true,
+    "stale": false
+  }
+]

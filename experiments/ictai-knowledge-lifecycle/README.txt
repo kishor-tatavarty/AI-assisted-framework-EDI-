@@ -1,0 +1,1 @@
+Place diagnose_ictai_stopping.py in C:\research\ictai-knowledge-lifecycle. Ensure run_knowledge_routing_choice.py and knowledge_routing_live_audit.json are in project root (or audit in results). Run python diagnose_ictai_stopping.py. No API calls, no confirmation changes. The observed-only check is a diagnostic counterfactual, NOT an approved production stopping rule.

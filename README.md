@@ -26,4 +26,4 @@ Summary and manifest files retain recorded experiment outcomes. Raw model respon
 
 ## Release status
 
-Repository: https://github.com/kishor-tatavarty/AI-assisted-framework-EDI- . A distribution license has not yet been selected. This package contains no manuscript or practitioner review documents. Local credential files and environment folders are excluded.
+Repository: https://github.com/kishor-tatavarty/AI-assisted-framework-EDI- . Released under the [MIT License](LICENSE). This package contains no manuscript or practitioner review documents. Local credential files and environment folders are excluded.

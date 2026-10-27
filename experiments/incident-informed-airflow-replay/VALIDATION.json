@@ -1,0 +1,15 @@
+{
+  "scope": "incident-informed generated local replays",
+  "tests": "8 unittest methods passed, including six failure/recovery scenarios under two deterministic policies",
+  "failure_executions": 6,
+  "recovery_executions": 6,
+  "investigation_outputs": 24,
+  "all_constructed_outcomes_as_expected": true,
+  "airflow_scheduler_tested": false,
+  "same_python_task_logic_executed": true,
+  "local_HTTP_503_and_200_tested": true,
+  "live_LLM_calls": 0,
+  "original_four_arm_experiment_replaced": false,
+  "unknown_original_data_replaced_by_generated_parameters": true,
+  "independent_production_accuracy_established": false
+}

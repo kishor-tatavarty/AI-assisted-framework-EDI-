@@ -1,0 +1,10 @@
+{
+  "run_id": "replay-06",
+  "execution_environment": "local replay task",
+  "started_at": "2026-10-26T23:18:41.903610-04:00",
+  "status": "SUCCESS",
+  "error_code": null,
+  "error": null,
+  "upstream_id": "inventory-reference-service",
+  "elapsed_ms": 29.576
+}

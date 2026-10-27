@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ictai-incident-replay"
+version = "0.1.0"
+description = "Incident-informed local ingestion replays with an optional Airflow DAG"
+requires-python = ">=3.10"
+dependencies = []
+license = "MIT"
+
+[tool.setuptools.packages.find]
+include = ["ictai_replay*"]

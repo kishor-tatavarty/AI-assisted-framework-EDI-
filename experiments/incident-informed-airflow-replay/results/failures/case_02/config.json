@@ -1,0 +1,56 @@
+{
+  "id": "02",
+  "business_date": "2024-03-01",
+  "run_id": "replay-02",
+  "delivery_expected": true,
+  "expected_file": "landing.csv",
+  "delivery_deadline": "2024-03-01T05:00:00-05:00",
+  "inspection_time": "2024-03-01T07:15:00-05:00",
+  "contract": {
+    "columns": [
+      "business_date",
+      "id",
+      "revenue",
+      "field_04",
+      "field_05",
+      "field_06",
+      "field_07",
+      "field_08",
+      "field_09",
+      "field_10",
+      "field_11",
+      "field_12",
+      "field_13",
+      "field_14"
+    ]
+  },
+  "runtime": {
+    "worker_package_ok": true
+  },
+  "dependency": {
+    "required": false,
+    "id": null
+  },
+  "rates": {
+    "required": false,
+    "required_month": "2024-03"
+  },
+  "symptoms": "Morning monitoring reports the expected business-date rows unavailable.",
+  "provenance": {
+    "record_type": "generated replay fixture informed by contributor account",
+    "historical_log_export": false,
+    "all_fixture_dates_values_and_names_generated": true,
+    "account": "Demand file present; expected 14 columns; extra columns observed; zero target rows; Snowflake load failure reported.",
+    "unknown": [
+      "actual added columns",
+      "exact load error",
+      "retained file",
+      "recovery outcome"
+    ],
+    "adaptations": [
+      "Airflow task replaces historical load executor",
+      "14 generic columns plus two generated extras",
+      "local CSV/SQLite"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "run_id": "replay-06",
+  "execution_environment": "local replay task",
+  "started_at": "2026-10-26T23:18:39.894015-04:00",
+  "status": "FAILED",
+  "error_code": "UpstreamUnavailable",
+  "error": "REPLAY_UPSTREAM_UNAVAILABLE: HTTPError",
+  "upstream_id": "inventory-reference-service",
+  "elapsed_ms": 49.814
+}

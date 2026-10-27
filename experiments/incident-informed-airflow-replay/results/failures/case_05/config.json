@@ -1,0 +1,45 @@
+{
+  "id": "05",
+  "business_date": "2024-03-01",
+  "run_id": "replay-05",
+  "delivery_expected": true,
+  "expected_file": "landing.csv",
+  "delivery_deadline": "2024-03-01T05:00:00-05:00",
+  "inspection_time": "2024-03-01T07:15:00-05:00",
+  "contract": {
+    "columns": [
+      "business_date",
+      "id",
+      "revenue"
+    ]
+  },
+  "runtime": {
+    "worker_package_ok": false
+  },
+  "dependency": {
+    "required": false,
+    "id": null
+  },
+  "rates": {
+    "required": false,
+    "required_month": "2024-03"
+  },
+  "symptoms": "All fact loads failed; source rows exist and fact tables are empty. Inspect the processing task.",
+  "provenance": {
+    "record_type": "generated replay fixture informed by contributor account",
+    "historical_log_export": false,
+    "all_fixture_dates_values_and_names_generated": true,
+    "account": "All monitored fact loads failed; date-D source rows present; fact rows zero; Matillion task system failure and package issue reported.",
+    "unknown": [
+      "exact package",
+      "retained system error",
+      "outage interval",
+      "recovery outcome"
+    ],
+    "adaptations": [
+      "Airflow replaces Matillion at user request",
+      "injected worker dependency ImportError, not original Matillion error",
+      "one representative fact load, not proof all production jobs were reproduced"
+    ]
+  }
+}

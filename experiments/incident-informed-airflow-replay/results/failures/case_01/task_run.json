@@ -1,0 +1,9 @@
+{
+  "run_id": "replay-01",
+  "execution_environment": "local replay task",
+  "started_at": "2026-10-26T23:18:37.277318-04:00",
+  "status": "FAILED",
+  "error_code": "FileNotFoundError",
+  "error": "REPLAY_INPUT_NOT_FOUND: expected business-date CSV absent",
+  "elapsed_ms": 0.156
+}

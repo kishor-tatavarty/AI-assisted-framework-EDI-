@@ -1,0 +1,98 @@
+[
+  {
+    "case_id": "01",
+    "policy": "fixed",
+    "category": "MISSING_FILE",
+    "status": "SUPPORTED_IN_REPLAY",
+    "tool_attempts": 6,
+    "elapsed_ms": 8.849
+  },
+  {
+    "case_id": "01",
+    "policy": "dynamic",
+    "category": "MISSING_FILE",
+    "status": "SUPPORTED_IN_REPLAY",
+    "tool_attempts": 6,
+    "elapsed_ms": 2.538
+  },
+  {
+    "case_id": "02",
+    "policy": "fixed",
+    "category": "SCHEMA_DRIFT",
+    "status": "SUPPORTED_IN_REPLAY",
+    "tool_attempts": 6,
+    "elapsed_ms": 11.378
+  },
+  {
+    "case_id": "02",
+    "policy": "dynamic",
+    "category": "SCHEMA_DRIFT",
+    "status": "SUPPORTED_IN_REPLAY",
+    "tool_attempts": 6,
+    "elapsed_ms": 5.395
+  },
+  {
+    "case_id": "03",
+    "policy": "fixed",
+    "category": "DATA_QUALITY_ANOMALY",
+    "status": "SUPPORTED_IN_REPLAY",
+    "tool_attempts": 6,
+    "elapsed_ms": 15.657
+  },
+  {
+    "case_id": "03",
+    "policy": "dynamic",
+    "category": "DATA_QUALITY_ANOMALY",
+    "status": "SUPPORTED_IN_REPLAY",
+    "tool_attempts": 6,
+    "elapsed_ms": 2.271
+  },
+  {
+    "case_id": "04",
+    "policy": "fixed",
+    "category": "FRESHNESS_VIOLATION",
+    "status": "SUPPORTED_IN_REPLAY",
+    "tool_attempts": 6,
+    "elapsed_ms": 11.944
+  },
+  {
+    "case_id": "04",
+    "policy": "dynamic",
+    "category": "FRESHNESS_VIOLATION",
+    "status": "SUPPORTED_IN_REPLAY",
+    "tool_attempts": 6,
+    "elapsed_ms": 2.452
+  },
+  {
+    "case_id": "05",
+    "policy": "fixed",
+    "category": "PIPELINE_FAILURE",
+    "status": "SUPPORTED_IN_REPLAY",
+    "tool_attempts": 6,
+    "elapsed_ms": 10.813
+  },
+  {
+    "case_id": "05",
+    "policy": "dynamic",
+    "category": "PIPELINE_FAILURE",
+    "status": "SUPPORTED_IN_REPLAY",
+    "tool_attempts": 6,
+    "elapsed_ms": 6.666
+  },
+  {
+    "case_id": "06",
+    "policy": "fixed",
+    "category": "DEPENDENCY_FAILURE",
+    "status": "SUPPORTED_IN_REPLAY",
+    "tool_attempts": 6,
+    "elapsed_ms": 27.723
+  },
+  {
+    "case_id": "06",
+    "policy": "dynamic",
+    "category": "DEPENDENCY_FAILURE",
+    "status": "SUPPORTED_IN_REPLAY",
+    "tool_attempts": 6,
+    "elapsed_ms": 15.212
+  }
+]

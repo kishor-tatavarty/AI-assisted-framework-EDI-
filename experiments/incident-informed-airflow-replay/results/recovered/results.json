@@ -1,0 +1,1140 @@
+[
+  {
+    "case_id": "01",
+    "policy": "fixed",
+    "category": "NO_INCIDENT",
+    "status": "NO_INCIDENT_DETECTED",
+    "evidence_refs": [],
+    "candidate_categories": [],
+    "recommendation": "No remediation proposed.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": false,
+    "tool_attempts": 6,
+    "elapsed_ms": 13.487,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 1,
+          "fact_count": 1,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-01",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:18:39.297019-04:00",
+          "status": "SUCCESS",
+          "error_code": null,
+          "error": null,
+          "elapsed_ms": 4.976
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "recovered_fixture": true
+  },
+  {
+    "case_id": "01",
+    "policy": "dynamic",
+    "category": "NO_INCIDENT",
+    "status": "NO_INCIDENT_DETECTED",
+    "evidence_refs": [],
+    "candidate_categories": [],
+    "recommendation": "No remediation proposed.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": false,
+    "tool_attempts": 6,
+    "elapsed_ms": 2.35,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 1,
+          "fact_count": 1,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-01",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:18:39.297019-04:00",
+          "status": "SUCCESS",
+          "error_code": null,
+          "error": null,
+          "elapsed_ms": 4.976
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "recovered_fixture": true
+  },
+  {
+    "case_id": "02",
+    "policy": "fixed",
+    "category": "NO_INCIDENT",
+    "status": "NO_INCIDENT_DETECTED",
+    "evidence_refs": [],
+    "candidate_categories": [],
+    "recommendation": "No remediation proposed.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": false,
+    "tool_attempts": 6,
+    "elapsed_ms": 9.5,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue",
+            "field_04",
+            "field_05",
+            "field_06",
+            "field_07",
+            "field_08",
+            "field_09",
+            "field_10",
+            "field_11",
+            "field_12",
+            "field_13",
+            "field_14"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue",
+            "field_04",
+            "field_05",
+            "field_06",
+            "field_07",
+            "field_08",
+            "field_09",
+            "field_10",
+            "field_11",
+            "field_12",
+            "field_13",
+            "field_14"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 1,
+          "fact_count": 1,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-02",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:18:39.804432-04:00",
+          "status": "SUCCESS",
+          "error_code": null,
+          "error": null,
+          "elapsed_ms": 5.322
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "recovered_fixture": true
+  },
+  {
+    "case_id": "02",
+    "policy": "dynamic",
+    "category": "NO_INCIDENT",
+    "status": "NO_INCIDENT_DETECTED",
+    "evidence_refs": [],
+    "candidate_categories": [],
+    "recommendation": "No remediation proposed.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": false,
+    "tool_attempts": 6,
+    "elapsed_ms": 2.214,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue",
+            "field_04",
+            "field_05",
+            "field_06",
+            "field_07",
+            "field_08",
+            "field_09",
+            "field_10",
+            "field_11",
+            "field_12",
+            "field_13",
+            "field_14"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue",
+            "field_04",
+            "field_05",
+            "field_06",
+            "field_07",
+            "field_08",
+            "field_09",
+            "field_10",
+            "field_11",
+            "field_12",
+            "field_13",
+            "field_14"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 1,
+          "fact_count": 1,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-02",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:18:39.804432-04:00",
+          "status": "SUCCESS",
+          "error_code": null,
+          "error": null,
+          "elapsed_ms": 5.322
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "recovered_fixture": true
+  },
+  {
+    "case_id": "03",
+    "policy": "fixed",
+    "category": "NO_INCIDENT",
+    "status": "NO_INCIDENT_DETECTED",
+    "evidence_refs": [],
+    "candidate_categories": [],
+    "recommendation": "No remediation proposed.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": false,
+    "tool_attempts": 6,
+    "elapsed_ms": 25.103,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T03:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 1,
+          "fact_count": 1,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-03",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:18:40.328890-04:00",
+          "status": "SUCCESS",
+          "error_code": null,
+          "error": null,
+          "elapsed_ms": 3.094
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "recovered_fixture": true
+  },
+  {
+    "case_id": "03",
+    "policy": "dynamic",
+    "category": "NO_INCIDENT",
+    "status": "NO_INCIDENT_DETECTED",
+    "evidence_refs": [],
+    "candidate_categories": [],
+    "recommendation": "No remediation proposed.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": false,
+    "tool_attempts": 6,
+    "elapsed_ms": 2.336,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T03:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 1,
+          "fact_count": 1,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-03",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:18:40.328890-04:00",
+          "status": "SUCCESS",
+          "error_code": null,
+          "error": null,
+          "elapsed_ms": 3.094
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "recovered_fixture": true
+  },
+  {
+    "case_id": "04",
+    "policy": "fixed",
+    "category": "NO_INCIDENT",
+    "status": "NO_INCIDENT_DETECTED",
+    "evidence_refs": [],
+    "candidate_categories": [],
+    "recommendation": "No remediation proposed.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": false,
+    "tool_attempts": 6,
+    "elapsed_ms": 26.788,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 1,
+          "fact_count": 1,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-04",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:18:40.859477-04:00",
+          "status": "SUCCESS",
+          "error_code": null,
+          "error": null,
+          "selected_rate_month": "2024-03",
+          "selected_rate": 1.2,
+          "elapsed_ms": 6.696
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": true,
+          "required_month": "2024-03",
+          "observed_months": [
+            "2024-02",
+            "2024-03"
+          ],
+          "current_month_count": 1,
+          "policy": "current-month rates required; generated replay policy"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "recovered_fixture": true
+  },
+  {
+    "case_id": "04",
+    "policy": "dynamic",
+    "category": "NO_INCIDENT",
+    "status": "NO_INCIDENT_DETECTED",
+    "evidence_refs": [],
+    "candidate_categories": [],
+    "recommendation": "No remediation proposed.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": false,
+    "tool_attempts": 6,
+    "elapsed_ms": 2.612,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 1,
+          "fact_count": 1,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-04",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:18:40.859477-04:00",
+          "status": "SUCCESS",
+          "error_code": null,
+          "error": null,
+          "selected_rate_month": "2024-03",
+          "selected_rate": 1.2,
+          "elapsed_ms": 6.696
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": true,
+          "required_month": "2024-03",
+          "observed_months": [
+            "2024-02",
+            "2024-03"
+          ],
+          "current_month_count": 1,
+          "policy": "current-month rates required; generated replay policy"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "recovered_fixture": true
+  },
+  {
+    "case_id": "05",
+    "policy": "fixed",
+    "category": "NO_INCIDENT",
+    "status": "NO_INCIDENT_DETECTED",
+    "evidence_refs": [],
+    "candidate_categories": [],
+    "recommendation": "No remediation proposed.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": false,
+    "tool_attempts": 6,
+    "elapsed_ms": 10.187,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 1,
+          "fact_count": 1,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-05",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:18:41.387252-04:00",
+          "status": "SUCCESS",
+          "error_code": null,
+          "error": null,
+          "elapsed_ms": 4.516
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "recovered_fixture": true
+  },
+  {
+    "case_id": "05",
+    "policy": "dynamic",
+    "category": "NO_INCIDENT",
+    "status": "NO_INCIDENT_DETECTED",
+    "evidence_refs": [],
+    "candidate_categories": [],
+    "recommendation": "No remediation proposed.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": false,
+    "tool_attempts": 6,
+    "elapsed_ms": 3.135,
+    "evidence": [
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-05",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:18:41.387252-04:00",
+          "status": "SUCCESS",
+          "error_code": null,
+          "error": null,
+          "elapsed_ms": 4.516
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 1,
+          "fact_count": 1,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "recovered_fixture": true
+  },
+  {
+    "case_id": "06",
+    "policy": "fixed",
+    "category": "NO_INCIDENT",
+    "status": "NO_INCIDENT_DETECTED",
+    "evidence_refs": [],
+    "candidate_categories": [],
+    "recommendation": "No remediation proposed.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": false,
+    "tool_attempts": 6,
+    "elapsed_ms": 17.04,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 1,
+          "fact_count": 1,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-06",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:18:41.903610-04:00",
+          "status": "SUCCESS",
+          "error_code": null,
+          "error": null,
+          "upstream_id": "inventory-reference-service",
+          "elapsed_ms": 29.576
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": true,
+          "upstream_id": "inventory-reference-service",
+          "health_source": "local HTTP reference-service stub",
+          "healthy": true,
+          "http_status": 200
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "recovered_fixture": true
+  },
+  {
+    "case_id": "06",
+    "policy": "dynamic",
+    "category": "NO_INCIDENT",
+    "status": "NO_INCIDENT_DETECTED",
+    "evidence_refs": [],
+    "candidate_categories": [],
+    "recommendation": "No remediation proposed.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": false,
+    "tool_attempts": 6,
+    "elapsed_ms": 6.299,
+    "evidence": [
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-06",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:18:41.903610-04:00",
+          "status": "SUCCESS",
+          "error_code": null,
+          "error": null,
+          "upstream_id": "inventory-reference-service",
+          "elapsed_ms": 29.576
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 1,
+          "fact_count": 1,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": true,
+          "upstream_id": "inventory-reference-service",
+          "health_source": "local HTTP reference-service stub",
+          "healthy": true,
+          "http_status": 200
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "recovered_fixture": true
+  }
+]

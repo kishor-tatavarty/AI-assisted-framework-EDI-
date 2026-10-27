@@ -27,3 +27,7 @@ Summary and manifest files retain recorded experiment outcomes. Raw model respon
 ## Release status
 
 Repository: https://github.com/kishor-tatavarty/AI-assisted-framework-EDI- . Released under the [MIT License](LICENSE). This package contains no manuscript or practitioner review documents. Local credential files and environment folders are excluded.
+
+## Incident-informed Airflow replay extension
+
+[Six-case replay code](experiments/incident-informed-airflow-replay) implements adapted local scenarios with an optional Airflow DAG and a local reference HTTP service. Shared Python task logic and failure/recovery paths were executed; the Airflow scheduler and live LLM calls were not run. Generated fixtures and recommendations are explicitly labeled. These results are functional replay checks, not independently verified production-incident accuracy.

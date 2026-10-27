@@ -5,5 +5,5 @@
     "ictai-knowledge-lifecycle": 149
   },
   "status": "all passed",
-  "notes": "Temporary files redirected to writable workspace. No live API calls performed. Public repository and license not yet selected."
+  "notes": "Temporary files redirected to writable workspace. No live API calls performed during release validation. A distribution license has not yet been selected."
 }

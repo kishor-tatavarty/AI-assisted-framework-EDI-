@@ -1,0 +1,43 @@
+{
+  "id": "01",
+  "business_date": "2024-03-01",
+  "run_id": "replay-01",
+  "delivery_expected": true,
+  "expected_file": "landing.csv",
+  "delivery_deadline": "2024-03-01T05:00:00-05:00",
+  "inspection_time": "2024-03-01T07:15:00-05:00",
+  "contract": {
+    "columns": [
+      "business_date",
+      "id",
+      "revenue"
+    ]
+  },
+  "runtime": {
+    "worker_package_ok": true
+  },
+  "dependency": {
+    "required": false,
+    "id": null
+  },
+  "rates": {
+    "required": false,
+    "required_month": "2024-03"
+  },
+  "symptoms": "Morning file ingestion alert; current-day raw rows unavailable.",
+  "provenance": {
+    "record_type": "generated replay fixture informed by contributor account",
+    "historical_log_export": false,
+    "all_fixture_dates_values_and_names_generated": true,
+    "account": "Supplier delivery due 05:00; monitoring at 07:00; raw rows absent at 07:05; file absent at 07:15; final load due 08:30 for 09:00 reporting.",
+    "unknown": [
+      "original file name/path",
+      "supplier explanation",
+      "recovery outcome"
+    ],
+    "adaptations": [
+      "local directory replaces S3",
+      "local SQLite replaces analytical tables"
+    ]
+  }
+}

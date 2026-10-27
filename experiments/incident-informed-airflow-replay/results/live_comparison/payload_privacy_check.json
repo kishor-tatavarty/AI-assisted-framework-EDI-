@@ -1,0 +1,13 @@
+{
+  "preview_sha256": "d475174df95dadccc2f511cc7ccfc96e89cde45835521912886b9d80422d5c92",
+  "external_destination": "https://api.openai.com/v1/responses",
+  "data": "generated replay symptoms, generated local evidence, synthetic design runbooks",
+  "excluded": [
+    "original contributor narratives",
+    "ticket aliases",
+    "company identities",
+    "production logs",
+    "credentials"
+  ],
+  "external_request_sent_by_this_preflight_script": false
+}

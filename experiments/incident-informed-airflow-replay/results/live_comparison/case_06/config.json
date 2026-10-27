@@ -1,0 +1,44 @@
+{
+  "id": "06",
+  "business_date": "2024-03-01",
+  "run_id": "replay-06",
+  "delivery_expected": true,
+  "expected_file": "landing.csv",
+  "delivery_deadline": "2024-03-01T05:00:00-05:00",
+  "inspection_time": "2024-03-01T07:15:00-05:00",
+  "contract": {
+    "columns": [
+      "business_date",
+      "id",
+      "revenue"
+    ]
+  },
+  "runtime": {
+    "worker_package_ok": true
+  },
+  "dependency": {
+    "required": true,
+    "id": "inventory-reference-service"
+  },
+  "rates": {
+    "required": false,
+    "required_month": "2024-03"
+  },
+  "symptoms": "Inventory ingestion job failed; upstream reference service must supply current inventory.",
+  "provenance": {
+    "record_type": "generated replay fixture informed by contributor account",
+    "historical_log_export": false,
+    "all_fixture_dates_values_and_names_generated": true,
+    "account": "Inventory load alert; upstream SAP HANA job failed; source count zero; server memory issue reported.",
+    "unknown": [
+      "exact memory error",
+      "causal trace",
+      "recovery outcome"
+    ],
+    "adaptations": [
+      "local inventory reference HTTP service replaces inaccessible SAP HANA at user request",
+      "HTTP 503 outage replaces memory-outage mechanism",
+      "does not reproduce or validate SAP HANA behavior"
+    ]
+  }
+}

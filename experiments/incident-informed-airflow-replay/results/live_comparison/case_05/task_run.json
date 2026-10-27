@@ -1,0 +1,9 @@
+{
+  "run_id": "replay-05",
+  "execution_environment": "local replay task",
+  "started_at": "2026-10-26T23:32:40.528348-04:00",
+  "status": "FAILED",
+  "error_code": "ImportError",
+  "error": "REPLAY_WORKER_PACKAGE_CONFLICT: incompatible worker dependency",
+  "elapsed_ms": 0.664
+}

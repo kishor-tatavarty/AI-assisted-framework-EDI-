@@ -1,0 +1,11 @@
+{
+  "run_id": "replay-04",
+  "execution_environment": "local replay task",
+  "started_at": "2026-10-26T23:32:26.804071-04:00",
+  "status": "SUCCESS",
+  "error_code": null,
+  "error": null,
+  "selected_rate_month": "2024-02",
+  "selected_rate": 1.1,
+  "elapsed_ms": 7.472
+}

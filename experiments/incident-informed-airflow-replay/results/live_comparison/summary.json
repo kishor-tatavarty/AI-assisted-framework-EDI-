@@ -1,0 +1,72 @@
+{
+  "scope": "six generated incident-informed replays; one run per policy/case; not independent production accuracy",
+  "model_counts": {
+    "gpt-4.1-mini-2025-04-14": 48
+  },
+  "model_calls": 48,
+  "input_tokens": 23851,
+  "output_tokens": 5865,
+  "policies": [
+    {
+      "policy": "fixed",
+      "cases": 6,
+      "designed_category_matches": 6,
+      "review_required": 0,
+      "abstained": 0,
+      "mean_tool_attempts": 6,
+      "mean_elapsed_ms": 20.155,
+      "llm_attempts": 0,
+      "api_failures": 0,
+      "invalid_route_proposals": 0,
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "policy": "dynamic",
+      "cases": 6,
+      "designed_category_matches": 6,
+      "review_required": 0,
+      "abstained": 0,
+      "mean_tool_attempts": 6,
+      "mean_elapsed_ms": 8.635,
+      "llm_attempts": 0,
+      "api_failures": 0,
+      "invalid_route_proposals": 0,
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "policy": "llm",
+      "cases": 6,
+      "designed_category_matches": 5,
+      "review_required": 1,
+      "abstained": 0,
+      "mean_tool_attempts": 6,
+      "mean_elapsed_ms": 6911.313,
+      "llm_attempts": 24,
+      "api_failures": 0,
+      "invalid_route_proposals": 0,
+      "input_tokens": 10950,
+      "output_tokens": 2763
+    },
+    {
+      "policy": "llm_knowledge",
+      "cases": 6,
+      "designed_category_matches": 5,
+      "review_required": 1,
+      "abstained": 0,
+      "mean_tool_attempts": 6,
+      "mean_elapsed_ms": 7106.012,
+      "llm_attempts": 24,
+      "api_failures": 0,
+      "invalid_route_proposals": 1,
+      "input_tokens": 12901,
+      "output_tokens": 3102
+    }
+  ],
+  "monetary_cost": "not calculated; usage recorded without assuming a price basis",
+  "knowledge": "synthetic design runbooks; not independently verified historical incidents",
+  "recommendations": "live model proposals, human approval required; not executed",
+  "airflow_scheduler_executed": false,
+  "human_review_completed": false
+}

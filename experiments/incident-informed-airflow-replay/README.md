@@ -6,7 +6,8 @@ a local inventory reference HTTP service replaces inaccessible SAP HANA.
 
 **These are generated, incident-informed local replays, not preserved production
 incidents or measurements from production systems.** No production credentials
-are required. No LLM or external API is called by this package.
+are required for offline use. The optional live comparison uses the OpenAI API
+only when explicitly invoked with the user's credential.
 
 ## What is executed
 
@@ -15,6 +16,8 @@ loads local SQLite raw/fact tables in a transaction, writes execution records,
 and contacts a local HTTP endpoint for the dependency case. Evidence adapters
 inspect those files, tables, records and endpoint. A deterministic controller
 then proposes a category and a rule-based recommendation with human approval.
+The separate live runner adds model-selected investigation order and a live
+model diagnosis/recommendation, checked against the same replay evidence rules.
 
 | Case | Contributor's account | Implemented replay |
 | --- | --- | --- |
@@ -76,13 +79,45 @@ the DAG in your Airflow DAG folder and provide:
 Do not substitute a production endpoint in this replay. A production adapter
 would require separate access, schema, privacy and operational validation.
 
+## Completed live LLM comparison
+
+```text
+python run_live_comparison.py --output results/live_comparison
+```
+
+Set `OPENAI_API_KEY` locally, or supply `--env-file` with the path to an existing
+private credential file. Never commit that file. This command makes billable
+requests to `https://api.openai.com/v1/responses`, sending generated replay
+symptoms/evidence and optional synthetic runbooks. It does not send the private
+credential as model input, contributor narratives, ticket aliases or production
+logs. Maximum calls: 48 (six cases, two LLM policies, four calls per case/policy).
+No automatic model-request retries are performed.
+
+One completed run is preserved in `results/live_comparison`. Fixed and dynamic
+policies each matched six designed categories; LLM and LLM+guidance policies each
+matched five, with one controller review required. Both models called the worker
+package error a dependency failure rather than the controller's pipeline-failure
+category. The prompt listed category names but did not define their boundaries;
+this is a taxonomy/prompt limitation, not proof the model missed the error itself.
+There was one rejected routing proposal in the knowledge-assisted policy and no
+API failures. Both LLM policies use six domains by design. The 48 calls recorded
+23,851 input and 5,865 output tokens. Monetary cost is not inferred from usage.
+
+`model_records.json` preserves raw model responses, usage, latency, model IDs,
+and generated input payloads. `manifest.json` freezes case/config/runbook hashes
+before execution. Final output and source-code hashes are in REPLAY_MANIFEST.json.
+`preflight_payload.py` prepares a generated-data preview without an API call.
+Do not modify the recorded outputs or rerun this folder without first preserving
+the frozen run; use a new output directory for further experiments.
+
 ## Evaluation boundaries
 
 The fixed and dynamic controllers here inspect the same six evidence domains.
-Dynamic mode changes inspection order only. Both collect all six domains, so no
-tool-call savings are expected or claimed. Recommendations are deterministic
-templates; no model-generated RCA, knowledge ablation or LLM performance result
-is produced by this extension. This does not replace the original published
+Dynamic mode changes inspection order only. All four policies collect all six
+domains, so no tool-call savings are expected or claimed. Offline recommendations
+are deterministic templates; live recommendations are model proposals. The
+knowledge-assisted policy retrieves synthetic design guidance, not independent
+verified incident history. This does not replace the original published
 four-arm experiment or silently extend its confirmation contracts. The new
 contracts explicitly support column counts, invalid numeric values, monthly
 reference freshness, worker failures and matching upstream failures.
@@ -91,6 +126,8 @@ Success on these constructed cases and their recoveries is functional
 verification, not an independent accuracy estimate. Generated recovery runs do
 not demonstrate how the historical incidents were resolved. Local elapsed time
 is neither human investigation time nor Airflow scheduler latency.
+Only one live run per case/policy was completed; stochastic variability and human
+effectiveness were not measured. Reviewer response forms are unfilled.
 
 ## License
 

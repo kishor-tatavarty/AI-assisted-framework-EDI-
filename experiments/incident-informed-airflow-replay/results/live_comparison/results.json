@@ -1,0 +1,3732 @@
+[
+  {
+    "case_id": "01",
+    "policy": "fixed",
+    "category": "MISSING_FILE",
+    "status": "SUPPORTED_IN_REPLAY",
+    "evidence_refs": [
+      "source"
+    ],
+    "candidate_categories": [
+      "MISSING_FILE"
+    ],
+    "recommendation": "Confirm the expected path and deadline; request the missing delivery and validate before rerunning.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": true,
+    "tool_attempts": 6,
+    "elapsed_ms": 18.105,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": false,
+          "count": 0,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": false,
+          "reason": "file absent",
+          "schema_mismatch": null,
+          "invalid_integer_rows": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 0,
+          "fact_count": 0,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-01",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:31:41.754208-04:00",
+          "status": "FAILED",
+          "error_code": "FileNotFoundError",
+          "error": "REPLAY_INPUT_NOT_FOUND: expected business-date CSV absent",
+          "elapsed_ms": 0.394
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "llm_attempts": 0
+  },
+  {
+    "case_id": "01",
+    "policy": "dynamic",
+    "category": "MISSING_FILE",
+    "status": "SUPPORTED_IN_REPLAY",
+    "evidence_refs": [
+      "source"
+    ],
+    "candidate_categories": [
+      "MISSING_FILE"
+    ],
+    "recommendation": "Confirm the expected path and deadline; request the missing delivery and validate before rerunning.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": true,
+    "tool_attempts": 6,
+    "elapsed_ms": 5.005,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": false,
+          "count": 0,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": false,
+          "reason": "file absent",
+          "schema_mismatch": null,
+          "invalid_integer_rows": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 0,
+          "fact_count": 0,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-01",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:31:41.754208-04:00",
+          "status": "FAILED",
+          "error_code": "FileNotFoundError",
+          "error": "REPLAY_INPUT_NOT_FOUND: expected business-date CSV absent",
+          "elapsed_ms": 0.394
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "llm_attempts": 0
+  },
+  {
+    "case_id": "01",
+    "policy": "llm",
+    "category": "MISSING_FILE",
+    "status": "SUPPORTED_IN_REPLAY",
+    "model_proposal": {
+      "category": "MISSING_FILE",
+      "rationale": "The expected input file 'landing.csv' for the business date 2024-03-01 was not present at the inspection time, causing the ingestion to fail with a FileNotFoundError. Validation could not proceed due to the absence of the file, and no raw or fact rows were ingested.",
+      "evidence_refs": [
+        "source",
+        "validation",
+        "tables",
+        "execution"
+      ],
+      "recommendation": "Investigate the upstream process responsible for delivering 'landing.csv' for the date 2024-03-01 to ensure timely file arrival. Implement alerting on missing files before the ingestion deadline and consider fallback or retry mechanisms to handle missing input files.",
+      "missing_checks": [
+        "upstream_file_delivery_logs",
+        "file_transfer_system_health",
+        "file arrival timestamp monitoring"
+      ],
+      "knowledge_refs": []
+    },
+    "evidence_refs": [
+      "source",
+      "validation",
+      "tables",
+      "execution"
+    ],
+    "recommendation": "Investigate the upstream process responsible for delivering 'landing.csv' for the date 2024-03-01 to ensure timely file arrival. Implement alerting on missing files before the ingestion deadline and consider fallback or retry mechanisms to handle missing input files.",
+    "recommendation_origin": "live LLM proposal; human approval required",
+    "human_approval_required": true,
+    "deterministic_gate": {
+      "category": "MISSING_FILE",
+      "status": "SUPPORTED_IN_REPLAY",
+      "evidence_refs": [
+        "source"
+      ],
+      "candidate_categories": [
+        "MISSING_FILE"
+      ],
+      "recommendation": "Confirm the expected path and deadline; request the missing delivery and validate before rerunning.",
+      "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+      "human_approval_required": true
+    },
+    "tool_attempts": 6,
+    "llm_attempts": 4,
+    "api_failures": 0,
+    "invalid_route_proposals": 0,
+    "input_tokens": 1545,
+    "output_tokens": 441,
+    "elapsed_ms": 8337.733,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": false,
+          "count": 0,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": false,
+          "reason": "file absent",
+          "schema_mismatch": null,
+          "invalid_integer_rows": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 0,
+          "fact_count": 0,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-01",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:31:41.754208-04:00",
+          "status": "FAILED",
+          "error_code": "FileNotFoundError",
+          "error": "REPLAY_INPUT_NOT_FOUND: expected business-date CSV absent",
+          "elapsed_ms": 0.394
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "knowledge": [],
+    "audit": [
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "source",
+          "validation"
+        ],
+        "proposal": {
+          "next_tools": [
+            "source",
+            "validation"
+          ],
+          "reason": "To investigate the ingestion incident with missing current-day raw rows, start by examining the source tool to verify if the data source received the expected files or data. Then use the validation tool to check for any data quality or schema issues that might have caused ingestion failures.",
+          "evidence_refs": [],
+          "knowledge_refs": []
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "dependency",
+          "rates"
+        ],
+        "proposal": {
+          "next_tools": [
+            "dependency",
+            "rates"
+          ],
+          "reason": "The source tool indicates the expected landing.csv file is absent, causing ingestion failure. Using the dependency tool can help identify upstream dependencies or delivery issues causing the missing file. The rates tool can analyze ingestion rates or delivery frequency anomalies around the incident time to confirm if this is a recurring or isolated delivery failure.",
+          "evidence_refs": [
+            "source",
+            "validation"
+          ],
+          "knowledge_refs": []
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "tables",
+          "execution"
+        ],
+        "proposal": {
+          "next_tools": [
+            "tables",
+            "execution"
+          ],
+          "reason": "The source tool evidence shows the expected landing.csv file is absent at inspection time, causing ingestion failure. Validation confirms unavailability due to file absence. To investigate further, querying tables can verify if any raw rows exist despite the missing file, and execution can check recent ingestion job runs or errors for root cause analysis.",
+          "evidence_refs": [
+            "source",
+            "validation"
+          ],
+          "knowledge_refs": []
+        }
+      },
+      {
+        "stage": "diagnose",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "category_agrees_with_gate": true,
+        "all_gate_refs_cited": true
+      }
+    ],
+    "scope": "generated incident-informed replay; one live run per arm; not production accuracy"
+  },
+  {
+    "case_id": "01",
+    "policy": "llm_knowledge",
+    "category": "MISSING_FILE",
+    "status": "SUPPORTED_IN_REPLAY",
+    "model_proposal": {
+      "category": "MISSING_FILE",
+      "rationale": "The expected source file 'landing.csv' for business date 2024-03-01 was not present at inspection time, causing the ingestion to fail with a FileNotFoundError. No raw rows were ingested, and validation could not proceed due to the absent file.",
+      "evidence_refs": [
+        "source",
+        "validation",
+        "execution",
+        "tables"
+      ],
+      "recommendation": "Verify the upstream process responsible for delivering 'landing.csv' for the date 2024-03-01. Confirm the delivery deadline and file path are correct and accessible. Investigate why the file was not delivered by the expected deadline and restore or regenerate the missing file if possible.",
+      "missing_checks": [
+        "Verify file system permissions and access to the expected file path",
+        "Confirm upstream delivery logs or alerts for the missing file",
+        "Check for any dependency failures that might have prevented file generation"
+      ],
+      "knowledge_refs": [
+        "guide-delivery"
+      ]
+    },
+    "evidence_refs": [
+      "source",
+      "validation",
+      "execution",
+      "tables"
+    ],
+    "recommendation": "Verify the upstream process responsible for delivering 'landing.csv' for the date 2024-03-01. Confirm the delivery deadline and file path are correct and accessible. Investigate why the file was not delivered by the expected deadline and restore or regenerate the missing file if possible.",
+    "recommendation_origin": "live LLM proposal; human approval required",
+    "human_approval_required": true,
+    "deterministic_gate": {
+      "category": "MISSING_FILE",
+      "status": "SUPPORTED_IN_REPLAY",
+      "evidence_refs": [
+        "source"
+      ],
+      "candidate_categories": [
+        "MISSING_FILE"
+      ],
+      "recommendation": "Confirm the expected path and deadline; request the missing delivery and validate before rerunning.",
+      "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+      "human_approval_required": true
+    },
+    "tool_attempts": 6,
+    "llm_attempts": 4,
+    "api_failures": 0,
+    "invalid_route_proposals": 0,
+    "input_tokens": 1976,
+    "output_tokens": 509,
+    "elapsed_ms": 7148.894,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": false,
+          "count": 0,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": false,
+          "reason": "file absent",
+          "schema_mismatch": null,
+          "invalid_integer_rows": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 0,
+          "fact_count": 0,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-01",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:31:41.754208-04:00",
+          "status": "FAILED",
+          "error_code": "FileNotFoundError",
+          "error": "REPLAY_INPUT_NOT_FOUND: expected business-date CSV absent",
+          "elapsed_ms": 0.394
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "knowledge": [
+      {
+        "id": "guide-delivery",
+        "record_type": "synthetic_design_guidance",
+        "text": "For missing file delivery or missing raw rows, check the expected delivery deadline, exact inventory path and access. An absent source input may explain a downstream load failure."
+      },
+      {
+        "id": "guide-columns",
+        "record_type": "synthetic_design_guidance",
+        "text": "For column or parser errors, compare observed file structure with the approved schema contract before changing a load mapping."
+      }
+    ],
+    "audit": [
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "source",
+          "validation"
+        ],
+        "proposal": {
+          "next_tools": [
+            "source",
+            "validation"
+          ],
+          "reason": "The incident involves a missing morning file ingestion and absence of current-day raw rows, which suggests a potential issue with file delivery or source availability. The 'source' tool can help verify the expected delivery deadline, inventory path, and access to the source files. The 'validation' tool can check for any discrepancies or errors in the file structure or content that might prevent ingestion, aligning with the guidance to check for missing file delivery or raw rows.",
+          "evidence_refs": [],
+          "knowledge_refs": [
+            "guide-delivery"
+          ]
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "dependency",
+          "tables"
+        ],
+        "proposal": {
+          "next_tools": [
+            "dependency",
+            "tables"
+          ],
+          "reason": "The source tool indicates the expected input file 'landing.csv' is missing, causing the ingestion alert and absence of current-day raw rows. To investigate further, use the dependency tool to trace downstream impacts and the tables tool to verify which tables are affected by the missing input file and confirm the absence of raw rows.",
+          "evidence_refs": [
+            "source",
+            "validation"
+          ],
+          "knowledge_refs": [
+            "guide-delivery"
+          ]
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "execution",
+          "rates"
+        ],
+        "proposal": {
+          "next_tools": [
+            "execution",
+            "rates"
+          ],
+          "reason": "The source tool evidence shows the expected input file 'landing.csv' is absent past the delivery deadline, explaining the missing raw rows and ingestion alert. To further diagnose, execution can verify ingestion job runs and rates can check data flow metrics for anomalies or delays.",
+          "evidence_refs": [
+            "source",
+            "validation",
+            "tables"
+          ],
+          "knowledge_refs": [
+            "guide-delivery"
+          ]
+        }
+      },
+      {
+        "stage": "diagnose",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "category_agrees_with_gate": true,
+        "all_gate_refs_cited": true
+      }
+    ],
+    "scope": "generated incident-informed replay; one live run per arm; not production accuracy"
+  },
+  {
+    "case_id": "02",
+    "policy": "fixed",
+    "category": "SCHEMA_DRIFT",
+    "status": "SUPPORTED_IN_REPLAY",
+    "evidence_refs": [
+      "validation"
+    ],
+    "candidate_categories": [
+      "SCHEMA_DRIFT"
+    ],
+    "recommendation": "Review the producer change and approved contract; correct the delivery or approve a compatible mapping before rerunning.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": true,
+    "tool_attempts": 6,
+    "elapsed_ms": 31.322,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue",
+            "field_04",
+            "field_05",
+            "field_06",
+            "field_07",
+            "field_08",
+            "field_09",
+            "field_10",
+            "field_11",
+            "field_12",
+            "field_13",
+            "field_14"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue",
+            "field_04",
+            "field_05",
+            "field_06",
+            "field_07",
+            "field_08",
+            "field_09",
+            "field_10",
+            "field_11",
+            "field_12",
+            "field_13",
+            "field_14",
+            "extra_01",
+            "extra_02"
+          ],
+          "schema_mismatch": true,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 0,
+          "fact_count": 0,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-02",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:31:57.409112-04:00",
+          "status": "FAILED",
+          "error_code": "ValueError",
+          "error": "REPLAY_COLUMN_MISMATCH: received columns differ from contract",
+          "elapsed_ms": 2.254
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "llm_attempts": 0
+  },
+  {
+    "case_id": "02",
+    "policy": "dynamic",
+    "category": "SCHEMA_DRIFT",
+    "status": "SUPPORTED_IN_REPLAY",
+    "evidence_refs": [
+      "validation"
+    ],
+    "candidate_categories": [
+      "SCHEMA_DRIFT"
+    ],
+    "recommendation": "Review the producer change and approved contract; correct the delivery or approve a compatible mapping before rerunning.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": true,
+    "tool_attempts": 6,
+    "elapsed_ms": 7.707,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue",
+            "field_04",
+            "field_05",
+            "field_06",
+            "field_07",
+            "field_08",
+            "field_09",
+            "field_10",
+            "field_11",
+            "field_12",
+            "field_13",
+            "field_14"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue",
+            "field_04",
+            "field_05",
+            "field_06",
+            "field_07",
+            "field_08",
+            "field_09",
+            "field_10",
+            "field_11",
+            "field_12",
+            "field_13",
+            "field_14",
+            "extra_01",
+            "extra_02"
+          ],
+          "schema_mismatch": true,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 0,
+          "fact_count": 0,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-02",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:31:57.409112-04:00",
+          "status": "FAILED",
+          "error_code": "ValueError",
+          "error": "REPLAY_COLUMN_MISMATCH: received columns differ from contract",
+          "elapsed_ms": 2.254
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "llm_attempts": 0
+  },
+  {
+    "case_id": "02",
+    "policy": "llm",
+    "category": "SCHEMA_DRIFT",
+    "status": "SUPPORTED_IN_REPLAY",
+    "model_proposal": {
+      "category": "SCHEMA_DRIFT",
+      "rationale": "The execution failed with a ValueError indicating a column mismatch (REPLAY_COLUMN_MISMATCH). Validation shows extra columns ('extra_01', 'extra_02') present beyond the expected schema, causing the pipeline to reject the input. The source file is present and on time, but no rows were loaded into the target table, confirming ingestion failure due to schema mismatch.",
+      "evidence_refs": [
+        "execution",
+        "validation",
+        "source",
+        "tables"
+      ],
+      "recommendation": "Review and update the ingestion pipeline schema contract to accommodate the new columns or remove the unexpected columns from the source data before ingestion. Validate schema compatibility before execution to prevent failures.",
+      "missing_checks": [
+        "schema_evolution_handling",
+        "pre-ingestion schema validation with rejection logging"
+      ],
+      "knowledge_refs": []
+    },
+    "evidence_refs": [
+      "execution",
+      "validation",
+      "source",
+      "tables"
+    ],
+    "recommendation": "Review and update the ingestion pipeline schema contract to accommodate the new columns or remove the unexpected columns from the source data before ingestion. Validate schema compatibility before execution to prevent failures.",
+    "recommendation_origin": "live LLM proposal; human approval required",
+    "human_approval_required": true,
+    "deterministic_gate": {
+      "category": "SCHEMA_DRIFT",
+      "status": "SUPPORTED_IN_REPLAY",
+      "evidence_refs": [
+        "validation"
+      ],
+      "candidate_categories": [
+        "SCHEMA_DRIFT"
+      ],
+      "recommendation": "Review the producer change and approved contract; correct the delivery or approve a compatible mapping before rerunning.",
+      "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+      "human_approval_required": true
+    },
+    "tool_attempts": 6,
+    "llm_attempts": 4,
+    "api_failures": 0,
+    "invalid_route_proposals": 0,
+    "input_tokens": 2141,
+    "output_tokens": 443,
+    "elapsed_ms": 7248.499,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue",
+            "field_04",
+            "field_05",
+            "field_06",
+            "field_07",
+            "field_08",
+            "field_09",
+            "field_10",
+            "field_11",
+            "field_12",
+            "field_13",
+            "field_14"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue",
+            "field_04",
+            "field_05",
+            "field_06",
+            "field_07",
+            "field_08",
+            "field_09",
+            "field_10",
+            "field_11",
+            "field_12",
+            "field_13",
+            "field_14",
+            "extra_01",
+            "extra_02"
+          ],
+          "schema_mismatch": true,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 0,
+          "fact_count": 0,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-02",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:31:57.409112-04:00",
+          "status": "FAILED",
+          "error_code": "ValueError",
+          "error": "REPLAY_COLUMN_MISMATCH: received columns differ from contract",
+          "elapsed_ms": 2.254
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "knowledge": [],
+    "audit": [
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "source",
+          "validation"
+        ],
+        "proposal": {
+          "next_tools": [
+            "source",
+            "validation"
+          ],
+          "reason": "To investigate the ingestion incident where expected business-date rows are unavailable, start by examining the source tool to verify if the data was ingested correctly from the origin. Then use the validation tool to check for any data quality or completeness issues in the ingested data.",
+          "evidence_refs": [],
+          "knowledge_refs": []
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "tables",
+          "execution"
+        ],
+        "proposal": {
+          "next_tools": [
+            "tables",
+            "execution"
+          ],
+          "reason": "The source file is present and delivered on time, and validation shows schema mismatch due to extra columns but no invalid integer rows. To investigate missing expected business-date rows, checking the tables tool can confirm if the data is loaded correctly into tables, and the execution tool can reveal if any ingestion or transformation steps failed or skipped processing relevant rows.",
+          "evidence_refs": [
+            "source",
+            "validation"
+          ],
+          "knowledge_refs": []
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "rates",
+          "dependency"
+        ],
+        "proposal": {
+          "next_tools": [
+            "rates",
+            "dependency"
+          ],
+          "reason": "The ingestion failed due to a column mismatch error as shown by the execution tool evidence. The validation tool confirms a schema mismatch with extra columns present. To investigate further, checking rates may reveal if data volume or timing issues contributed, and dependency can identify if upstream sources or processes caused the schema change or missing data.",
+          "evidence_refs": [
+            "execution",
+            "validation"
+          ],
+          "knowledge_refs": []
+        }
+      },
+      {
+        "stage": "diagnose",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "category_agrees_with_gate": true,
+        "all_gate_refs_cited": true
+      }
+    ],
+    "scope": "generated incident-informed replay; one live run per arm; not production accuracy"
+  },
+  {
+    "case_id": "02",
+    "policy": "llm_knowledge",
+    "category": "SCHEMA_DRIFT",
+    "status": "SUPPORTED_IN_REPLAY",
+    "model_proposal": {
+      "category": "SCHEMA_DRIFT",
+      "rationale": "The execution failed with a ValueError indicating a column mismatch (REPLAY_COLUMN_MISMATCH). Validation shows the observed columns include extra columns ('extra_01', 'extra_02') not present in the expected schema, causing the schema mismatch. Despite the source file being present and containing rows, the downstream tables have zero rows, consistent with the pipeline failing due to schema drift.",
+      "evidence_refs": [
+        "execution",
+        "validation",
+        "source",
+        "tables"
+      ],
+      "recommendation": "Review and update the schema contract to accommodate the extra columns or adjust the source data to conform to the expected schema. Re-run the pipeline after schema alignment to restore data availability.",
+      "missing_checks": [
+        "Check if the extra columns are intentional schema changes or erroneous data injection.",
+        "Verify if downstream consumers can handle the schema change or require schema rollback."
+      ],
+      "knowledge_refs": [
+        "guide-delivery",
+        "guide-upstream"
+      ]
+    },
+    "evidence_refs": [
+      "execution",
+      "validation",
+      "source",
+      "tables"
+    ],
+    "recommendation": "Review and update the schema contract to accommodate the extra columns or adjust the source data to conform to the expected schema. Re-run the pipeline after schema alignment to restore data availability.",
+    "recommendation_origin": "live LLM proposal; human approval required",
+    "human_approval_required": true,
+    "deterministic_gate": {
+      "category": "SCHEMA_DRIFT",
+      "status": "SUPPORTED_IN_REPLAY",
+      "evidence_refs": [
+        "validation"
+      ],
+      "candidate_categories": [
+        "SCHEMA_DRIFT"
+      ],
+      "recommendation": "Review the producer change and approved contract; correct the delivery or approve a compatible mapping before rerunning.",
+      "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+      "human_approval_required": true
+    },
+    "tool_attempts": 6,
+    "llm_attempts": 4,
+    "api_failures": 0,
+    "invalid_route_proposals": 0,
+    "input_tokens": 2319,
+    "output_tokens": 537,
+    "elapsed_ms": 7845.623,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue",
+            "field_04",
+            "field_05",
+            "field_06",
+            "field_07",
+            "field_08",
+            "field_09",
+            "field_10",
+            "field_11",
+            "field_12",
+            "field_13",
+            "field_14"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue",
+            "field_04",
+            "field_05",
+            "field_06",
+            "field_07",
+            "field_08",
+            "field_09",
+            "field_10",
+            "field_11",
+            "field_12",
+            "field_13",
+            "field_14",
+            "extra_01",
+            "extra_02"
+          ],
+          "schema_mismatch": true,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 0,
+          "fact_count": 0,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-02",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:31:57.409112-04:00",
+          "status": "FAILED",
+          "error_code": "ValueError",
+          "error": "REPLAY_COLUMN_MISMATCH: received columns differ from contract",
+          "elapsed_ms": 2.254
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "knowledge": [
+      {
+        "id": "guide-delivery",
+        "record_type": "synthetic_design_guidance",
+        "text": "For missing file delivery or missing raw rows, check the expected delivery deadline, exact inventory path and access. An absent source input may explain a downstream load failure."
+      },
+      {
+        "id": "guide-upstream",
+        "record_type": "synthetic_design_guidance",
+        "text": "For inventory job failures, verify the upstream reference dependency and link service health to the affected task. Zero rows alone do not identify an upstream cause."
+      }
+    ],
+    "audit": [
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "source",
+          "dependency"
+        ],
+        "proposal": {
+          "next_tools": [
+            "source",
+            "dependency"
+          ],
+          "reason": "The symptom indicates missing expected business-date rows, which may be caused by missing source input or upstream dependency failures. The 'source' tool can verify the expected delivery deadline, inventory path, and access to confirm if the source data was delivered. The 'dependency' tool can check upstream reference dependencies and service health to identify if an upstream failure caused the missing rows.",
+          "evidence_refs": [],
+          "knowledge_refs": [
+            "guide-delivery",
+            "guide-upstream"
+          ]
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "validation",
+          "tables"
+        ],
+        "proposal": {
+          "next_tools": [
+            "validation",
+            "tables"
+          ],
+          "reason": "The source tool confirms the expected file 'landing.csv' is present and delivered on time, so the issue is unlikely due to missing source data. To investigate why the expected business-date rows are unavailable, checking validation results can reveal if data quality or schema issues caused row exclusion. Examining tables can verify if the data was loaded correctly and if the expected rows exist in the target tables.",
+          "evidence_refs": [
+            "source"
+          ],
+          "knowledge_refs": [
+            "guide-delivery"
+          ]
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "execution",
+          "rates"
+        ],
+        "proposal": {
+          "next_tools": [
+            "execution",
+            "rates"
+          ],
+          "reason": "The source file 'landing.csv' is present and delivered on time, and validation shows schema mismatch but no invalid integer rows. However, the tables tool shows zero raw and fact rows for the business date, indicating no data was loaded into the target table. To investigate ingestion incidents further, use the execution tool to check job execution details and the rates tool to analyze data flow rates and identify where data loss or blockage occurred.",
+          "evidence_refs": [
+            "source",
+            "validation",
+            "tables"
+          ],
+          "knowledge_refs": []
+        }
+      },
+      {
+        "stage": "diagnose",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "category_agrees_with_gate": true,
+        "all_gate_refs_cited": true
+      }
+    ],
+    "scope": "generated incident-informed replay; one live run per arm; not production accuracy"
+  },
+  {
+    "case_id": "03",
+    "policy": "fixed",
+    "category": "DATA_QUALITY_ANOMALY",
+    "status": "SUPPORTED_IN_REPLAY",
+    "evidence_refs": [
+      "validation"
+    ],
+    "candidate_categories": [
+      "DATA_QUALITY_ANOMALY"
+    ],
+    "recommendation": "Confirm the numeric-value contract; obtain corrected values or approve a conversion rule, then reconcile totals.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": true,
+    "tool_attempts": 6,
+    "elapsed_ms": 7.908,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T03:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [
+            {
+              "row": 2,
+              "value": "$100"
+            }
+          ],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 0,
+          "fact_count": 0,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-03",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:32:12.639373-04:00",
+          "status": "FAILED",
+          "error_code": "ValueError",
+          "error": "REPLAY_NUMERIC_CONVERSION: revenue must be an integer",
+          "elapsed_ms": 2.343
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "llm_attempts": 0
+  },
+  {
+    "case_id": "03",
+    "policy": "dynamic",
+    "category": "DATA_QUALITY_ANOMALY",
+    "status": "SUPPORTED_IN_REPLAY",
+    "evidence_refs": [
+      "validation"
+    ],
+    "candidate_categories": [
+      "DATA_QUALITY_ANOMALY"
+    ],
+    "recommendation": "Confirm the numeric-value contract; obtain corrected values or approve a conversion rule, then reconcile totals.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": true,
+    "tool_attempts": 6,
+    "elapsed_ms": 2.071,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T03:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [
+            {
+              "row": 2,
+              "value": "$100"
+            }
+          ],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 0,
+          "fact_count": 0,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-03",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:32:12.639373-04:00",
+          "status": "FAILED",
+          "error_code": "ValueError",
+          "error": "REPLAY_NUMERIC_CONVERSION: revenue must be an integer",
+          "elapsed_ms": 2.343
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "llm_attempts": 0
+  },
+  {
+    "case_id": "03",
+    "policy": "llm",
+    "category": "DATA_QUALITY_ANOMALY",
+    "status": "SUPPORTED_IN_REPLAY",
+    "model_proposal": {
+      "category": "DATA_QUALITY_ANOMALY",
+      "rationale": "The ingestion failed due to a ValueError caused by a non-integer value ('$100') in the 'revenue' column, which must be an integer. The source file 'landing.csv' was present and schema matched expected columns, but data quality issues in the 'revenue' field prevented successful ingestion, resulting in zero rows loaded.",
+      "evidence_refs": [
+        "source",
+        "validation",
+        "execution",
+        "tables"
+      ],
+      "recommendation": "Review and correct the data formatting in the 'revenue' column of the source file to ensure all values are valid integers before ingestion. Implement stricter data validation or cleansing steps upstream to prevent non-integer values in integer fields.",
+      "missing_checks": [
+        "upstream data cleansing validation",
+        "automated data type enforcement before ingestion"
+      ],
+      "knowledge_refs": []
+    },
+    "evidence_refs": [
+      "source",
+      "validation",
+      "execution",
+      "tables"
+    ],
+    "recommendation": "Review and correct the data formatting in the 'revenue' column of the source file to ensure all values are valid integers before ingestion. Implement stricter data validation or cleansing steps upstream to prevent non-integer values in integer fields.",
+    "recommendation_origin": "live LLM proposal; human approval required",
+    "human_approval_required": true,
+    "deterministic_gate": {
+      "category": "DATA_QUALITY_ANOMALY",
+      "status": "SUPPORTED_IN_REPLAY",
+      "evidence_refs": [
+        "validation"
+      ],
+      "candidate_categories": [
+        "DATA_QUALITY_ANOMALY"
+      ],
+      "recommendation": "Confirm the numeric-value contract; obtain corrected values or approve a conversion rule, then reconcile totals.",
+      "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+      "human_approval_required": true
+    },
+    "tool_attempts": 6,
+    "llm_attempts": 4,
+    "api_failures": 0,
+    "invalid_route_proposals": 0,
+    "input_tokens": 1817,
+    "output_tokens": 483,
+    "elapsed_ms": 6628.783,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T03:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [
+            {
+              "row": 2,
+              "value": "$100"
+            }
+          ],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 0,
+          "fact_count": 0,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-03",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:32:12.639373-04:00",
+          "status": "FAILED",
+          "error_code": "ValueError",
+          "error": "REPLAY_NUMERIC_CONVERSION: revenue must be an integer",
+          "elapsed_ms": 2.343
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "knowledge": [],
+    "audit": [
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "source",
+          "validation"
+        ],
+        "proposal": {
+          "next_tools": [
+            "source",
+            "validation"
+          ],
+          "reason": "To investigate the ingestion incident where expected business-date rows are unavailable, start by examining the source tool to verify if the data was ingested correctly from the origin. Then use the validation tool to check for any data quality or completeness issues in the ingested data.",
+          "evidence_refs": [],
+          "knowledge_refs": []
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "tables",
+          "execution"
+        ],
+        "proposal": {
+          "next_tools": [
+            "tables",
+            "execution"
+          ],
+          "reason": "The source file landing.csv is present and expected, but validation shows invalid integer rows in the revenue column, indicating possible data format issues affecting ingestion. Using tables can help verify if the expected business-date rows exist in the ingested tables, and execution can check if the ingestion jobs or transformations ran successfully or encountered errors.",
+          "evidence_refs": [
+            "source",
+            "validation"
+          ],
+          "knowledge_refs": []
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "rates",
+          "dependency"
+        ],
+        "proposal": {
+          "next_tools": [
+            "rates",
+            "dependency"
+          ],
+          "reason": "The ingestion failure is due to a numeric conversion error in the 'revenue' column, which contains an invalid value ('$100') that is not an integer. The 'validation' tool identified this schema mismatch, and the 'execution' tool reported a ValueError causing the replay to fail. To investigate further, checking 'rates' may help understand if there are any rate-related issues affecting ingestion, and 'dependency' can reveal upstream dependencies that might have caused the invalid data or missing rows.",
+          "evidence_refs": [
+            "validation",
+            "execution"
+          ],
+          "knowledge_refs": []
+        }
+      },
+      {
+        "stage": "diagnose",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "category_agrees_with_gate": true,
+        "all_gate_refs_cited": true
+      }
+    ],
+    "scope": "generated incident-informed replay; one live run per arm; not production accuracy"
+  },
+  {
+    "case_id": "03",
+    "policy": "llm_knowledge",
+    "category": "DATA_QUALITY_ANOMALY",
+    "status": "SUPPORTED_IN_REPLAY",
+    "model_proposal": {
+      "category": "DATA_QUALITY_ANOMALY",
+      "rationale": "The ingestion failed due to a data quality issue: the 'revenue' column contains a non-integer value ('$100') which caused a numeric conversion error and led to zero rows being loaded for the expected business date.",
+      "evidence_refs": [
+        "validation",
+        "execution",
+        "tables"
+      ],
+      "recommendation": "Investigate and correct the data format in the 'revenue' column of the source file 'landing.csv' to ensure all values are valid integers before ingestion. Implement stricter validation or cleansing steps upstream to prevent non-integer values in integer fields.",
+      "missing_checks": [
+        "Check for automated data cleansing or rejection of invalid rows prior to ingestion.",
+        "Verify if there are fallback or error handling mechanisms for data type mismatches."
+      ],
+      "knowledge_refs": [
+        "guide-delivery",
+        "guide-upstream"
+      ]
+    },
+    "evidence_refs": [
+      "validation",
+      "execution",
+      "tables"
+    ],
+    "recommendation": "Investigate and correct the data format in the 'revenue' column of the source file 'landing.csv' to ensure all values are valid integers before ingestion. Implement stricter validation or cleansing steps upstream to prevent non-integer values in integer fields.",
+    "recommendation_origin": "live LLM proposal; human approval required",
+    "human_approval_required": true,
+    "deterministic_gate": {
+      "category": "DATA_QUALITY_ANOMALY",
+      "status": "SUPPORTED_IN_REPLAY",
+      "evidence_refs": [
+        "validation"
+      ],
+      "candidate_categories": [
+        "DATA_QUALITY_ANOMALY"
+      ],
+      "recommendation": "Confirm the numeric-value contract; obtain corrected values or approve a conversion rule, then reconcile totals.",
+      "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+      "human_approval_required": true
+    },
+    "tool_attempts": 6,
+    "llm_attempts": 4,
+    "api_failures": 0,
+    "invalid_route_proposals": 0,
+    "input_tokens": 2103,
+    "output_tokens": 513,
+    "elapsed_ms": 7492.524,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T03:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [
+            {
+              "row": 2,
+              "value": "$100"
+            }
+          ],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 0,
+          "fact_count": 0,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-03",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:32:12.639373-04:00",
+          "status": "FAILED",
+          "error_code": "ValueError",
+          "error": "REPLAY_NUMERIC_CONVERSION: revenue must be an integer",
+          "elapsed_ms": 2.343
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "knowledge": [
+      {
+        "id": "guide-delivery",
+        "record_type": "synthetic_design_guidance",
+        "text": "For missing file delivery or missing raw rows, check the expected delivery deadline, exact inventory path and access. An absent source input may explain a downstream load failure."
+      },
+      {
+        "id": "guide-upstream",
+        "record_type": "synthetic_design_guidance",
+        "text": "For inventory job failures, verify the upstream reference dependency and link service health to the affected task. Zero rows alone do not identify an upstream cause."
+      }
+    ],
+    "audit": [
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "source",
+          "dependency"
+        ],
+        "proposal": {
+          "next_tools": [
+            "source",
+            "dependency"
+          ],
+          "reason": "The symptom indicates missing expected business-date rows, which suggests a potential issue with the source data delivery or upstream dependencies. Using the 'source' tool can help verify if the expected input files or raw rows were delivered on time and accessible. The 'dependency' tool can help check upstream job references and service health to identify if any upstream failures caused the missing data.",
+          "evidence_refs": [],
+          "knowledge_refs": [
+            "guide-delivery",
+            "guide-upstream"
+          ]
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "validation",
+          "tables"
+        ],
+        "proposal": {
+          "next_tools": [
+            "validation",
+            "tables"
+          ],
+          "reason": "The source tool confirms the expected file 'landing.csv' is present and delivered on time, so the issue is not with file delivery. To investigate why the expected business-date rows are unavailable, the next step is to validate the data content and check the tables for row availability and correctness.",
+          "evidence_refs": [
+            "source"
+          ],
+          "knowledge_refs": [
+            "guide-delivery"
+          ]
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "execution",
+          "rates"
+        ],
+        "proposal": {
+          "next_tools": [
+            "execution",
+            "rates"
+          ],
+          "reason": "The source file 'landing.csv' is present and on time, but the tables tool shows zero raw and fact rows for the business date 2024-03-01, indicating a failure in ingestion or processing after source delivery. Validation shows a schema match but an invalid integer value in revenue, which could cause ingestion issues. Using execution to check ingestion job logs and rates to analyze data flow rates can help identify where ingestion failed or was blocked.",
+          "evidence_refs": [
+            "source",
+            "tables",
+            "validation"
+          ],
+          "knowledge_refs": [
+            "guide-delivery",
+            "guide-upstream"
+          ]
+        }
+      },
+      {
+        "stage": "diagnose",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "category_agrees_with_gate": true,
+        "all_gate_refs_cited": true
+      }
+    ],
+    "scope": "generated incident-informed replay; one live run per arm; not production accuracy"
+  },
+  {
+    "case_id": "04",
+    "policy": "fixed",
+    "category": "FRESHNESS_VIOLATION",
+    "status": "SUPPORTED_IN_REPLAY",
+    "evidence_refs": [
+      "rates"
+    ],
+    "candidate_categories": [
+      "FRESHNESS_VIOLATION"
+    ],
+    "recommendation": "Obtain approved current-month rates, trace the rate used, and reconcile/reprocess affected converted values.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": true,
+    "tool_attempts": 6,
+    "elapsed_ms": 10.096,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 1,
+          "fact_count": 1,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-04",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:32:26.804071-04:00",
+          "status": "SUCCESS",
+          "error_code": null,
+          "error": null,
+          "selected_rate_month": "2024-02",
+          "selected_rate": 1.1,
+          "elapsed_ms": 7.472
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": true,
+          "required_month": "2024-03",
+          "observed_months": [
+            "2024-02"
+          ],
+          "current_month_count": 0,
+          "policy": "current-month rates required; generated replay policy"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "llm_attempts": 0
+  },
+  {
+    "case_id": "04",
+    "policy": "dynamic",
+    "category": "FRESHNESS_VIOLATION",
+    "status": "SUPPORTED_IN_REPLAY",
+    "evidence_refs": [
+      "rates"
+    ],
+    "candidate_categories": [
+      "FRESHNESS_VIOLATION"
+    ],
+    "recommendation": "Obtain approved current-month rates, trace the rate used, and reconcile/reprocess affected converted values.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": true,
+    "tool_attempts": 6,
+    "elapsed_ms": 2.211,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 1,
+          "fact_count": 1,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-04",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:32:26.804071-04:00",
+          "status": "SUCCESS",
+          "error_code": null,
+          "error": null,
+          "selected_rate_month": "2024-02",
+          "selected_rate": 1.1,
+          "elapsed_ms": 7.472
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": true,
+          "required_month": "2024-03",
+          "observed_months": [
+            "2024-02"
+          ],
+          "current_month_count": 0,
+          "policy": "current-month rates required; generated replay policy"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "llm_attempts": 0
+  },
+  {
+    "case_id": "04",
+    "policy": "llm",
+    "category": "FRESHNESS_VIOLATION",
+    "status": "SUPPORTED_IN_REPLAY",
+    "model_proposal": {
+      "category": "FRESHNESS_VIOLATION",
+      "rationale": "The ingestion pipeline successfully processed the expected file landing.csv with correct schema and data for business_date 2024-03-01, but the rates tool indicates that current-month rates (March 2024) are required and none were observed; only prior month (February 2024) rates are present. This suggests that the business-date rows are unavailable in monitoring reports due to missing or stale rate data for the current month, causing the effective data to be considered unavailable despite successful ingestion.",
+      "evidence_refs": [
+        "source",
+        "validation",
+        "tables",
+        "rates",
+        "execution"
+      ],
+      "recommendation": "Investigate and ensure that current-month rate data for 2024-03 is ingested and available before or alongside the business-date data ingestion to satisfy freshness requirements. Confirm that the rate ingestion pipeline is functioning correctly and delivering timely data.",
+      "missing_checks": [
+        "rate ingestion pipeline status",
+        "rate data freshness validation beyond observed_months",
+        "monitoring correlation between rate availability and business-date row visibility"
+      ],
+      "knowledge_refs": []
+    },
+    "evidence_refs": [
+      "source",
+      "validation",
+      "tables",
+      "rates",
+      "execution"
+    ],
+    "recommendation": "Investigate and ensure that current-month rate data for 2024-03 is ingested and available before or alongside the business-date data ingestion to satisfy freshness requirements. Confirm that the rate ingestion pipeline is functioning correctly and delivering timely data.",
+    "recommendation_origin": "live LLM proposal; human approval required",
+    "human_approval_required": true,
+    "deterministic_gate": {
+      "category": "FRESHNESS_VIOLATION",
+      "status": "SUPPORTED_IN_REPLAY",
+      "evidence_refs": [
+        "rates"
+      ],
+      "candidate_categories": [
+        "FRESHNESS_VIOLATION"
+      ],
+      "recommendation": "Obtain approved current-month rates, trace the rate used, and reconcile/reprocess affected converted values.",
+      "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+      "human_approval_required": true
+    },
+    "tool_attempts": 6,
+    "llm_attempts": 4,
+    "api_failures": 0,
+    "invalid_route_proposals": 0,
+    "input_tokens": 1856,
+    "output_tokens": 499,
+    "elapsed_ms": 6601.508,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-04",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:32:26.804071-04:00",
+          "status": "SUCCESS",
+          "error_code": null,
+          "error": null,
+          "selected_rate_month": "2024-02",
+          "selected_rate": 1.1,
+          "elapsed_ms": 7.472
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 1,
+          "fact_count": 1,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": true,
+          "required_month": "2024-03",
+          "observed_months": [
+            "2024-02"
+          ],
+          "current_month_count": 0,
+          "policy": "current-month rates required; generated replay policy"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "knowledge": [],
+    "audit": [
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "source",
+          "execution"
+        ],
+        "proposal": {
+          "next_tools": [
+            "source",
+            "execution"
+          ],
+          "reason": "To investigate the ingestion incident where expected business-date rows are unavailable, first examine the source tool to verify if the data source has the expected rows. Then use the execution tool to check if the ingestion jobs or pipelines ran successfully and processed the data as expected.",
+          "evidence_refs": [],
+          "knowledge_refs": []
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "validation",
+          "tables"
+        ],
+        "proposal": {
+          "next_tools": [
+            "validation",
+            "tables"
+          ],
+          "reason": "The source file 'landing.csv' is present and delivered on time, and the execution run was successful, so the next step is to validate the data content and check the tables for the expected business-date rows to identify where the missing data issue occurs.",
+          "evidence_refs": [
+            "source",
+            "execution"
+          ],
+          "knowledge_refs": []
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "rates",
+          "dependency"
+        ],
+        "proposal": {
+          "next_tools": [
+            "rates",
+            "dependency"
+          ],
+          "reason": "The source data file landing.csv is present and valid with expected columns and data types, and the execution run was successful. The tables tool shows data for business_date 2024-03-01 is present with one row. To investigate why morning monitoring reports missing expected business-date rows despite this, checking rates and dependency tools may reveal if rate selection or upstream dependencies caused the discrepancy.",
+          "evidence_refs": [
+            "source",
+            "execution",
+            "validation",
+            "tables"
+          ],
+          "knowledge_refs": []
+        }
+      },
+      {
+        "stage": "diagnose",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "category_agrees_with_gate": true,
+        "all_gate_refs_cited": true
+      }
+    ],
+    "scope": "generated incident-informed replay; one live run per arm; not production accuracy"
+  },
+  {
+    "case_id": "04",
+    "policy": "llm_knowledge",
+    "category": "FRESHNESS_VIOLATION",
+    "status": "SUPPORTED_IN_REPLAY",
+    "model_proposal": {
+      "category": "FRESHNESS_VIOLATION",
+      "rationale": "The source file 'landing.csv' is present with expected columns and data, and the pipeline execution succeeded without errors. However, the rates tool indicates that the required current month (2024-03) rates are missing, with only the previous month (2024-02) rates observed. This suggests that the business-date rows for the expected month are unavailable due to missing or stale rate data, causing the freshness violation.",
+      "evidence_refs": [
+        "source",
+        "validation",
+        "tables",
+        "execution",
+        "rates"
+      ],
+      "recommendation": "Investigate the process responsible for generating or ingesting the current month (2024-03) rates data. Ensure that the rates data for the required month is available and correctly ingested before running the pipeline to prevent freshness violations.",
+      "missing_checks": [
+        "Verify upstream rate data ingestion and availability for the current month",
+        "Check for any delays or failures in rate data generation pipelines"
+      ],
+      "knowledge_refs": [
+        "guide-delivery",
+        "guide-upstream"
+      ]
+    },
+    "evidence_refs": [
+      "source",
+      "validation",
+      "tables",
+      "execution",
+      "rates"
+    ],
+    "recommendation": "Investigate the process responsible for generating or ingesting the current month (2024-03) rates data. Ensure that the rates data for the required month is available and correctly ingested before running the pipeline to prevent freshness violations.",
+    "recommendation_origin": "live LLM proposal; human approval required",
+    "human_approval_required": true,
+    "deterministic_gate": {
+      "category": "FRESHNESS_VIOLATION",
+      "status": "SUPPORTED_IN_REPLAY",
+      "evidence_refs": [
+        "rates"
+      ],
+      "candidate_categories": [
+        "FRESHNESS_VIOLATION"
+      ],
+      "recommendation": "Obtain approved current-month rates, trace the rate used, and reconcile/reprocess affected converted values.",
+      "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+      "human_approval_required": true
+    },
+    "tool_attempts": 6,
+    "llm_attempts": 4,
+    "api_failures": 0,
+    "invalid_route_proposals": 0,
+    "input_tokens": 2128,
+    "output_tokens": 535,
+    "elapsed_ms": 6688.416,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 1,
+          "fact_count": 1,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-04",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:32:26.804071-04:00",
+          "status": "SUCCESS",
+          "error_code": null,
+          "error": null,
+          "selected_rate_month": "2024-02",
+          "selected_rate": 1.1,
+          "elapsed_ms": 7.472
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": true,
+          "required_month": "2024-03",
+          "observed_months": [
+            "2024-02"
+          ],
+          "current_month_count": 0,
+          "policy": "current-month rates required; generated replay policy"
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "knowledge": [
+      {
+        "id": "guide-delivery",
+        "record_type": "synthetic_design_guidance",
+        "text": "For missing file delivery or missing raw rows, check the expected delivery deadline, exact inventory path and access. An absent source input may explain a downstream load failure."
+      },
+      {
+        "id": "guide-upstream",
+        "record_type": "synthetic_design_guidance",
+        "text": "For inventory job failures, verify the upstream reference dependency and link service health to the affected task. Zero rows alone do not identify an upstream cause."
+      }
+    ],
+    "audit": [
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "source",
+          "dependency"
+        ],
+        "proposal": {
+          "next_tools": [
+            "source",
+            "dependency"
+          ],
+          "reason": "The symptom indicates missing expected business-date rows, which suggests a potential issue with the source data delivery or upstream dependencies. Using the 'source' tool can help verify if the expected input files or raw rows were delivered on time and accessible. The 'dependency' tool can help check upstream job references and service health that might affect data availability downstream.",
+          "evidence_refs": [],
+          "knowledge_refs": [
+            "guide-delivery",
+            "guide-upstream"
+          ]
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "validation",
+          "tables"
+        ],
+        "proposal": {
+          "next_tools": [
+            "validation",
+            "tables"
+          ],
+          "reason": "The source tool confirms the expected file 'landing.csv' is present and delivered on time, so the issue is unlikely due to missing source data. To investigate why the expected business-date rows are unavailable, validation can check data correctness and completeness, while tables can inspect the actual data content and row counts for the business date in question.",
+          "evidence_refs": [
+            "source"
+          ],
+          "knowledge_refs": [
+            "guide-delivery"
+          ]
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "execution",
+          "rates"
+        ],
+        "proposal": {
+          "next_tools": [
+            "execution",
+            "rates"
+          ],
+          "reason": "The source file 'landing.csv' is present and contains the expected row with the correct business_date, and validation confirms schema correctness and data integrity. The tables tool shows the raw and fact counts are both 1 for the business_date 2024-03-01, indicating data is loaded locally. To further investigate why morning monitoring reports missing expected business-date rows, we should use execution to check the ingestion job execution details and rates to analyze ingestion throughput or delays.",
+          "evidence_refs": [
+            "source",
+            "validation",
+            "tables"
+          ],
+          "knowledge_refs": []
+        }
+      },
+      {
+        "stage": "diagnose",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "category_agrees_with_gate": true,
+        "all_gate_refs_cited": true
+      }
+    ],
+    "scope": "generated incident-informed replay; one live run per arm; not production accuracy"
+  },
+  {
+    "case_id": "05",
+    "policy": "fixed",
+    "category": "PIPELINE_FAILURE",
+    "status": "SUPPORTED_IN_REPLAY",
+    "evidence_refs": [
+      "execution"
+    ],
+    "candidate_categories": [
+      "PIPELINE_FAILURE"
+    ],
+    "recommendation": "Review the worker dependency error with the platform owner, restore the approved environment and rerun safely.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": true,
+    "tool_attempts": 6,
+    "elapsed_ms": 35.598,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 1,
+          "fact_count": 0,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-05",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:32:40.528348-04:00",
+          "status": "FAILED",
+          "error_code": "ImportError",
+          "error": "REPLAY_WORKER_PACKAGE_CONFLICT: incompatible worker dependency",
+          "elapsed_ms": 0.664
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "llm_attempts": 0
+  },
+  {
+    "case_id": "05",
+    "policy": "dynamic",
+    "category": "PIPELINE_FAILURE",
+    "status": "SUPPORTED_IN_REPLAY",
+    "evidence_refs": [
+      "execution"
+    ],
+    "candidate_categories": [
+      "PIPELINE_FAILURE"
+    ],
+    "recommendation": "Review the worker dependency error with the platform owner, restore the approved environment and rerun safely.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": true,
+    "tool_attempts": 6,
+    "elapsed_ms": 4.919,
+    "evidence": [
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-05",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:32:40.528348-04:00",
+          "status": "FAILED",
+          "error_code": "ImportError",
+          "error": "REPLAY_WORKER_PACKAGE_CONFLICT: incompatible worker dependency",
+          "elapsed_ms": 0.664
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 1,
+          "fact_count": 0,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "llm_attempts": 0
+  },
+  {
+    "case_id": "05",
+    "policy": "llm",
+    "category": "INSUFFICIENT_EVIDENCE",
+    "status": "REVIEW_REQUIRED",
+    "model_proposal": {
+      "category": "DEPENDENCY_FAILURE",
+      "rationale": "The ingestion task failed immediately with an ImportError indicating a REPLAY_WORKER_PACKAGE_CONFLICT due to incompatible worker dependency. This prevented any processing from occurring despite the presence of source data and correct schema.",
+      "evidence_refs": [
+        "execution",
+        "source",
+        "validation",
+        "tables"
+      ],
+      "recommendation": "Investigate and resolve the worker dependency conflict causing the ImportError in the local replay environment. Ensure compatible package versions are installed and the execution environment is correctly configured before rerunning the ingestion task.",
+      "missing_checks": [
+        "detailed dependency version compatibility check",
+        "worker environment configuration validation"
+      ],
+      "knowledge_refs": []
+    },
+    "evidence_refs": [
+      "execution",
+      "source",
+      "validation",
+      "tables"
+    ],
+    "recommendation": "Investigate and resolve the worker dependency conflict causing the ImportError in the local replay environment. Ensure compatible package versions are installed and the execution environment is correctly configured before rerunning the ingestion task.",
+    "recommendation_origin": "live LLM proposal; human approval required",
+    "human_approval_required": true,
+    "deterministic_gate": {
+      "category": "PIPELINE_FAILURE",
+      "status": "SUPPORTED_IN_REPLAY",
+      "evidence_refs": [
+        "execution"
+      ],
+      "candidate_categories": [
+        "PIPELINE_FAILURE"
+      ],
+      "recommendation": "Review the worker dependency error with the platform owner, restore the approved environment and rerun safely.",
+      "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+      "human_approval_required": true
+    },
+    "tool_attempts": 6,
+    "llm_attempts": 4,
+    "api_failures": 0,
+    "invalid_route_proposals": 0,
+    "input_tokens": 1789,
+    "output_tokens": 461,
+    "elapsed_ms": 6677.171,
+    "evidence": [
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-05",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:32:40.528348-04:00",
+          "status": "FAILED",
+          "error_code": "ImportError",
+          "error": "REPLAY_WORKER_PACKAGE_CONFLICT: incompatible worker dependency",
+          "elapsed_ms": 0.664
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 1,
+          "fact_count": 0,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "knowledge": [],
+    "audit": [
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "execution",
+          "validation"
+        ],
+        "proposal": {
+          "next_tools": [
+            "execution",
+            "validation"
+          ],
+          "reason": "To investigate ingestion incidents where all fact loads failed despite source rows existing and fact tables being empty, inspecting the processing task execution details is critical to identify errors or failures. Additionally, validating the data processing and transformation steps can help pinpoint where the failure occurred.",
+          "evidence_refs": [],
+          "knowledge_refs": []
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "dependency",
+          "source"
+        ],
+        "proposal": {
+          "next_tools": [
+            "dependency",
+            "source"
+          ],
+          "reason": "The execution evidence shows the processing task failed due to a package conflict error (REPLAY_WORKER_PACKAGE_CONFLICT), indicating a dependency issue. Investigating the dependency tool can clarify the incompatible worker dependency causing the failure. Additionally, checking the source tool can confirm that source rows exist as stated and verify their integrity, supporting the symptom that source rows exist but fact tables are empty.",
+          "evidence_refs": [
+            "execution",
+            "validation"
+          ],
+          "knowledge_refs": []
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "tables",
+          "rates"
+        ],
+        "proposal": {
+          "next_tools": [
+            "tables",
+            "rates"
+          ],
+          "reason": "The ingestion failed due to an ImportError indicating a worker package conflict, which suggests the processing task did not run successfully. The source data is present and valid, and the schema matches expectations, so the issue is likely in the processing or loading step. Using the 'tables' tool can help inspect the fact tables to confirm they are empty and check their status. The 'rates' tool might provide additional context on related data or dependencies that could affect processing. Both tools together can help diagnose why fact loads failed despite source rows existing.",
+          "evidence_refs": [
+            "execution",
+            "validation",
+            "source"
+          ],
+          "knowledge_refs": []
+        }
+      },
+      {
+        "stage": "diagnose",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "category_agrees_with_gate": false,
+        "all_gate_refs_cited": true
+      }
+    ],
+    "scope": "generated incident-informed replay; one live run per arm; not production accuracy"
+  },
+  {
+    "case_id": "05",
+    "policy": "llm_knowledge",
+    "category": "INSUFFICIENT_EVIDENCE",
+    "status": "REVIEW_REQUIRED",
+    "model_proposal": {
+      "category": "DEPENDENCY_FAILURE",
+      "rationale": "The processing task failed immediately with an ImportError indicating a REPLAY_WORKER_PACKAGE_CONFLICT due to incompatible worker dependency. This prevented any fact loads from completing despite the presence of source rows and correct schema.",
+      "evidence_refs": [
+        "execution",
+        "source",
+        "validation",
+        "tables"
+      ],
+      "recommendation": "Investigate and resolve the worker dependency conflict causing the ImportError in the processing task environment. Ensure compatible package versions are installed and the runtime environment matches expected dependencies before rerunning the ingestion.",
+      "missing_checks": [
+        "detailed dependency version compatibility check",
+        "worker environment configuration validation"
+      ],
+      "knowledge_refs": [
+        "guide-worker"
+      ]
+    },
+    "evidence_refs": [
+      "execution",
+      "source",
+      "validation",
+      "tables"
+    ],
+    "recommendation": "Investigate and resolve the worker dependency conflict causing the ImportError in the processing task environment. Ensure compatible package versions are installed and the runtime environment matches expected dependencies before rerunning the ingestion.",
+    "recommendation_origin": "live LLM proposal; human approval required",
+    "human_approval_required": true,
+    "deterministic_gate": {
+      "category": "PIPELINE_FAILURE",
+      "status": "SUPPORTED_IN_REPLAY",
+      "evidence_refs": [
+        "execution"
+      ],
+      "candidate_categories": [
+        "PIPELINE_FAILURE"
+      ],
+      "recommendation": "Review the worker dependency error with the platform owner, restore the approved environment and rerun safely.",
+      "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+      "human_approval_required": true
+    },
+    "tool_attempts": 6,
+    "llm_attempts": 4,
+    "api_failures": 0,
+    "invalid_route_proposals": 1,
+    "input_tokens": 2141,
+    "output_tokens": 437,
+    "elapsed_ms": 6780.122,
+    "evidence": [
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-05",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:32:40.528348-04:00",
+          "status": "FAILED",
+          "error_code": "ImportError",
+          "error": "REPLAY_WORKER_PACKAGE_CONFLICT: incompatible worker dependency",
+          "elapsed_ms": 0.664
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": false,
+          "healthy": null
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 1,
+          "fact_count": 0,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "knowledge": [
+      {
+        "id": "guide-worker",
+        "record_type": "synthetic_design_guidance",
+        "text": "For job or all fact loads failing while source rows exist, inspect processing task errors and runtime dependencies before assuming a missing input."
+      },
+      {
+        "id": "guide-delivery",
+        "record_type": "synthetic_design_guidance",
+        "text": "For missing file delivery or missing raw rows, check the expected delivery deadline, exact inventory path and access. An absent source input may explain a downstream load failure."
+      }
+    ],
+    "audit": [
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "execution",
+          "dependency"
+        ],
+        "proposal": {
+          "next_tools": [
+            "execution",
+            "dependency"
+          ],
+          "reason": "Since all fact loads failed despite source rows existing and fact tables being empty, the issue likely lies in the processing task execution or its runtime dependencies. Inspecting execution logs can reveal task errors, and checking dependencies can identify missing or failing inputs required by the processing task, as guided by the 'guide-worker' runbook.",
+          "evidence_refs": [],
+          "knowledge_refs": [
+            "guide-worker"
+          ]
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": false,
+        "validation_reason": "ineligible_tool",
+        "selected_tools": [
+          "source",
+          "validation"
+        ],
+        "proposal": {
+          "next_tools": [
+            "dependency",
+            "execution"
+          ],
+          "reason": "The failure is due to an ImportError indicating a worker package conflict, which is a dependency issue. Inspecting the dependency tool output and rechecking the execution details will help confirm and diagnose the incompatible worker dependency causing all fact loads to fail despite source rows existing.",
+          "evidence_refs": [
+            "execution",
+            "dependency"
+          ],
+          "knowledge_refs": [
+            "guide-worker"
+          ]
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "tables",
+          "rates"
+        ],
+        "proposal": {
+          "next_tools": [
+            "tables",
+            "rates"
+          ],
+          "reason": "The execution evidence shows the processing task failed with an ImportError due to incompatible worker dependencies, which aligns with the runbook guidance to inspect processing task errors and runtime dependencies. Since the source file is present and valid, and the failure is in the processing task, the next step is to inspect the fact tables to confirm they are empty and check rates for any anomalies affecting ingestion.",
+          "evidence_refs": [
+            "execution",
+            "source",
+            "validation"
+          ],
+          "knowledge_refs": [
+            "guide-worker"
+          ]
+        }
+      },
+      {
+        "stage": "diagnose",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "category_agrees_with_gate": false,
+        "all_gate_refs_cited": true
+      }
+    ],
+    "scope": "generated incident-informed replay; one live run per arm; not production accuracy"
+  },
+  {
+    "case_id": "06",
+    "policy": "fixed",
+    "category": "DEPENDENCY_FAILURE",
+    "status": "SUPPORTED_IN_REPLAY",
+    "evidence_refs": [
+      "dependency",
+      "execution"
+    ],
+    "candidate_categories": [
+      "DEPENDENCY_FAILURE"
+    ],
+    "recommendation": "Confirm the upstream service outage, coordinate recovery, then retry and validate inventory output.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": true,
+    "tool_attempts": 6,
+    "elapsed_ms": 17.903,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 0,
+          "fact_count": 0,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-06",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:32:54.172081-04:00",
+          "status": "FAILED",
+          "error_code": "UpstreamUnavailable",
+          "error": "REPLAY_UPSTREAM_UNAVAILABLE: HTTPError",
+          "upstream_id": "inventory-reference-service",
+          "elapsed_ms": 28.699
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": true,
+          "upstream_id": "inventory-reference-service",
+          "health_source": "local HTTP reference-service stub",
+          "healthy": false,
+          "http_status": 503
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "llm_attempts": 0
+  },
+  {
+    "case_id": "06",
+    "policy": "dynamic",
+    "category": "DEPENDENCY_FAILURE",
+    "status": "SUPPORTED_IN_REPLAY",
+    "evidence_refs": [
+      "dependency",
+      "execution"
+    ],
+    "candidate_categories": [
+      "DEPENDENCY_FAILURE"
+    ],
+    "recommendation": "Confirm the upstream service outage, coordinate recovery, then retry and validate inventory output.",
+    "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+    "human_approval_required": true,
+    "tool_attempts": 6,
+    "elapsed_ms": 29.895,
+    "evidence": [
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-06",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:32:54.172081-04:00",
+          "status": "FAILED",
+          "error_code": "UpstreamUnavailable",
+          "error": "REPLAY_UPSTREAM_UNAVAILABLE: HTTPError",
+          "upstream_id": "inventory-reference-service",
+          "elapsed_ms": 28.699
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 0,
+          "fact_count": 0,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": true,
+          "upstream_id": "inventory-reference-service",
+          "health_source": "local HTTP reference-service stub",
+          "healthy": false,
+          "http_status": 503
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "scope": "generated incident-informed replay; not independently verified production evidence",
+    "llm_attempts": 0
+  },
+  {
+    "case_id": "06",
+    "policy": "llm",
+    "category": "DEPENDENCY_FAILURE",
+    "status": "SUPPORTED_IN_REPLAY",
+    "model_proposal": {
+      "category": "DEPENDENCY_FAILURE",
+      "rationale": "The inventory ingestion job failed due to the upstream inventory-reference-service being unhealthy and returning HTTP 503 errors, causing an UpstreamUnavailable error. The source file landing.csv was present and schema validation passed, indicating no issues with input data or schema. The failure is directly linked to the unavailable upstream dependency.",
+      "evidence_refs": [
+        "dependency",
+        "execution",
+        "source",
+        "validation"
+      ],
+      "recommendation": "Investigate and restore the health of the inventory-reference-service to ensure it responds successfully. Once the upstream service is healthy, retry the ingestion job. Monitor the upstream service availability to prevent recurrence.",
+      "missing_checks": [
+        "upstream service logs for root cause of 503",
+        "network connectivity checks between ingestion job and upstream service",
+        "retry mechanism effectiveness for upstream failures"
+      ],
+      "knowledge_refs": []
+    },
+    "evidence_refs": [
+      "dependency",
+      "execution",
+      "source",
+      "validation"
+    ],
+    "recommendation": "Investigate and restore the health of the inventory-reference-service to ensure it responds successfully. Once the upstream service is healthy, retry the ingestion job. Monitor the upstream service availability to prevent recurrence.",
+    "recommendation_origin": "live LLM proposal; human approval required",
+    "human_approval_required": true,
+    "deterministic_gate": {
+      "category": "DEPENDENCY_FAILURE",
+      "status": "SUPPORTED_IN_REPLAY",
+      "evidence_refs": [
+        "dependency",
+        "execution"
+      ],
+      "candidate_categories": [
+        "DEPENDENCY_FAILURE"
+      ],
+      "recommendation": "Confirm the upstream service outage, coordinate recovery, then retry and validate inventory output.",
+      "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+      "human_approval_required": true
+    },
+    "tool_attempts": 6,
+    "llm_attempts": 4,
+    "api_failures": 0,
+    "invalid_route_proposals": 0,
+    "input_tokens": 1802,
+    "output_tokens": 436,
+    "elapsed_ms": 5974.183,
+    "evidence": [
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "dependency",
+        "result": {
+          "required": true,
+          "upstream_id": "inventory-reference-service",
+          "health_source": "local HTTP reference-service stub",
+          "healthy": false,
+          "http_status": 503
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-06",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:32:54.172081-04:00",
+          "status": "FAILED",
+          "error_code": "UpstreamUnavailable",
+          "error": "REPLAY_UPSTREAM_UNAVAILABLE: HTTPError",
+          "upstream_id": "inventory-reference-service",
+          "elapsed_ms": 28.699
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 0,
+          "fact_count": 0,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "knowledge": [],
+    "audit": [
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "source",
+          "dependency"
+        ],
+        "proposal": {
+          "next_tools": [
+            "source",
+            "dependency"
+          ],
+          "reason": "To investigate the inventory ingestion job failure, first check the source tool for any issues with the upstream reference service supplying current inventory data. Then use the dependency tool to verify if there are any upstream dependencies causing the failure.",
+          "evidence_refs": [],
+          "knowledge_refs": []
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "execution",
+          "validation"
+        ],
+        "proposal": {
+          "next_tools": [
+            "execution",
+            "validation"
+          ],
+          "reason": "The ingestion job failure is linked to an unhealthy upstream inventory-reference-service (HTTP 503). To investigate further, execution tool can check job run details and logs for failure context, while validation can verify data integrity and correctness of the inventory ingestion process.",
+          "evidence_refs": [
+            "source",
+            "dependency"
+          ],
+          "knowledge_refs": []
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "tables",
+          "rates"
+        ],
+        "proposal": {
+          "next_tools": [
+            "tables",
+            "rates"
+          ],
+          "reason": "The ingestion job failure is due to the upstream inventory-reference-service being unavailable (HTTP 503), as confirmed by the dependency and execution tool evidence. The source data file landing.csv is present and valid, and the validation tool confirms the schema is correct. To further investigate the impact on inventory ingestion and any rate-related issues, the tables and rates tools should be used next.",
+          "evidence_refs": [
+            "dependency",
+            "execution",
+            "source",
+            "validation"
+          ],
+          "knowledge_refs": []
+        }
+      },
+      {
+        "stage": "diagnose",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "category_agrees_with_gate": true,
+        "all_gate_refs_cited": true
+      }
+    ],
+    "scope": "generated incident-informed replay; one live run per arm; not production accuracy"
+  },
+  {
+    "case_id": "06",
+    "policy": "llm_knowledge",
+    "category": "DEPENDENCY_FAILURE",
+    "status": "SUPPORTED_IN_REPLAY",
+    "model_proposal": {
+      "category": "DEPENDENCY_FAILURE",
+      "rationale": "The ingestion job failed due to the upstream inventory-reference-service being unavailable, returning HTTP 503. The source file landing.csv was present and schema validation passed, indicating no issues with input data or schema. The execution error code 'UpstreamUnavailable' and error message confirm the failure is caused by the unavailable upstream dependency.",
+      "evidence_refs": [
+        "dependency",
+        "source",
+        "validation",
+        "execution",
+        "tables"
+      ],
+      "recommendation": "Investigate and restore the health of the inventory-reference-service upstream dependency to resolve the ingestion failure. Monitor the service availability and implement retry or fallback mechanisms if appropriate.",
+      "missing_checks": [
+        "Verify if the upstream service outage is transient or persistent",
+        "Check logs and metrics of the inventory-reference-service for root cause",
+        "Confirm if any network or configuration issues affect connectivity to the upstream service"
+      ],
+      "knowledge_refs": [
+        "guide-upstream",
+        "guide-delivery"
+      ]
+    },
+    "evidence_refs": [
+      "dependency",
+      "source",
+      "validation",
+      "execution",
+      "tables"
+    ],
+    "recommendation": "Investigate and restore the health of the inventory-reference-service upstream dependency to resolve the ingestion failure. Monitor the service availability and implement retry or fallback mechanisms if appropriate.",
+    "recommendation_origin": "live LLM proposal; human approval required",
+    "human_approval_required": true,
+    "deterministic_gate": {
+      "category": "DEPENDENCY_FAILURE",
+      "status": "SUPPORTED_IN_REPLAY",
+      "evidence_refs": [
+        "dependency",
+        "execution"
+      ],
+      "candidate_categories": [
+        "DEPENDENCY_FAILURE"
+      ],
+      "recommendation": "Confirm the upstream service outage, coordinate recovery, then retry and validate inventory output.",
+      "recommendation_origin": "deterministic category-to-action template, not LLM generation",
+      "human_approval_required": true
+    },
+    "tool_attempts": 6,
+    "llm_attempts": 4,
+    "api_failures": 0,
+    "invalid_route_proposals": 0,
+    "input_tokens": 2234,
+    "output_tokens": 571,
+    "elapsed_ms": 6680.496,
+    "evidence": [
+      {
+        "tool": "dependency",
+        "result": {
+          "required": true,
+          "upstream_id": "inventory-reference-service",
+          "health_source": "local HTTP reference-service stub",
+          "healthy": false,
+          "http_status": 503
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "source",
+        "result": {
+          "expected": true,
+          "expected_file": "landing.csv",
+          "present": true,
+          "count": 1,
+          "delivery_deadline": "2024-03-01T05:00:00-05:00",
+          "inspection_time": "2024-03-01T07:15:00-05:00",
+          "time_basis": "generated replay parameters"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "validation",
+        "result": {
+          "available": true,
+          "expected_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "observed_columns": [
+            "business_date",
+            "id",
+            "revenue"
+          ],
+          "schema_mismatch": false,
+          "revenue_type": "integer",
+          "invalid_integer_rows": [],
+          "note": "column names and sample values generated for replay"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "execution",
+        "result": {
+          "run_id": "replay-06",
+          "execution_environment": "local replay task",
+          "started_at": "2026-10-26T23:32:54.172081-04:00",
+          "status": "FAILED",
+          "error_code": "UpstreamUnavailable",
+          "error": "REPLAY_UPSTREAM_UNAVAILABLE: HTTPError",
+          "upstream_id": "inventory-reference-service",
+          "elapsed_ms": 28.699
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "tables",
+        "result": {
+          "business_date": "2024-03-01",
+          "raw_count": 0,
+          "fact_count": 0,
+          "backend": "local SQLite stand-in, not a Snowflake query"
+        },
+        "evidence_origin": "executed local replay adapter"
+      },
+      {
+        "tool": "rates",
+        "result": {
+          "applicable": false
+        },
+        "evidence_origin": "executed local replay adapter"
+      }
+    ],
+    "knowledge": [
+      {
+        "id": "guide-upstream",
+        "record_type": "synthetic_design_guidance",
+        "text": "For inventory job failures, verify the upstream reference dependency and link service health to the affected task. Zero rows alone do not identify an upstream cause."
+      },
+      {
+        "id": "guide-delivery",
+        "record_type": "synthetic_design_guidance",
+        "text": "For missing file delivery or missing raw rows, check the expected delivery deadline, exact inventory path and access. An absent source input may explain a downstream load failure."
+      }
+    ],
+    "audit": [
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "dependency",
+          "source"
+        ],
+        "proposal": {
+          "next_tools": [
+            "dependency",
+            "source"
+          ],
+          "reason": "The symptom indicates an inventory ingestion job failure due to an upstream reference service issue. According to the runbook 'guide-upstream', verifying the upstream reference dependency and service health is critical. Additionally, 'guide-delivery' suggests checking the source input for missing files or raw rows that could cause downstream failures. Therefore, using the 'dependency' tool to assess upstream dependencies and the 'source' tool to verify input data availability is appropriate.",
+          "evidence_refs": [],
+          "knowledge_refs": [
+            "guide-upstream",
+            "guide-delivery"
+          ]
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "validation",
+          "execution"
+        ],
+        "proposal": {
+          "next_tools": [
+            "validation",
+            "execution"
+          ],
+          "reason": "The inventory ingestion job failure is linked to an unhealthy upstream inventory-reference-service (HTTP 503). According to the guide-upstream runbook, verifying the upstream reference dependency and the health of the linked service is critical. Using the validation tool can help confirm the integrity and correctness of the input data (landing.csv), while the execution tool can help trace the ingestion job's execution details and failure points related to the upstream dependency.",
+          "evidence_refs": [
+            "dependency",
+            "source"
+          ],
+          "knowledge_refs": [
+            "guide-upstream"
+          ]
+        }
+      },
+      {
+        "stage": "route",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "selected_tools": [
+          "tables",
+          "rates"
+        ],
+        "proposal": {
+          "next_tools": [
+            "tables",
+            "rates"
+          ],
+          "reason": "The ingestion job failed due to the upstream inventory-reference-service being unavailable (HTTP 503). The source file landing.csv is present and valid, so the issue is not with the source data. To further diagnose the impact on inventory ingestion, examining the tables tool can reveal if any inventory tables were partially loaded or empty, and the rates tool can provide insight into any rate limits or throttling affecting the upstream service or ingestion job.",
+          "evidence_refs": [
+            "dependency",
+            "source",
+            "validation",
+            "execution"
+          ],
+          "knowledge_refs": [
+            "guide-upstream",
+            "guide-delivery"
+          ]
+        }
+      },
+      {
+        "stage": "diagnose",
+        "accepted": true,
+        "validation_reason": "accepted",
+        "category_agrees_with_gate": true,
+        "all_gate_refs_cited": true
+      }
+    ],
+    "scope": "generated incident-informed replay; one live run per arm; not production accuracy"
+  }
+]

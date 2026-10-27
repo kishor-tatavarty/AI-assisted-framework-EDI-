@@ -16,6 +16,10 @@
     "sha256": "9e30dc646db0319d26fba70656131614636158d3d68ad3a57c43e63382e6aa95"
   },
   {
+    "path": "ictai_replay/llm.py",
+    "sha256": "a3e2d7a80ed927cbeb814b60a4cc71858cbcc4c486f40b335a797cf24883445a"
+  },
+  {
     "path": "ictai_replay/scenarios.py",
     "sha256": "13eead725c1267c049fc0e9175c5598f781480b546fe81b406944506d5dd4e2f"
   },
@@ -28,12 +32,16 @@
     "sha256": "ec6efd089d071d13f3348936239f1cd9661c93686ff0b58b41cc1bd6efcdd606"
   },
   {
+    "path": "preflight_payload.py",
+    "sha256": "dc52354abd76dec4ca3269e3dfe7fcff56296a283fc134b462b28ea36358ea11"
+  },
+  {
     "path": "pyproject.toml",
     "sha256": "a9fcb9bac687b896b3c4332b9fdeb134d4e2a3f36b5c30daae7a22ff9047b21f"
   },
   {
     "path": "README.md",
-    "sha256": "da4dde6c9a72515249ed986b185c1c84882f460eeea738d5dbd7d7e7aaaef7b2"
+    "sha256": "5b386696bb7618c4722be5b9747c7d746e70eb240ac3c2f05bcff0b2068e170a"
   },
   {
     "path": "results/failures/case_01/config.json",
@@ -114,6 +122,106 @@
   {
     "path": "results/failures/summary.json",
     "sha256": "d101937e3238aed49d6387b8aa48f444fe06842fba4344d86148b21546991858"
+  },
+  {
+    "path": "results/live_comparison/case_01/config.json",
+    "sha256": "2ab10323ce5176d67561377174e21d9a149abcf0435f626afa5881a2cc3346b0"
+  },
+  {
+    "path": "results/live_comparison/case_01/task_run.json",
+    "sha256": "b3a8d894d851645284f2872190431c310eae569e119532e6f6b0a701b5e722c7"
+  },
+  {
+    "path": "results/live_comparison/case_02/config.json",
+    "sha256": "e7fa5519452df0d12ffd43acc7bd902d94ca176673780bfaa627fc2caadde4ae"
+  },
+  {
+    "path": "results/live_comparison/case_02/landing.csv",
+    "sha256": "5e88fb1e29c563cd5b400efc913831ad0fcb9b8a84716c1e2f4db1c0bc81a9d2"
+  },
+  {
+    "path": "results/live_comparison/case_02/task_run.json",
+    "sha256": "aa5be26596eb5568f4f677110aef9021c7e76291a54a3e4884c3ddfc4fa7589c"
+  },
+  {
+    "path": "results/live_comparison/case_03/config.json",
+    "sha256": "9d7e1255c956baa0c4dec041ead600588fa6d5d76a60b4b2ae88ca1d76fa7dab"
+  },
+  {
+    "path": "results/live_comparison/case_03/landing.csv",
+    "sha256": "90c0f1e5d339d466b5c712381442244c608007480e15925b689d783011fa1bf2"
+  },
+  {
+    "path": "results/live_comparison/case_03/task_run.json",
+    "sha256": "30fa6d8a7ada8144bc85ddbd2edd73f11c85695087953a3109fc5c027ab26a2c"
+  },
+  {
+    "path": "results/live_comparison/case_04/config.json",
+    "sha256": "3fbcaaf9e943494bd5fefac0df295bedcff3753cf4ed14dbcac881508d351671"
+  },
+  {
+    "path": "results/live_comparison/case_04/landing.csv",
+    "sha256": "88d31e14053b9fc09a15a0d6583ef923a500ea1ebb8fbda948b3013c1f103788"
+  },
+  {
+    "path": "results/live_comparison/case_04/rates.csv",
+    "sha256": "fae8eb02622e4884e2b082ec11855008f69caaebeeb6ea24349be3c8437b8ea6"
+  },
+  {
+    "path": "results/live_comparison/case_04/task_run.json",
+    "sha256": "3e96cd3730b77a8150f50ce775028965fb5061e0385e140e8ef2ea0f9805f4c6"
+  },
+  {
+    "path": "results/live_comparison/case_05/config.json",
+    "sha256": "8ec452f91495f68e15d67b610ff998409628bc0d05cc35d9b7180880c2aa4ccd"
+  },
+  {
+    "path": "results/live_comparison/case_05/landing.csv",
+    "sha256": "88d31e14053b9fc09a15a0d6583ef923a500ea1ebb8fbda948b3013c1f103788"
+  },
+  {
+    "path": "results/live_comparison/case_05/task_run.json",
+    "sha256": "cfbf6e7307d67826c8fb102a7605e0a2ba0c214b401e8996d8d2a830959d3cab"
+  },
+  {
+    "path": "results/live_comparison/case_06/config.json",
+    "sha256": "356962501a463f8f0868b92fe25e4140c5b06811df3287ce2aa74e2d1992d815"
+  },
+  {
+    "path": "results/live_comparison/case_06/landing.csv",
+    "sha256": "88d31e14053b9fc09a15a0d6583ef923a500ea1ebb8fbda948b3013c1f103788"
+  },
+  {
+    "path": "results/live_comparison/case_06/task_run.json",
+    "sha256": "f097bd49897d7fb60dd6536802b97d4c572b7802f2cb810eedef4bdbe18f26b3"
+  },
+  {
+    "path": "results/live_comparison/knowledge.json",
+    "sha256": "d4dcf8f730cc68a48fe8dcf4f8e561db736d6f29e6a8895bf334938a7ee39d17"
+  },
+  {
+    "path": "results/live_comparison/manifest.json",
+    "sha256": "82307687051ec318c5d57112e41f70030798e39e92e3c1a96a5be67f0018cd43"
+  },
+  {
+    "path": "results/live_comparison/model_records.json",
+    "sha256": "a84f31ec73e92c96611020e454c019338450d78f528fbc55038febd30dc4ab17"
+  },
+  {
+    "path": "results/live_comparison/outbound_preview.json",
+    "sha256": "25e2e94546a6cfc95ddfc40d13e45ea3321d7d48e76f20c170c60485592c3502"
+  },
+  {
+    "path": "results/live_comparison/payload_privacy_check.json",
+    "sha256": "8585cc16924467d544f297bf2cfdde0d0785e3516c431926c8d835db89c2c984"
+  },
+  {
+    "path": "results/live_comparison/results.json",
+    "sha256": "c07cd9682c8919687793da7d741dbbd475c97c6ab428cb86a7c4983a4d3cacd1"
+  },
+  {
+    "path": "results/live_comparison/summary.json",
+    "sha256": "40493655657b0479280f1f626177cf7e63e71bd557f6b166594b02d6055aed74"
   },
   {
     "path": "results/recovered/case_01/config.json",
@@ -200,8 +308,16 @@
     "sha256": "9844c210cdc7fb425be2040f26ea44a444de7b4998d65eac8890134dde16766b"
   },
   {
+    "path": "run_live_comparison.py",
+    "sha256": "888c9d71d56ba29d7954041936a3bbf3eef3743d0f9b9fcb418ca56b444b3a0e"
+  },
+  {
     "path": "run_replays.py",
     "sha256": "8df6f3f03d608c10b59406b4b4481d6b021fa515f263f13fb10710c7187a1078"
+  },
+  {
+    "path": "tests/test_llm_validation.py",
+    "sha256": "807b6b19532cdfef744d4f84be064e586bb34474314599d33c442b37edee757a"
   },
   {
     "path": "tests/test_replays.py",
@@ -209,6 +325,6 @@
   },
   {
     "path": "VALIDATION.json",
-    "sha256": "74df99b511131d350f25b97bad0a4f8c6ab8773896bb78b5a91bb0041f98f2e5"
+    "sha256": "37176ecf868e6a9818491c37adda5e2ce615d0c79618bcd3bd855d171464e633"
   }
 ]

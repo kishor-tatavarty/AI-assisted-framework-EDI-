@@ -1,0 +1,43 @@
+{
+  "id": "03",
+  "business_date": "2024-03-01",
+  "run_id": "replay-03",
+  "delivery_expected": true,
+  "expected_file": "landing.csv",
+  "delivery_deadline": "2024-03-01T03:00:00-05:00",
+  "inspection_time": "2024-03-01T07:15:00-05:00",
+  "contract": {
+    "columns": [
+      "business_date",
+      "id",
+      "revenue"
+    ]
+  },
+  "runtime": {
+    "worker_package_ok": true
+  },
+  "dependency": {
+    "required": false,
+    "id": null
+  },
+  "rates": {
+    "required": false,
+    "required_month": "2024-03"
+  },
+  "symptoms": "Morning monitoring reports the expected business-date rows unavailable.",
+  "provenance": {
+    "record_type": "generated replay fixture informed by contributor account",
+    "historical_log_export": false,
+    "all_fixture_dates_values_and_names_generated": true,
+    "account": "Order file expected/arrived at 03:00; revenue requires integer values; dollar signs observed; matching column count; zero target rows; numeric load failure reported.",
+    "unknown": [
+      "actual sample values",
+      "exact numeric error",
+      "recovery outcome"
+    ],
+    "adaptations": [
+      "generated revenue sample $100",
+      "Airflow-compatible Python task and SQLite"
+    ]
+  }
+}

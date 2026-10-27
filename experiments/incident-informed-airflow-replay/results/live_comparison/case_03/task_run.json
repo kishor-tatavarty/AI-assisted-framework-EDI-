@@ -1,0 +1,9 @@
+{
+  "run_id": "replay-03",
+  "execution_environment": "local replay task",
+  "started_at": "2026-10-26T23:32:12.639373-04:00",
+  "status": "FAILED",
+  "error_code": "ValueError",
+  "error": "REPLAY_NUMERIC_CONVERSION: revenue must be an integer",
+  "elapsed_ms": 2.343
+}

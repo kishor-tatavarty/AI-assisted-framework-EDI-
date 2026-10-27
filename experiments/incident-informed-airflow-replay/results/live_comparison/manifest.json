@@ -1,0 +1,18 @@
+{
+  "case_config_sha256": {
+    "01": "9261ca92105ee2778c920af285494af980f9698bdf8907790863cb3abc79589e",
+    "02": "cf6da4b78e8e578a99672cd9fe0440f11e67e1a52221c745c64599e756729ea1",
+    "03": "bc945b0d1bc0e518c012dae593c2b5937b06ecb3a2f772b4aace5c88cfefb838",
+    "04": "9441ebbe4bf51df4443db6eeb22c51e979faf4dcfe7f495362daa1cd11342579",
+    "05": "99fededb474202bf8bc7e5ef9c3cbdb10a5ff42f2d88619ff6b5eb0e30946e6c",
+    "06": "d80cc3850d934e46468e2dbb36e47011bf9572ea301cdc06642e6000e4a412b9"
+  },
+  "knowledge_sha256": "77eb98b9dee7044760feb9deb276ecc6610f6a289330aea953eac8694b423856",
+  "model": "gpt-4.1-mini-2025-04-14",
+  "max_model_calls_per_case_per_llm_arm": 4,
+  "maximum_total_model_calls": 48,
+  "all_policies_collect_same_six_domains": true,
+  "no_gold_labels_in_model_input": true,
+  "history_type": "synthetic design guidance; not independent verified incident history",
+  "scope": "incident-informed generated local replay; one run per policy per case"
+}

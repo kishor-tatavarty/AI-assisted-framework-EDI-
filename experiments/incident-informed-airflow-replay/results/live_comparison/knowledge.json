@@ -1,0 +1,32 @@
+[
+  {
+    "id": "guide-delivery",
+    "record_type": "synthetic_design_guidance",
+    "text": "For missing file delivery or missing raw rows, check the expected delivery deadline, exact inventory path and access. An absent source input may explain a downstream load failure."
+  },
+  {
+    "id": "guide-columns",
+    "record_type": "synthetic_design_guidance",
+    "text": "For column or parser errors, compare observed file structure with the approved schema contract before changing a load mapping."
+  },
+  {
+    "id": "guide-values",
+    "record_type": "synthetic_design_guidance",
+    "text": "For invalid revenue or numeric values, inspect the value contract and failing samples. Matching column count does not establish valid data types."
+  },
+  {
+    "id": "guide-period",
+    "record_type": "synthetic_design_guidance",
+    "text": "For incorrect converted amounts, check effective month of rates and trace the selected reference rate. A successful load can publish stale reference values."
+  },
+  {
+    "id": "guide-worker",
+    "record_type": "synthetic_design_guidance",
+    "text": "For job or all fact loads failing while source rows exist, inspect processing task errors and runtime dependencies before assuming a missing input."
+  },
+  {
+    "id": "guide-upstream",
+    "record_type": "synthetic_design_guidance",
+    "text": "For inventory job failures, verify the upstream reference dependency and link service health to the affected task. Zero rows alone do not identify an upstream cause."
+  }
+]

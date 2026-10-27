@@ -1,0 +1,9 @@
+{
+  "run_id": "replay-02",
+  "execution_environment": "local replay task",
+  "started_at": "2026-10-26T23:31:57.409112-04:00",
+  "status": "FAILED",
+  "error_code": "ValueError",
+  "error": "REPLAY_COLUMN_MISMATCH: received columns differ from contract",
+  "elapsed_ms": 2.254
+}
